@@ -140,7 +140,8 @@ EL~\DHW~m for a design flood of \DesignQ~\cms, whose return period the documents
 operation~\citep{ayun2022}. The operating manual, as-built drawings and gate logs were not available to us, so all
 sill, bed and deck levels are assumptions derived from the sourced levels and gate sizes.
 
-\textbf{Open data.} Table~\ref{tab:data} lists the datasets. Terrain comes from the Copernicus GLO-30 surface
+\textbf{Open data.} Table~\ref{tab:data} lists the datasets and Fig.~\ref{fig:pipeline} (bands 1 to 3) shows how each
+becomes a file the page reads. Terrain comes from the Copernicus GLO-30 surface
 model~\citep{copdem}, prepared once into two grids: a ``wide'' grid of \WideCols$\times$\WideCols{} cells of about
 \WideCellM~m covering the whole basin, and a ``fine'' grid of \FineCols$\times$\FineRows{} cells of about
 \FineCellM~m around the weir. Each grid stores elevation, D8 flow direction~\citep{ocallaghan1984}, upstream area and
@@ -178,44 +179,22 @@ parameters, \NParamsS{} are sourced, \NParamsC{} computed, \NParamsR{} read and 
 (\NParamsAPct~\%); the page shows the letter next to the value. Project levels (``EL'') and terrain heights are tied
 by one number, an offset of \DatumOffset~m found by matching the terrain's pond surface to the normal pond level.
 
+\begin{figure*}[p]
+\centering
+\input{fig_pipeline}
+\caption{From sources to screen on one page. Bands 1 to 3 are done once, offline, by the scripts in
+\texttt{tools/dataprep/} and \texttt{tools/data/}, and their results are shipped as static files beside the page.
+Bands 4 and 5 run in the visitor's browser, with no server. Band 6 checks the same engines and files and produces
+this paper. Solid arrows carry data; the dashed arrow marks what the checks run on.}
+\label{fig:pipeline}
+\end{figure*}
+
 \section{Model}
 
-Fig.~\ref{fig:chain} shows the chain. Each engine is a set of pure functions that take their constants as arguments;
-the equations are given in full in Appendix~A.
+Fig.~\ref{fig:pipeline} follows the whole route on one page, from the sources through preparation and the static
+files to the engines and the screen; its fourth band is the model chain described here. Each engine is a set of pure
+functions that take their constants as arguments; the equations are given in full in Appendix~A.
 
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}[font=\sffamily\scriptsize, >=Latex,
-  box/.style={draw=black!55, rounded corners=1.5pt, minimum height=6.5mm, text width=17.5mm, align=center, inner sep=1.5pt, fill=white},
-  inp/.style={box, fill=black!6, draw=black!35}, lab/.style={font=\sffamily\tiny, text=black!70}]
-\node[inp] (rain) at (0,0) {Daily rain, ET$_0$\\(ERA5)};
-\node[inp] (facts) at (2.75,0) {Fact sheet with\\status letters};
-\node[inp] (grid) at (5.5,0) {Terrain grids\\(GLO-30)};
-\node[box] (rf) at (0,-1.25) {Rain to flow};
-\node[box] (weir) at (2.75,-1.25) {Weir: gates,\\sluices, intake};
-\node[box] (flood) at (5.5,-1.25) {Flood extent};
-\node[box] (irr) at (0,-2.5) {Irrigation\\demand};
-\node[box] (sed) at (2.75,-2.5) {Sediment,\\settling basins};
-\node[box] (imp) at (5.5,-2.5) {Impact count};
-\node[box] (res) at (0,-3.75) {Reservoir\\(maker mode)};
-\node[inp] (out) at (4.125,-3.75) {\hspace{-1pt}Panels, 3D scene, film\hspace{-1pt}};
-\draw[->] (rain) -- (rf);
-\draw[->] (rf) -- node[lab, above] {$Q_{in}$} (weir);
-\draw[->] (weir) -- node[lab, above] {$H$, $T$} (flood);
-\draw[->] (flood) -- (imp);
-\draw[->] (grid) -- (flood);
-\draw[->] (facts) -- (weir);
-\draw[->] (irr) -- node[lab, sloped, above, pos=0.42] {demand} (weir.south west);
-\draw[->] (weir) -- node[lab, right, pos=0.45] {$Q_{in}$, $Q_i$} (sed);
-\draw[->] (rf.west) -- ++(-0.28,0) |- (res.west);
-\draw[->] (sed.south) -- ++(0,-0.3) -| (out.north);
-\draw[->] (imp.south) -- ++(0,-0.3) -| ([xshift=6mm]out.north);
-\draw[->] (res) -- (out);
-\end{tikzpicture}
-\caption{The model chain. Grey boxes are inputs and outputs; white boxes are calculation engines. The terrain grids
-also feed the reservoir engine and the impact count.}
-\label{fig:chain}
-\end{figure}
 
 \textbf{Rain to flow.} A daily conceptual model with three stores (soil, fast, slow) turns basin-mean rain into flow
 at the weir (Eqs.~\ref{eq:bucket1}--\ref{eq:bucket3}). Its parameters were fitted once to two published
@@ -669,7 +648,7 @@ footprint area) sorted by a zoom-12 tile key with an index. Terrain tiles are Te
 parameters are JSON leaves of the form \{value, unit, status, sources\}, assembled from fragments by
 \texttt{tools/data/build.mjs} and checked by \texttt{tools/data/check.mjs}.
 
-\textbf{C.4 Preparation} (\texttt{tools/dataprep/}). Six GLO-30 tiles were mosaicked; pits and depressions were
+\textbf{C.4 Preparation} (\texttt{tools/dataprep/}; band 2 of Fig.~\ref{fig:pipeline}). Six GLO-30 tiles were mosaicked; pits and depressions were
 filled and flats resolved; mapped rivers were burned in by 20~m where the surface lies under 120~m, and Lake Ranau
 was set flat. The wide grid averages $3\times3$ cells; the fine grid keeps the 1-arc-second cells and takes its
 inflow from the wide grid. Height above drainage uses channels of at least 200~\kmsq{} (wide) and 50~\kmsq{}

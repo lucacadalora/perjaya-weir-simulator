@@ -1,0 +1,138 @@
+% The one-page flow diagram: sources -> preparation -> static files -> modelling -> rendering -> checks.
+% Input by main.tex inside a figure*. Lengths are millimetres. Counts are macros from numbers.tex.
+% Every box is a minipage of fixed height: text that does not fit raises an "Overfull \vbox" warning in the log.
+\begingroup
+\definecolor{pbandbg}{RGB}{246,246,243}
+\definecolor{pstripoff}{RGB}{222,221,214}
+\definecolor{pstripweb}{RGB}{206,224,247}
+\definecolor{pstripchk}{RGB}{236,226,205}
+\definecolor{pline}{RGB}{120,119,113}
+\definecolor{pink}{RGB}{11,11,11}
+\definecolor{pmuted}{RGB}{82,81,78}
+\newcommand{\pfont}{\sffamily\fontsize{7.2}{8.5}\selectfont\color{pink}\setlength{\parskip}{0pt}\setlength{\parindent}{0pt}}
+\newcommand{\bt}[1]{\textbf{#1}\par\vspace{0.5mm}}
+\newcommand{\st}[2]{{\hangindent=2.2mm\hangafter=1\noindent\makebox[2.2mm][l]{\textcolor{pmuted}{#1}}#2\par}}
+\newcommand{\rd}[1]{\par\vspace{0.6mm}{\fontsize{6.7}{7.8}\selectfont\itshape\color{pmuted}reads: #1\par}}
+% \pbox[style]{name}{x}{y top}{width}{height}{content}: a box with its north-west corner at (x, y)
+\newcommand{\pbox}[7][]{\node[pbx,#1] (#2) at (#3,#4)
+  {\begin{minipage}[t][\dimexpr#6mm-2.6mm\relax][t]{\dimexpr#5mm-2.6mm\relax}\pfont\raggedright #7\end{minipage}};}
+% \pband{y top}{y bottom}{strip colour}{title}{note}
+\newcommand{\pband}[5]{\fill[pbandbg] (3.5,#1) rectangle (172.2,#2);
+  \fill[#3] (3.5,#1) rectangle (11,#2);
+  \node[rotate=90, align=center, inner sep=0pt] at (7.25,{(#1+#2)/2})
+    {\sffamily\fontsize{7.6}{8.6}\selectfont\color{pink}\textbf{#4}\\[-0.2mm]\sffamily\fontsize{6.6}{7.6}\selectfont\color{pmuted}#5};}
+\begin{tikzpicture}[x=1mm, y=1mm, >={Latex[length=1.7mm,width=1.3mm]},
+  pbx/.style={draw=pline, line width=0.4pt, fill=white, rounded corners=0.8pt, anchor=north west, inner sep=1.3mm, outer sep=0pt},
+  pnote/.style={dash pattern=on 1.4pt off 1.2pt},
+  parr/.style={->, draw=pmuted, line width=0.55pt},
+  plab/.style={font=\sffamily\fontsize{6.5}{7.5}\selectfont\itshape, text=pmuted, inner sep=0.5pt}]
+
+% ------------------------------------------------------------------ bands
+\pband{0}{-19}{pstripoff}{1\enspace Sources}{open data, documents}
+\pband{-24}{-70}{pstripoff}{2\enspace Preparation}{offline, once}
+\pband{-75}{-96.5}{pstripoff}{3\enspace Static files}{served with the page}
+\pband{-104}{-168}{pstripweb}{4\enspace Modelling}{in the browser}
+\pband{-173.5}{-199}{pstripweb}{5\enspace Rendering and output}{in the browser}
+\pband{-204}{-225.5}{pstripchk}{6\enspace Checks}{and this paper}
+
+% ------------------------------------------------------------------ 1 sources (five lanes: x = 13, 45.2, 77.4, 109.6, 141.8; width 29.2)
+\pbox{s1}{13}{-1.5}{29.2}{16}{\bt{Copernicus DEM GLO-30}30 m surface model, six one-degree tiles}
+\pbox{s2}{45.2}{-1.5}{29.2}{16}{\bt{ERA5 and GloFAS v4}daily rain, reference ET and modelled river flow, through Open-Meteo}
+\pbox{s3}{77.4}{-1.5}{29.2}{16}{\bt{WorldCover, Sentinel-2}10 m land cover; a 2016 mosaic and a scene of 26 April 2026}
+\pbox{s4}{109.6}{-1.5}{29.2}{16}{\bt{Overture Maps}buildings, roads, rail, places, rivers, lakes; mostly OpenStreetMap}
+\pbox{s5}{141.8}{-1.5}{29.2}{16}{\bt{Documents}\NSources{} sources: project reports, design criteria, papers, press}
+
+% ------------------------------------------------------------------ 2 preparation
+\pbox{p1}{13}{-25.5}{29.2}{43}{\bt{Terrain and hydrology}
+  \st{1}{mosaic the tiles}
+  \st{2}{fill pits and depressions, resolve flats}
+  \st{3}{burn in the mapped rivers}
+  \st{4}{flow direction (D8), upstream area, height above drainage}
+  \st{5}{two grids: the basin and the weir box}
+  \st{6}{map tiles; river bed carved at the weir}}
+\pbox{p2}{45.2}{-25.5}{29.2}{43}{\bt{Rain and river flow}
+  \st{1}{daily series at \NRainPoints{} points, \RepYearFirst--\RepYearLast}
+  \st{2}{basin mean for each day}
+  \st{3}{monthly means, yearly totals, largest storms}
+  \st{4}{half-month rain exceeded in 80\,\% of years}
+  \st{5}{modelled flow at the river cell of the weir, for comparison}}
+\pbox{p3}{77.4}{-25.5}{29.2}{43}{\bt{Land cover and imagery}
+  \st{1}{majority land-cover class in each grid cell}
+  \st{2}{land-cover and image map tiles}
+  \st{3}{water index on the 2026 scene}
+  \st{4}{threshold it, then trace the river outline}}
+\pbox{p4}{109.6}{-25.5}{29.2}{43}{\bt{Map features}
+  \st{1}{clip to the basin box}
+  \st{2}{buildings to points with footprint area, indexed by map tile}
+  \st{3}{roads and rail, bridges marked}
+  \st{4}{places, rivers, lakes}
+  \st{5}{river widths from upstream area}}
+\pbox{p5}{141.8}{-25.5}{29.2}{43}{\bt{Fact sheet}
+  \st{1}{research notes by topic}
+  \st{2}{one value per fact; conflicts recorded}
+  \st{3}{unit, sources and a status for each: S, C, R, A or P}
+  \st{4}{assumed levels derived from sourced ones; datum offset}
+  \st{5}{build the files, then check them}}
+
+% ------------------------------------------------------------------ 3 static files
+\pbox{f1}{13}{-76.5}{29.2}{18.5}{\bt{grid/, tiles/terrain/}elevation, flow direction, upstream area and height above drainage as raw typed arrays; terrain tiles}
+\pbox{f2}{45.2}{-76.5}{29.2}{18.5}{\bt{climate/}rain.json: daily rain, monthly ET. flow\_glofas.json: daily modelled flow}
+\pbox{f3}{77.4}{-76.5}{29.2}{18.5}{\bt{grid/, tiles/, feat/}land cover per cell; land-cover and image tiles; the river outline}
+\pbox{f4}{109.6}{-76.5}{29.2}{18.5}{\bt{feat/}buildings.bin: \NBuildings{} points. Roads, rail, places and rivers as GeoJSON}
+\pbox{f5}{141.8}{-76.5}{29.2}{18.5}{\bt{params, facts, weir}params.json: \NParams{} constants. facts.json: \NFacts{} facts. weir.json: geometry}
+
+% lane arrows: source -> preparation -> files -> one bus into the modelling band
+\foreach \c in {27.6,59.8,92,124.2,156.4}{
+  \draw[parr] (\c,-17.5) -- (\c,-25.5);
+  \draw[parr] (\c,-68.5) -- (\c,-76.5);
+  \draw[draw=pmuted, line width=0.55pt] (\c,-95) -- (\c,-100);}
+\draw[draw=pmuted, line width=0.55pt] (27.6,-100) -- (156.4,-100);
+\draw[parr] (75.9,-100) -- (75.9,-104);
+\node[plab, anchor=west] at (77.6,-102.05) {each engine names what it reads};
+
+% ------------------------------------------------------------------ 4 modelling: the chain
+\pbox{e1}{13}{-105.5}{29.2}{22}{\bt{Scenario}a mean year, any year since \RepYearFirst, or a design flood\rd{rain, flood table}}
+\pbox{e2}{45.2}{-105.5}{29.2}{22}{\bt{Rain to flow}daily model with a soil, a fast and a slow store\rd{rain, ET, fitted parameters}}
+\pbox{e3}{77.4}{-105.5}{29.2}{22}{\bt{Weir}gates, sluices, intake, tailwater; automatic or manual rule\rd{levels, sizes, coefficients}}
+\pbox{e4}{109.6}{-105.5}{29.2}{22}{\bt{Flood extent}height above the main river, connected cells only\rd{weir-box grid, land cover, river outline}}
+\pbox{e5}{141.8}{-105.5}{29.2}{22}{\bt{Impact count}buildings, roads, rail, land cover and places in the water\rd{map features, land cover}}
+\foreach \a/\b in {e1/e2,e2/e3,e3/e4,e4/e5}{\draw[parr] (\a.east) -- (\b.west);}
+
+\pbox{e6}{13}{-135.5}{61.4}{18.5}{\bt{Reservoir (maker mode)}snap to a stream $\rightarrow$ catchment $\rightarrow$ dam line across the valley $\rightarrow$ storage curve $\rightarrow$ filling by level-pool routing\rd{basin grid, flow scaled to the catchment}}
+\pbox{e7}{77.4}{-135.5}{29.2}{18.5}{\bt{Irrigation demand}crop calendar by half-month, three groups\rd{ET, rain, crop factors}}
+\pbox{e8}{109.6}{-135.5}{29.2}{18.5}{\bt{Sediment and basins}river load, trapping, flushing\rd{rating, basin sizes}}
+\pbox[pnote]{e9}{141.8}{-135.5}{29.2}{18.5}{\bt{Web worker}the grid engines (flood, impact, catchment, reservoir) run off the main thread}
+
+\draw[parr] (59.8,-127.5) -- (59.8,-135.5);
+\node[plab, anchor=east] at (58.8,-131.5) {flow by area};
+\draw[parr] (85,-135.5) -- (85,-127.5);
+\node[plab, anchor=east] at (84.1,-131.5) {demand};
+\draw[parr] (91,-127.5) -- (91,-135.5);
+\node[plab, anchor=west] at (91.9,-131.5) {delivery};
+\draw[parr] (104,-127.5) -- (104,-131.9) -- (124.2,-131.9) -- (124.2,-135.5);
+\node[plab, anchor=south] at (114.4,-131.6) {flow, intake};
+
+\pbox{st}{13}{-157}{158}{9.5}{\textbf{Runner and store.} A clock of one hour to one year per second steps the chain. Every result goes into one store (flow, weir, flood, impact, irrigation, sediment, maker); large arrays (flood mask, lake mask, catchment outline) are passed as fields.}
+
+% ------------------------------------------------------------------ 5 rendering and output (four columns: x = 13, 53.25, 93.5, 133.75; width 37.25)
+\pbox{r1}{13}{-175}{37.25}{22.5}{\bt{Panels and charts}status card and eight tabs; charts; live elevation and section drawing; a status letter beside every sourced number; Indonesian and English}
+\pbox{r2}{53.25}{-175}{37.25}{22.5}{\bt{Export}a link that restores the view and settings; a still picture; an MP4 film recorded in the page along a camera path, credits burnt into each frame}
+\pbox{r3}{93.5}{-175}{37.25}{22.5}{\bt{3D scene (three.js)}weir, gates, intake, settling basins and dams at true scale; water surfaces shaped by the computed flows; flood tint on the ground}
+\pbox{r4}{133.75}{-175}{37.25}{22.5}{\bt{Map (MapLibre GL)}terrain with relief and computed contours; satellite and land-cover base; roads, rivers and names; ground detail at close zoom}
+\foreach \c in {31.625,71.875,112.125,152.375}{\draw[parr] (\c,-166.5) -- (\c,-175);}
+
+% ------------------------------------------------------------------ 6 checks and the paper
+\pbox{c1}{13}{-205.5}{37.25}{18.5}{\bt{Unit tests}\NTests{} tests: hand-computed targets for each formula; balance and monotonicity; checks on the real data}
+\pbox{c2}{53.25}{-205.5}{37.25}{18.5}{\bt{Data check}every value has a unit, a status and a source that exists; fragments and built files agree}
+\pbox{c3}{93.5}{-205.5}{37.25}{18.5}{\bt{Review}the whole chain run on the real data in a separate review pass; each serious finding fixed and turned into a test}
+\pbox{c4}{133.75}{-205.5}{37.25}{18.5}{\bt{This paper}run.mjs $\rightarrow$ results.json $\rightarrow$ build.py $\rightarrow$ numbers, tables, plots $\rightarrow$ PDF}
+
+% ------------------------------------------------------------------ side channels
+% right: tiles, features and geometry go straight to the map and the 3D scene
+\draw[parr] (172.2,-85.75) -- (174.8,-85.75) -- (174.8,-186.25) -- (172.2,-186.25);
+\node[plab, rotate=90, fill=white, inner sep=1pt] at (174.8,-136) {tiles, features and weir geometry are also drawn directly};
+% left: the checks run on the same engines and files
+\draw[parr, dash pattern=on 2pt off 1.4pt] (3.5,-136) -- (1.2,-136) -- (1.2,-214.75) -- (3.5,-214.75);
+\node[plab, rotate=90, fill=white, inner sep=1pt] at (1.2,-175.5) {same engines, same files};
+\end{tikzpicture}
+\endgroup
