@@ -5,6 +5,7 @@ version: 0.1.0
 date-released: "2026-11-27"
 license: MIT
 type: software
+repository-code: "https://github.com/lucacadalora/perjaya-weir-simulator"
 authors:
   - family-names: "Cada Lora"
     given-names: "Luca"
