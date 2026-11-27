@@ -1,0 +1,22 @@
+{
+ "tilejson": "3.0.0",
+ "name": "Sentinel-2 26 Apr 2026 true colour, weir reach (fine box)",
+ "tiles": [
+  "data/tiles/sat2026/{z}/{x}/{y}.jpg"
+ ],
+ "scheme": "xyz",
+ "format": "jpg",
+ "tileSize": 256,
+ "bounds": [
+  104.2,
+  -4.5,
+  104.55,
+  -4.1
+ ],
+ "minzoom": 11,
+ "maxzoom": 14,
+ "attribution": "Contains modified Copernicus Sentinel data 2026",
+ "source": "Sentinel-2 L2A S2B_48MVA_20260426_0_L2A (0.22 % cloud), bands B04/B03/B02 via Element84 earth-search STAC on AWS; one linear stretch on all bands, gamma 0.9, no sharpening",
+ "edge_note": "outside the fine box each tile shows the EOX 2016 tile of data/tiles/sat underneath (JPEG has no transparency)",
+ "pixel_size_note": "native 10 m; z14 is about 9.5 m per pixel at 4.3 S, so overzoom beyond 14 adds no detail"
+}

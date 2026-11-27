@@ -1,0 +1,48 @@
+{
+ "_doc": "scenario defaults for b01/b13/b19",
+ "scenario": {
+  "dry_year": [
+   2019,
+   "year",
+   "C",
+   "r14:OM",
+   "an El Nino / IOD dry year in ERA5: 2,162 mm against 2,818 mean; Jun-Nov far below normal (the driest, 1997, is in dry_years)"
+  ],
+  "dry_years": [
+   [
+    1997,
+    2015,
+    2019,
+    2023
+   ],
+   "year",
+   "C",
+   "r14:OM",
+   "driest ERA5 years 1991-2025: 1997 1,608 mm; 2015 2,092; 2019 2,162; 2023 2,135"
+  ],
+  "design_q_m3s": [
+   2200,
+   "m3/s",
+   "S",
+   "r01:J19",
+   "design flood of the weir"
+  ],
+  "design_T": [
+   100,
+   "years",
+   "A",
+   "study:method",
+   "return period of the return-period flood scenario only (1982 Gumbel: 1,939 m3/s); the weir's design flood 2,200 m3/s has NO return period and runs as its own scenario (scenario.design_q_m3s)"
+  ],
+  "climatology_years": [
+   [
+    1991,
+    2020
+   ],
+   "year",
+   "C",
+   "r14:OM",
+   "base period of the mean year"
+  ]
+ }
+}

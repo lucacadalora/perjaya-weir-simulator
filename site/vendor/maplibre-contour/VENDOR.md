@@ -1,0 +1,1 @@
+maplibre-contour 0.2.0 · BSD-3-Clause (LICENSE beside this file) · dist/index.min.js from `npm pack maplibre-contour` (23 Nov 2026) · sha256 1d033eb2af0a08da379126c6c7c0b8f3cf56f21eb4a6d85e3551549e4055f407 · global `mlcontour`; makes its worker from a blob: URL (needs CSP worker-src blob:)

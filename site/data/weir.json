@@ -1,0 +1,1530 @@
+{
+ "meta": {
+  "frame": "x along the axis from the left (west) abutment face to the right (east) bank; y along the flow, positive downstream (north). Levels in project EL; model metres = EL + params.datum.offset_m.",
+  "bank_convention": "left and right looking downstream; the river flows south to north, so left = west (Keromongan), right = east (Perjaya)",
+  "built": "2026-11-23T21:10:38Z",
+  "datum_offset_m": -3.2
+ },
+ "axis": {
+  "lon": {
+   "v": 104.38101,
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "centre of the OpenStreetMap weir line"
+  },
+  "lat": {
+   "v": -4.30512,
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "centre of the OpenStreetMap weir line"
+  },
+  "bearing_deg": {
+   "v": 90,
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV",
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "direction from the left (west) abutment to the right (east) abutment; the OSM line runs 104.38003,-4.30513 to 104.38198,-4.30510 (within 1 deg of 90)"
+  },
+  "flow_bearing_deg": {
+   "v": 0,
+   "unit": "deg",
+   "status": "C",
+   "src": [
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "the river crosses the weir flowing north (checked on the D8 flow grid)"
+  },
+  "west_end": {
+   "v": [
+    104.38003,
+    -4.30513
+   ],
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "lon, lat"
+  },
+  "east_end": {
+   "v": [
+    104.38198,
+    -4.3051
+   ],
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "lon, lat"
+  },
+  "length_m": {
+   "v": 215.5,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J02",
+    "r01:J19"
+   ],
+   "note": "abutment to abutment; the OSM line is 217 m and imagery 217 +/- 3 m (r08)"
+  }
+ },
+ "type": {
+  "v": "gated barrage (bendung gerak): all bays gated, no fixed overflow crest",
+  "unit": "-",
+  "status": "R",
+  "src": [
+   "r08:ESRI",
+   "r01:J19"
+  ]
+ },
+ "abutments": {
+  "left_width_m": {
+   "v": 5.5,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "what is left of 215.5 m after 177.5 m of gates and nine 3.0 m piers, split evenly between the two abutments"
+  },
+  "right_width_m": {
+   "v": 5.5,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "as the left abutment"
+  }
+ },
+ "piers": {
+  "count": {
+   "v": 9,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "ten bays need nine piers between them"
+  },
+  "width_m": {
+   "v": 3,
+   "unit": "m",
+   "status": "C",
+   "src": [
+    "r08:ESRI",
+    "r01:J19"
+   ],
+   "note": "main bays 22.9 m centre to centre on imagery minus the 20.0 m gate; sluice bays 15.5 m minus 12.5 m",
+   "alt": [
+    {
+     "v": 4.2,
+     "src": [
+      "study:assume"
+     ],
+     "note": "38.0 m of non-gate length split over nine piers with no abutments (earlier settled assumption)"
+    },
+    {
+     "v": 6,
+     "src": [
+      "r01:J19"
+     ],
+     "note": "drawn for some piers on a blurry scan (R)"
+    }
+   ]
+  },
+  "length_m": {
+   "v": 12,
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "length along the flow of the pier and deck band including the hoist towers, 12 +/- 2 m"
+  },
+  "nose": {
+   "v": "round",
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "rounded noses assumed (KP-02 pier coefficient 0.01 used for round piers)"
+  },
+  "x_centre_m": {
+   "v": [
+    27,
+    50,
+    73,
+    96,
+    119,
+    142,
+    165,
+    180.5,
+    196
+   ],
+   "unit": "m",
+   "status": "C",
+   "src": [
+    "study:assume"
+   ],
+   "note": "centre of each pier, left to right"
+  }
+ },
+ "bays_order_status": {
+  "v": "seven flood-gate bays from the left (west) bank, then the three sluice bays at the right (east) end",
+  "unit": "-",
+  "status": "R",
+  "src": [
+   "r08:ESRI",
+   "study:terrain",
+   "g01:GLO30"
+  ],
+  "note": "the narrow sluice bays are seen at the east end on imagery; which flood gates are FG1 to FG7 across the river, and which two are the 3.9 m high ones, is assumed (next to the sluices)"
+ },
+ "bays": [
+  {
+   "id": "FG1",
+   "kind": "flood",
+   "index": 0,
+   "width_m": {
+    "v": 20,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 2.9,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "sill_el": {
+    "v": 77,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 30,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "x_left_m": {
+    "v": 5.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 15.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "FG2",
+   "kind": "flood",
+   "index": 1,
+   "width_m": {
+    "v": 20,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 2.9,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "sill_el": {
+    "v": 77,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 30,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "x_left_m": {
+    "v": 28.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 38.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "FG3",
+   "kind": "flood",
+   "index": 2,
+   "width_m": {
+    "v": 20,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 2.9,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "sill_el": {
+    "v": 77,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 30,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "x_left_m": {
+    "v": 51.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 61.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "FG4",
+   "kind": "flood",
+   "index": 3,
+   "width_m": {
+    "v": 20,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 2.9,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "sill_el": {
+    "v": 77,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 40,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 3,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "x_left_m": {
+    "v": 74.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 84.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "FG5",
+   "kind": "flood",
+   "index": 4,
+   "width_m": {
+    "v": 20,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 2.9,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "sill_el": {
+    "v": 77,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 40,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 3,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "x_left_m": {
+    "v": 97.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 107.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "FG6",
+   "kind": "flood",
+   "index": 5,
+   "width_m": {
+    "v": 20,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 3.9,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "sill_el": {
+    "v": 76,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 40,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 3,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "x_left_m": {
+    "v": 120.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 130.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "FG7",
+   "kind": "flood",
+   "index": 6,
+   "width_m": {
+    "v": 20,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 3.9,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "sill_el": {
+    "v": 76,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 40,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 3,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "x_left_m": {
+    "v": 143.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 153.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "SG1",
+   "kind": "sluice",
+   "index": 7,
+   "width_m": {
+    "v": 12.5,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 4.2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "under_h_m": {
+    "v": 2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "under-sluice leaf 12.5 x 2.0 m below each scouring sluice"
+   },
+   "sill_el": {
+    "v": 73.7,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 50,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 3,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "upper_sill_el": {
+    "v": 75.7,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "sill of the upper (scouring) leaf = 79.90 - 4.2 = 75.70, on top of the 2.0 m under-sluice leaf"
+   },
+   "x_left_m": {
+    "v": 166.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 172.75,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "SG2",
+   "kind": "sluice",
+   "index": 8,
+   "width_m": {
+    "v": 12.5,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 4.2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "under_h_m": {
+    "v": 2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "under-sluice leaf 12.5 x 2.0 m below each scouring sluice"
+   },
+   "sill_el": {
+    "v": 73.7,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 50,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 3,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "upper_sill_el": {
+    "v": 75.7,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "sill of the upper (scouring) leaf = 79.90 - 4.2 = 75.70, on top of the 2.0 m under-sluice leaf"
+   },
+   "x_left_m": {
+    "v": 182,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 188.25,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  },
+  {
+   "id": "SG3",
+   "kind": "sluice",
+   "index": 9,
+   "width_m": {
+    "v": 12.5,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "gate clear widths from the O&M manual via JICA 2019"
+   },
+   "gate_h_m": {
+    "v": 4.2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "FG1-5 2.9 m, FG6-7 3.9 m, scouring sluice 4.2 m; which bays carry the 3.9 m gates is assumed"
+   },
+   "under_h_m": {
+    "v": 2,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "under-sluice leaf 12.5 x 2.0 m below each scouring sluice"
+   },
+   "sill_el": {
+    "v": 73.7,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "closed gate top at the normal pond 79.70 + 0.20 freeboard = 79.90; sill = 79.90 - gate height (2.9 m: 77.00; 3.9 m: 76.00); sluices: under-sluice floor = 75.70 - 2.0 = 73.70; no drawing found"
+   },
+   "basin_len_m": {
+    "v": 50,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "stilling basin lengths FG1-3 30 m (printed 330, a typo), FG4-7 40 m, sluice 50 m; imagery reads 20-25 m (r08)"
+   },
+   "end_sill_m": {
+    "v": 3,
+    "unit": "m",
+    "status": "S",
+    "src": [
+     "r01:J19"
+    ],
+    "note": "end sill heights"
+   },
+   "upper_sill_el": {
+    "v": 75.7,
+    "unit": "m EL",
+    "status": "A",
+    "src": [
+     "study:assume"
+    ],
+    "note": "sill of the upper (scouring) leaf = 79.90 - 4.2 = 75.70, on top of the 2.0 m under-sluice leaf"
+   },
+   "x_left_m": {
+    "v": 197.5,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ],
+    "note": "left edge of the clear opening, from the left abutment face: abutment + bays and piers to its left"
+   },
+   "x_centre_m": {
+    "v": 203.75,
+    "unit": "m",
+    "status": "C",
+    "src": [
+     "study:assume",
+     "r01:J19"
+    ]
+   }
+  }
+ ],
+ "gates": {
+  "type_3d": {
+   "v": "vertical-lift roller gate with a flap on top",
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "r05:UNISMA22",
+    "r03:JICA81"
+   ],
+   "note": "flaps from a student paper (weak); roller lift gates are the type of the 1981 design; hoist towers on every pier fit a lifting gate; real type not found"
+  },
+  "flap_h_m": {
+   "v": 0.6,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "height of the top flap leaf; the paper's flaps pass 9.36 m3/s in the first 0.1 m, no drawing found"
+  },
+  "colour_top": {
+   "v": "orange-red",
+   "unit": "-",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "a thin orange-red line along all gate tops on aerials"
+  },
+  "lift_max_m": {
+   "v": 4.5,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "full lift clears the tallest leaf (4.2 m) out of the water with a 0.3 m margin"
+  }
+ },
+ "deck": {
+  "el": {
+   "v": 83,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "2.0 m over the design high water EL 81.00; no drawing found"
+  },
+  "band_width_m": {
+   "v": 12,
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "deck band including the hoist towers seen from above, 12 +/- 2 m"
+  },
+  "road_width_m": {
+   "v": 6,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "two-lane rural road (the secondary road crosses on the weir)"
+  },
+  "tower_footprint_m": {
+   "v": [
+    6,
+    8
+   ],
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "each hoist tower about 6 x 8 m (+/- 2 m), one on each pier; grey concrete, flat grey roof"
+  },
+  "tower_height_m": {
+   "v": 7,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "above the deck: room to lift the tallest leaf clear plus the hoist housing; no drawing found"
+  }
+ },
+ "bridge": {
+  "road": {
+   "v": "secondary road on the weir deck (OSM bridge 222 m)",
+   "unit": "-",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ]
+  },
+  "length_m": {
+   "v": 222,
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "OSM bridge way along the weir"
+  },
+  "railing_h_m": {
+   "v": 1.1,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "usual road railing height; not resolvable on imagery"
+  }
+ },
+ "divide_wall": {
+  "between": {
+   "v": [
+    "FG7",
+    "SG1"
+   ],
+   "unit": "-",
+   "status": "R",
+   "src": [
+    "r08:ESRI",
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "on the pier between the flood bays and the sluice bays"
+  },
+  "upstream_m": {
+   "v": 68,
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "about 50-68 m upstream (south) of the axis on imagery (the note's compass words are swapped, CONTRACT A1)"
+  },
+  "downstream_m": {
+   "v": 83,
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "+/- 3 m downstream (north) of the axis (the note's compass words are swapped, CONTRACT A1)"
+  },
+  "top_el": {
+   "v": 81.5,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "0.5 m above the held pond"
+  }
+ },
+ "stilling_basin": {
+  "floor_el": {
+   "v": 73,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "1 m below the bed EL 74.0 at the axis, 0.7 m below the under-sluice floor"
+  }
+ },
+ "levels": {
+  "pond_normal_el": {
+   "v": 79.7,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "normal pond held by the gates: the intake water level of the O&M spec sheet (CONTRACT A5)",
+   "alt": [
+    {
+     "v": 81,
+     "src": [
+      "r05:UNISMA22"
+     ],
+     "note": "student paper: pond held at +81.00 (weak)"
+    }
+   ]
+  },
+  "design_high_water_el": {
+   "v": 81,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "reached only in the design flood with every gate open"
+  },
+  "pond_min_intake_el": {
+   "v": 79.6,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "r01:J19",
+    "study:assume"
+   ],
+   "note": "one 0.1 m gate step under the normal pond 79.70: the lowest pond at which the intake is still taken as giving its design flow"
+  },
+  "riverbed_el": {
+   "v": 74,
+   "unit": "m EL",
+   "status": "C",
+   "src": [
+    "r03:JICA81"
+   ],
+   "note": "bed at the weir axis in the 1981 design's own project datum: crest 79.30 minus height 5.3; the Manning section below the weir uses tail_bed_el instead"
+  },
+  "tailwater_flood_case_el": {
+   "v": 80,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "note": "downstream level in the paper's overflow case (weak)"
+  },
+  "tail_bed_el": {
+   "v": 74.23,
+   "unit": "m EL",
+   "status": "C",
+   "src": [
+    "r05:UNISMA22",
+    "r01:J19",
+    "r13:CHOW",
+    "study:calc"
+   ],
+   "note": "Manning section b 200 m, side slope 1:2, n 0.035, S 0.00042: 2200 m3/s needs depth 5.77 m; bed = tail EL 80.00 - 5.77 = 74.23. (The terrain's tail surface, EL 78.2 on the survey days, is no longer an anchor.)"
+  }
+ },
+ "intake": {
+  "bank": {
+   "v": "right (east)",
+   "unit": "-",
+   "status": "R",
+   "src": [
+    "g04:OV",
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "office, settling basins and canal head all lie east of the weir"
+  },
+  "x_m": {
+   "v": 226,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "r08:ESRI",
+    "study:assume"
+   ],
+   "note": "centre about 10 m beyond the right abutment, along the east bank"
+  },
+  "y_m": {
+   "v": -30,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "r08:ESRI",
+    "study:assume"
+   ],
+   "note": "centre about 30 m upstream of the axis in the pocket behind the divide wall; a gated bank structure about 54 m long is seen there"
+  },
+  "face_bearing_deg": {
+   "v": 270,
+   "unit": "deg",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "gates face west into the pond pocket; channels run east then curve north (r08)"
+  },
+  "width_m": {
+   "v": 49.5,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "intake width"
+  },
+  "leaves": {
+   "v": 5,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "slide-gate leaves; about 6 housings are seen on the photo (r08)"
+  },
+  "structure_length_m": {
+   "v": 90.5,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J02"
+   ],
+   "note": "intake and drop structure"
+  },
+  "sill_el": {
+   "v": 78.3,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume",
+    "r13:KP02"
+   ],
+   "note": "79.70 - 0.20 lip cover - 1.17 m opening; opening = 91.68 / (0.80 x 49.5 x sqrt(2g x 0.20)) = 1.17 m (KP-02 eq 5-3)"
+  },
+  "design_wl_el": {
+   "v": 79.7,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "intake design water level = normal pond (CONTRACT A5)"
+  },
+  "capacity_m3s": {
+   "v": 91.68,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "design capacity",
+   "alt": [
+    {
+     "v": 81,
+     "src": [
+      "r01:J02",
+      "r02:LUC20"
+     ],
+     "note": "Phase I design and operator figure, kept as the operating target"
+    }
+   ]
+  },
+  "capacity_max_m3s": {
+   "v": 101,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "operating_m3s": {
+   "v": 81,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J02",
+    "r02:LUC20"
+   ]
+  },
+  "feed_channels": {
+   "v": 4,
+   "unit": "-",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "four parallel concrete-lined channels run east then north"
+  },
+  "gate_h_m": {
+   "v": 2.7,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "from the sill 78.30 up to the design high water 81.00, so the closed intake holds the flood"
+  }
+ },
+ "settling_basins": {
+  "count": {
+   "v": 5,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "3 built in Phase I, 2 added in Phase II"
+  },
+  "centre": {
+   "v": [
+    104.38416,
+    -4.30418
+   ],
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "Bak Desilting Perjaya, right bank just below the weir"
+  },
+  "width_m": {
+   "v": 45,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "imagery: bulbs about 44 +/- 4 m wide, 50 m centre to centre (r08)"
+  },
+  "length_m": {
+   "v": 140,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "imagery: about 165 +/- 6 m (r08)",
+   "alt": [
+    {
+     "v": 165,
+     "src": [
+      "r08:ESRI"
+     ],
+     "note": "read from imagery"
+    }
+   ]
+  },
+  "spacing_m": {
+   "v": 50,
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "centre to centre"
+  },
+  "depth_m": {
+   "v": [
+    2.9,
+    4.3
+   ],
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "long_axis_bearing_deg": {
+   "v": 0,
+   "unit": "deg",
+   "status": "A",
+   "src": [
+    "r08:ESRI",
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "basins run along the flow; their downstream (north) ends join a collector"
+  },
+  "capacity_each_m3s": {
+   "v": 16,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "flush_gates_per_basin": {
+   "v": 10,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "each 3.0 x 0.8 m"
+  }
+ },
+ "fish_ladder": {
+  "side": {
+   "v": "right (east)",
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r11:Nizar-2022",
+    "study:terrain",
+    "g01:GLO30"
+   ]
+  },
+  "slot": {
+   "v": "between SG3 and the right abutment",
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "east side is sourced; the exact slot is not"
+  },
+  "length_m": {
+   "v": 75.5,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "pool-and-weir"
+  },
+  "slope": {
+   "v": 11.7,
+   "unit": "1:n",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "slope 1:11.7"
+  },
+  "width_m": {
+   "v": 3,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "not found"
+  }
+ },
+ "canal_head": {
+  "point": {
+   "v": [
+    104.3855,
+    -4.302
+   ],
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "start of the OSM irrigation canal toward Belitang"
+  },
+  "water_width_m": {
+   "v": 31,
+   "unit": "m",
+   "status": "R",
+   "src": [
+    "r08:ESRI"
+   ],
+   "note": "+/- 5 m, 1.3 km east"
+  }
+ },
+ "office": {
+  "point": {
+   "v": [
+    104.38245,
+    -4.30494
+   ],
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ],
+   "note": "Kantor O&P SDA II Bendung Perjaya, right bank"
+  },
+  "floor_area_m2": {
+   "v": 638,
+   "unit": "m2",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "control house, 4 storeys"
+  },
+  "storeys": {
+   "v": 4,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "imagery shows a white 3-storey office (r08)"
+  }
+ },
+ "check": {
+  "sum_m": 215.5,
+  "length_m": 215.5
+ }
+}

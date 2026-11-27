@@ -1,0 +1,182 @@
+{
+ "note": "Ground flooded beyond the normal river (land cover 80 and the river outline left out), computed from a 30 m surface model (Copernicus GLO-30), not a survey. stage_m = rise of the tail over flood.ref_tail_el; stage_up_m = rise of the pond over the normal pond.",
+ "grid": "fine",
+ "ref_tail_el": 78.2,
+ "river_cells": 11533,
+ "rises": [
+  {
+   "stage_m": 0,
+   "stage_up_m": 0,
+   "cells": 0,
+   "area_km2": 0,
+   "area_ha": 0,
+   "area_up_km2": 0,
+   "area_down_km2": 0,
+   "volume_mcm": 0,
+   "depth_max_m": 0,
+   "ms": 0
+  },
+  {
+   "stage_m": 0.25,
+   "stage_up_m": 0,
+   "cells": 0,
+   "area_km2": 0,
+   "area_ha": 0,
+   "area_up_km2": 0,
+   "area_down_km2": 0,
+   "volume_mcm": 0,
+   "depth_max_m": 0,
+   "ms": 59
+  },
+  {
+   "stage_m": 0.5,
+   "stage_up_m": 0,
+   "cells": 680,
+   "area_km2": 0.64,
+   "area_ha": 64,
+   "area_up_km2": 0,
+   "area_down_km2": 0.64,
+   "volume_mcm": 0.32,
+   "depth_max_m": 0.5,
+   "ms": 44
+  },
+  {
+   "stage_m": 1,
+   "stage_up_m": 0,
+   "cells": 739,
+   "area_km2": 0.7,
+   "area_ha": 70,
+   "area_up_km2": 0,
+   "area_down_km2": 0.7,
+   "volume_mcm": 0.67,
+   "depth_max_m": 1,
+   "ms": 46
+  },
+  {
+   "stage_m": 1.8,
+   "stage_up_m": 0,
+   "cells": 2449,
+   "area_km2": 2.32,
+   "area_ha": 232,
+   "area_up_km2": 0,
+   "area_down_km2": 2.32,
+   "volume_mcm": 3.29,
+   "depth_max_m": 1.8,
+   "ms": 50
+  },
+  {
+   "stage_m": 3,
+   "stage_up_m": 0,
+   "cells": 6672,
+   "area_km2": 6.32,
+   "area_ha": 632,
+   "area_up_km2": 0,
+   "area_down_km2": 6.32,
+   "volume_mcm": 11.8,
+   "depth_max_m": 3,
+   "ms": 46
+  },
+  {
+   "stage_m": 4,
+   "stage_up_m": 0,
+   "cells": 11019,
+   "area_km2": 10.44,
+   "area_ha": 1044,
+   "area_up_km2": 0,
+   "area_down_km2": 10.44,
+   "volume_mcm": 24.83,
+   "depth_max_m": 4,
+   "ms": 38
+  },
+  {
+   "stage_m": 5,
+   "stage_up_m": 0,
+   "cells": 21127,
+   "area_km2": 20.01,
+   "area_ha": 2001,
+   "area_up_km2": 0,
+   "area_down_km2": 20.01,
+   "volume_mcm": 55.73,
+   "depth_max_m": 5,
+   "ms": 39
+  },
+  {
+   "stage_m": 0,
+   "stage_up_m": 0.25,
+   "cells": 0,
+   "area_km2": 0,
+   "area_ha": 0,
+   "area_up_km2": 0,
+   "area_down_km2": 0,
+   "volume_mcm": 0,
+   "depth_max_m": 0,
+   "ms": 32
+  },
+  {
+   "stage_m": 0,
+   "stage_up_m": 0.5,
+   "cells": 2713,
+   "area_km2": 2.57,
+   "area_ha": 257,
+   "area_up_km2": 2.57,
+   "area_down_km2": 0,
+   "volume_mcm": 1.24,
+   "depth_max_m": 0.5,
+   "ms": 45
+  },
+  {
+   "stage_m": 0,
+   "stage_up_m": 1,
+   "cells": 3840,
+   "area_km2": 3.64,
+   "area_ha": 364,
+   "area_up_km2": 3.64,
+   "area_down_km2": 0,
+   "volume_mcm": 3.17,
+   "depth_max_m": 1,
+   "ms": 32
+  },
+  {
+   "stage_m": 0,
+   "stage_up_m": 1.3,
+   "cells": 4595,
+   "area_km2": 4.35,
+   "area_ha": 435,
+   "area_up_km2": 4.35,
+   "area_down_km2": 0,
+   "volume_mcm": 4.65,
+   "depth_max_m": 1.3,
+   "ms": 30
+  }
+ ],
+ "rating": [
+  {
+   "q_m3s": 203,
+   "rise_m": 0
+  },
+  {
+   "q_m3s": 500,
+   "rise_m": 0
+  },
+  {
+   "q_m3s": 1000,
+   "rise_m": 0
+  },
+  {
+   "q_m3s": 1250,
+   "rise_m": 0.13
+  },
+  {
+   "q_m3s": 1500,
+   "rise_m": 0.61
+  },
+  {
+   "q_m3s": 1939,
+   "rise_m": 1.38
+  },
+  {
+   "q_m3s": 2200,
+   "rise_m": 1.8
+  }
+ ]
+}

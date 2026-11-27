@@ -1,0 +1,106 @@
+{
+ "_doc": "Dossier section 'floods' (floods and droughts). Dated events are in data-src/timeline.json.",
+ "flood_gauge_max": {
+  "v": 5.08,
+  "u": "m",
+  "s": "S",
+  "y": 1988,
+  "src": [
+   "r03:JICA03-G"
+  ],
+  "l": [
+   "Bacaan papan duga tertinggi Martapura 1971-1997 (1988)",
+   "Highest Martapura staff reading 1971-97 (1988)"
+  ]
+ },
+ "ev_2023_bunga_mayang": {
+  "v": 164,
+  "u": "houses",
+  "s": "P",
+  "y": 2023,
+  "src": [
+   "r04:antara2023a"
+  ],
+  "l": [
+   "Banjir Bunga Mayang, 23 Apr 2023: rumah terendam",
+   "Bunga Mayang flood, 23 Apr 2023: houses flooded"
+  ]
+ },
+ "ev_2026_belitang": {
+  "v": 1359,
+  "u": "houses",
+  "s": "P",
+  "y": 2026,
+  "src": [
+   "r04:detik2026"
+  ],
+  "l": [
+   "Banjir 7-9 Jan 2026 di sisi Belitang: rumah terendam",
+   "Flood 7-9 Jan 2026 on the Belitang side: houses flooded"
+  ],
+  "n": [
+   "Dari Sungai Macak dan Muara Bala, bukan dari alur utama Komering.",
+   "From the Macak and Muara Bala streams, not the Komering main stem."
+  ]
+ },
+ "ev_2011_closure": {
+  "v": 34000,
+  "u": "ha",
+  "s": "P",
+  "y": 2011,
+  "src": [
+   "r04:jpnn2011"
+  ],
+  "l": [
+   "Pengeringan saluran Jul 2011: sawah Belitang terancam",
+   "Canal closure Jul 2011: Belitang paddy at risk"
+  ]
+ },
+ "drought_q10": {
+  "v": 104,
+  "u": "m3/s",
+  "s": "S",
+  "y": 1982,
+  "src": [
+   "r03:JICA82"
+  ],
+  "l": [
+   "Debit rata-rata Jun-Okt, kering 10 tahunan",
+   "Jun-Oct mean flow, 10-year dry"
+  ]
+ },
+ "flood_prone": {
+  "v": {
+   "id": "Martapura, BP Bangsa Raja, Madang Suku I dan II, Semendawai Barat, Cempaka",
+   "en": "Martapura, BP Bangsa Raja, Madang Suku I and II, Semendawai Barat, Cempaka"
+  },
+  "s": "S",
+  "y": 2022,
+  "src": [
+   "r04:unisma2022"
+  ],
+  "l": [
+   "Kecamatan rawan banjir",
+   "Flood-prone districts"
+  ],
+  "n": [
+   "Satu makalah mahasiswa yang mengutip BPBD (sumber lemah).",
+   "One student paper quoting the disaster agency (weak source)."
+  ]
+ },
+ "downstream_claim": {
+  "v": {
+   "id": "Warga hilir menyebut sungai kering di musim kemarau sejak ada bendung",
+   "en": "Lower-river villages say the river runs dry in the dry season since the weir"
+  },
+  "s": "P",
+  "y": 2026,
+  "src": [
+   "r04:mongabay2026"
+  ],
+  "l": [
+   "Keluhan di hilir",
+   "Downstream complaint"
+  ]
+ }
+}

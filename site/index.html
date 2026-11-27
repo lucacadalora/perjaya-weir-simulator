@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Simulator Bendung Perjaya · Sungai Komering</title>
+<link rel="stylesheet" href="./vendor/maplibre-gl/maplibre-gl.css">
+<link rel="stylesheet" href="./css/app.css">
+<script>window.__BUILD = 'dev';</script>
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/build/three.module.js", "three/addons/": "./vendor/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="app" class="app">
+  <div id="map" class="map" role="application" aria-label="Peta 3D"></div>
+  <header id="topbar" class="topbar"></header>
+  <section id="status" class="statuscard" aria-live="polite"></section>
+  <div id="maptools" class="maptools"></div>
+  <aside id="panel" class="panel"></aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer id="credits" class="credits"></footer>
+  <div id="loading" class="loading"><span data-t="app.loading">Memuat peta dan data</span><span class="loading-bar"><i></i></span></div>
+</div>
+<script src="./vendor/maplibre-gl/maplibre-gl.js"></script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

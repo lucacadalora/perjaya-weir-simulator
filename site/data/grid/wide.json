@@ -1,0 +1,80 @@
+{
+ "name": "wide",
+ "west": 103.29986111,
+ "south": -5.19986111,
+ "east": 104.99986111,
+ "north": -3.49986111,
+ "cols": 2040,
+ "rows": 2040,
+ "cellsize_deg": 0.0008333333333333334,
+ "pixel_registration": "area: west/north are cell edges; GLO-30 pixel centres sit on whole arc-seconds, so the edges are half an arc-second off the round box",
+ "order": "row-major from the north-west corner, little-endian",
+ "files": {
+  "dem": "wide.dem.i16",
+  "dir": "wide.dir.u8",
+  "acc": "wide.acc.f32",
+  "hand": "wide.hand.i16"
+ },
+ "encodings": {
+  "dem": "Int16, surface elevation in decimetres (EGM2008 heights), unconditioned",
+  "dir": "Uint8 D8 code, see dir_codes (flow to that neighbour)",
+  "acc": "Float32, upstream area in km2 including the cell itself, true cell area by latitude (WGS84)",
+  "hand": "Int16, height above nearest drainage in decimetres; drainage = cells with more than 200 km2 upstream"
+ },
+ "nodata": {
+  "dem": -32768,
+  "hand": -32768,
+  "dir": 0,
+  "acc": "none"
+ },
+ "dir_codes": {
+  "0": "no flow (outlet on the box edge, sea)",
+  "1": "E",
+  "2": "SE",
+  "4": "S",
+  "8": "SW",
+  "16": "W",
+  "32": "NW",
+  "64": "N",
+  "128": "NE"
+ },
+ "resampling": "average of 3x3 GLO-30 cells",
+ "conditioning": "pits filled, depressions filled (priority flood), flats resolved (pysheds 0.5); mapped rivers (Overture base/water, subtype river) burned 20 m where the surface is under 120 m, Sungai Komering lines burned under 160 m; Danau Ranau set flat at its median surface",
+ "weir": {
+  "lon": 104.381111,
+  "lat": -4.305278,
+  "col": 1297,
+  "row": 966,
+  "catchment_km2": 4317.7,
+  "feature": {
+   "lon": 104.381008,
+   "lat": -4.305116,
+   "source": "Overture 2026-11-18.0 base/infrastructure, class weir, name 'Bendung Perjaya' (OSM-derived)"
+  }
+ },
+ "outlets": {
+  "ranau_outlet": {
+   "lon": 103.919444,
+   "lat": -4.811111,
+   "col": 743,
+   "row": 1573,
+   "catchment_km2": 489.3
+  },
+  "muaradua": {
+   "lon": 104.075278,
+   "lat": -4.521111,
+   "col": 930,
+   "row": 1225,
+   "catchment_km2": 2896.6
+  },
+  "tiga_dihaji": {
+   "lon": 103.878611,
+   "lat": -4.624444,
+   "col": 694,
+   "row": 1349,
+   "catchment_km2": 1159.0
+  }
+ },
+ "credits": "Copernicus GLO-30 DEM (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA; rivers (c) OpenStreetMap contributors via Overture Maps 2026-11-18.0 (ODbL)",
+ "note": "Computed from a 30 m surface model, not a survey."
+}

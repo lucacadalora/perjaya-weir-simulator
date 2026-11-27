@@ -1,0 +1,22 @@
+// English strings, area "search". Owner: lane b03. Written by tools/i18n/merge.mjs; keep it sorted.
+export default {
+  "search.kind_canal": "canal",
+  "search.kind_city": "city",
+  "search.kind_dam": "dam",
+  "search.kind_ditch": "channel",
+  "search.kind_hamlet": "hamlet",
+  "search.kind_lake": "lake",
+  "search.kind_locality": "locality",
+  "search.kind_near": "{kind} · near {town}",
+  "search.kind_neighborhood": "neighbourhood",
+  "search.kind_place": "place",
+  "search.kind_river": "river",
+  "search.kind_stream": "stream",
+  "search.kind_town": "town",
+  "search.kind_view": "view",
+  "search.kind_village": "village",
+  "search.label": "Search the map",
+  "search.loading": "Loading place and river names",
+  "search.none": "Nothing found",
+  "search.placeholder": "Search a place, river or dam",
+};

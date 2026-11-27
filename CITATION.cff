@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Perjaya Weir Simulator"
+version: 0.1.0
+date-released: "2026-11-27"
+license: MIT
+type: software
+authors:
+  - family-names: "Cada Lora"
+    given-names: "Luca"
+    affiliation: "Jatevo Labs Limited"
+preferred-citation:
+  type: report
+  title: "An open browser simulator of a gated weir and its river basin: Bendung Perjaya on the Komering River, Sumatra"
+  authors:
+    - family-names: "Cada Lora"
+      given-names: "Luca"
+      affiliation: "Jatevo Labs Limited"
+  year: 2026
+  notes: "Preprint, 27 November 2026"

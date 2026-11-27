@@ -1,0 +1,22 @@
+// Indonesian strings, area "search". Owner: lane b03. Written by tools/i18n/merge.mjs; keep it sorted.
+export default {
+  "search.kind_canal": "saluran",
+  "search.kind_city": "kota",
+  "search.kind_dam": "bendungan",
+  "search.kind_ditch": "parit",
+  "search.kind_hamlet": "dusun",
+  "search.kind_lake": "danau",
+  "search.kind_locality": "kawasan",
+  "search.kind_near": "{kind} · dekat {town}",
+  "search.kind_neighborhood": "lingkungan",
+  "search.kind_place": "tempat",
+  "search.kind_river": "sungai",
+  "search.kind_stream": "kali",
+  "search.kind_town": "kota kecil",
+  "search.kind_view": "sudut pandang",
+  "search.kind_village": "desa",
+  "search.label": "Cari di peta",
+  "search.loading": "Memuat nama tempat dan sungai",
+  "search.none": "Tidak ditemukan",
+  "search.placeholder": "Cari tempat atau sungai",
+};

@@ -1,0 +1,300 @@
+{
+ "_doc": "Dossier section 'identity'. Fact: {v, u unit, s status, y year, src, l:[id,en] label, n:[id,en] note, alt:[{v,src}]}. Text values are {id,en}.",
+ "name": {
+  "v": {
+   "id": "Bendung Perjaya (juga Bendung Gerak Perjaya)",
+   "en": "Perjaya Weir (Bendung Gerak Perjaya); Perjaya Headworks in project documents"
+  },
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:U22",
+   "r01:J19"
+  ],
+  "l": [
+   "Nama",
+   "Name"
+  ],
+  "n": [
+   "Sebutan populer \"Bendungan Perjaya\" kurang tepat: bendung ini tidak membentuk waduk.",
+   "The popular name \"Bendungan Perjaya\" (a dam) is wrong: the weir forms no reservoir."
+  ]
+ },
+ "name_early": {
+  "v": {
+   "id": "Pracak Headworks (studi kelayakan 1981)",
+   "en": "Pracak Headworks (1981 feasibility study)"
+  },
+  "s": "S",
+  "y": 1981,
+  "src": [
+   "r03:JICA81"
+  ],
+  "l": [
+   "Nama awal",
+   "Early name"
+  ]
+ },
+ "type": {
+  "v": {
+   "id": "Bendung gerak pengalih air; tidak membentuk waduk",
+   "en": "Gated diversion weir (barrage); forms no reservoir"
+  },
+  "s": "S",
+  "y": 2015,
+  "src": [
+   "r01:PP37",
+   "r01:PM27"
+  ],
+  "l": [
+   "Jenis",
+   "Type"
+  ]
+ },
+ "purpose": {
+  "v": {
+   "id": "Mengalihkan air Sungai Komering ke Daerah Irigasi Komering; pasokan musim kemarau dibantu Danau Ranau",
+   "en": "Diverts the Komering into the Komering irrigation system; the dry-season supply is backed by Lake Ranau"
+  },
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Fungsi",
+   "Purpose"
+  ]
+ },
+ "river": {
+  "v": {
+   "id": "Sungai Komering, DAS Musi",
+   "en": "Sungai Komering, Musi basin"
+  },
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Sungai",
+   "River"
+  ]
+ },
+ "location": {
+  "v": {
+   "id": "Kec. Martapura, Kab. Ogan Komering Ulu Timur, Sumatera Selatan; antara Desa Keromongan (tepi kiri, barat) dan Desa Perjaya (tepi kanan, timur)",
+   "en": "Martapura district, OKU Timur regency, South Sumatra; between Keromongan (left, west bank) and Perjaya (right, east bank)"
+  },
+  "s": "R",
+  "y": 2026,
+  "src": [
+   "r01:U22",
+   "r10:P14",
+   "g04:OV",
+   "r09:OVT"
+  ],
+  "l": [
+   "Lokasi",
+   "Location"
+  ],
+  "n": [
+   "Kecamatan dan kabupaten bersumber (S); tepi kiri dan kanan dibaca dari peta (R).",
+   "District and regency are sourced (S); the banks are read from the map (R)."
+  ]
+ },
+ "weir_lon": {
+  "v": 104.38101,
+  "u": "deg",
+  "s": "R",
+  "y": 2026,
+  "src": [
+   "g04:OV"
+  ],
+  "l": [
+   "Bujur",
+   "Longitude"
+  ],
+  "n": [
+   "Garis bendung OpenStreetMap yang ditelusuri dari citra, bukan koordinat survei.",
+   "OpenStreetMap weir line traced on imagery, not a surveyed coordinate."
+  ]
+ },
+ "weir_lat": {
+  "v": -4.30512,
+  "u": "deg",
+  "s": "R",
+  "y": 2026,
+  "src": [
+   "g04:OV"
+  ],
+  "l": [
+   "Lintang",
+   "Latitude"
+  ]
+ },
+ "martapura_dist_km": {
+  "v": 4.3,
+  "u": "km",
+  "s": "C",
+  "y": 2026,
+  "src": [
+   "r09:OVT"
+  ],
+  "l": [
+   "Jarak ke Martapura (hulu, sepanjang sungai)",
+   "Distance to Martapura (upstream, along the river)"
+  ]
+ },
+ "rail_bridge_km": {
+  "v": 5.1,
+  "u": "km",
+  "s": "R",
+  "y": 2026,
+  "src": [
+   "g04:OV",
+   "r09:OVT"
+  ],
+  "l": [
+   "Jembatan kereta api (hulu, sepanjang sungai)",
+   "Rail bridge (upstream, along the river)"
+  ]
+ },
+ "built_civil_start": {
+  "v": "1991-10",
+  "u": "date",
+  "s": "S",
+  "y": 2002,
+  "src": [
+   "r01:J02"
+  ],
+  "l": [
+   "Mulai pekerjaan sipil",
+   "Civil works began"
+  ]
+ },
+ "built_civil_end": {
+  "v": "1996-02",
+  "u": "date",
+  "s": "S",
+  "y": 2002,
+  "src": [
+   "r01:J02"
+  ],
+  "l": [
+   "Pekerjaan sipil selesai",
+   "Civil works finished"
+  ]
+ },
+ "completed": {
+  "v": "1996-10",
+  "u": "date",
+  "s": "S",
+  "y": 2002,
+  "src": [
+   "r01:J02",
+   "r10:E02"
+  ],
+  "l": [
+   "Skema selesai",
+   "Scheme completed"
+  ],
+  "n": [
+   "1,5 tahun terlambat (perubahan desain, pembebasan lahan).",
+   "1.5 years late (design changes, land acquisition)."
+  ]
+ },
+ "executing_agency": {
+  "v": {
+   "id": "Ditjen Sumber Daya Air, Kementerian PU",
+   "en": "Directorate General of Water Resources, Ministry of Public Works"
+  },
+  "s": "S",
+  "y": 2002,
+  "src": [
+   "r01:J02"
+  ],
+  "l": [
+   "Pelaksana",
+   "Executing agency"
+  ]
+ },
+ "operator": {
+  "v": {
+   "id": "BBWS Sumatera VIII; kantor lapangan Kantor O&P SDA II Bendung Perjaya",
+   "en": "BBWS Sumatera VIII; site office Kantor O&P SDA II Bendung Perjaya"
+  },
+  "s": "S",
+  "y": 2026,
+  "src": [
+   "r10:P14",
+   "r10:BB8",
+   "g04:OV"
+  ],
+  "l": [
+   "Pengelola",
+   "Operator"
+  ]
+ },
+ "hydropower": {
+  "v": {
+   "id": "Tidak ada PLTA di bendung; hanya disebut sebagai calon lokasi",
+   "en": "No hydropower at the weir; named only as a candidate site"
+  },
+  "s": "P",
+  "y": 2025,
+  "src": [
+   "r06:BAPPENAS"
+  ],
+  "l": [
+   "PLTA",
+   "Hydropower"
+  ]
+ },
+ "population_martapura": {
+  "v": 54806,
+  "u": "persons",
+  "s": "S",
+  "y": 2020,
+  "src": [
+   "r09:WP-OKUT"
+  ],
+  "l": [
+   "Penduduk Kec. Martapura (sensus 2020)",
+   "Martapura district population (2020 census)"
+  ],
+  "sec": "people"
+ },
+ "population_river": {
+  "v": 225573,
+  "u": "persons",
+  "s": "C",
+  "y": 2020,
+  "src": [
+   "r09:WP-OKUT",
+   "study:calc"
+  ],
+  "l": [
+   "Penduduk 8 kecamatan di tepi sungai (-20 sampai +50 km)",
+   "Population of the 8 riverside districts (-20 to +50 km)"
+  ],
+  "sec": "people"
+ },
+ "gauge_peracak": {
+  "v": {
+   "id": "Pos duga air Pracak (Peracak), salah satu dari dua pos duga air Komering untuk sistem ini; letak tepatnya tidak ditemukan (Desa Peracak Jaya 12,6 km di hulu)",
+   "en": "Pracak (Peracak) water-level gauge, one of the two Komering gauges serving the system; its exact point was not found (Peracak Jaya village is 12.6 km upstream)"
+  },
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19",
+   "g04:OV"
+  ],
+  "l": [
+   "Pos duga air di hulu",
+   "Gauge upstream"
+  ],
+  "sec": "river"
+ }
+}

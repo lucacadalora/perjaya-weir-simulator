@@ -1,0 +1,203 @@
+{
+ "_doc": "Dossier section 'operation'.",
+ "pond_normal": {
+  "v": 79.7,
+  "u": "m EL",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19",
+   "lead:A5"
+  ],
+  "l": [
+   "Muka air normal yang ditahan pintu",
+   "Normal pond held by the gates"
+  ],
+  "n": [
+   "Muka air pengambilan pada lembar spesifikasi pedoman O&P (JICA 2019).",
+   "The intake water level on the O&M spec sheet (JICA 2019)."
+  ],
+  "alt": [
+   {
+    "v": 81.0,
+    "src": [
+     "r05:UNISMA22"
+    ],
+    "note": "student paper: pond held at +81.00 (weak)"
+   }
+  ]
+ },
+ "pond_min_intake": {
+  "v": 79.6,
+  "u": "m EL",
+  "s": "A",
+  "y": 2026,
+  "src": [
+   "b18:assume"
+  ],
+  "l": [
+   "Muka air terendah untuk pengambilan rencana",
+   "Lowest pond for design intake"
+  ],
+  "n": [
+   "Satu langkah pintu (0,1 m) di bawah muka air normal.",
+   "One gate step (0.1 m) under the normal pond."
+  ]
+ },
+ "gate_order": {
+  "v": [
+   6,
+   7,
+   5,
+   4,
+   3,
+   2,
+   1
+  ],
+  "u": "-",
+  "s": "S",
+  "y": 2022,
+  "src": [
+   "r05:UNISMA22"
+  ],
+  "l": [
+   "Urutan membuka pintu",
+   "Gate opening order"
+  ],
+  "n": [
+   "Satu makalah mahasiswa yang mengutip pedoman operasi (sumber lemah). Lalu semua dinaikkan bersama: langkah 0,1 m biasa, 0,6 m saat banjir.",
+   "One student paper quoting the operating manual (weak source). Then all raised together: 0.1 m steps normally, 0.6 m in a flood."
+  ]
+ },
+ "flap_threshold": {
+  "v": 9.36,
+  "u": "m3/s",
+  "s": "S",
+  "y": 2022,
+  "src": [
+   "r05:UNISMA22"
+  ],
+  "l": [
+   "Di bawah debit ini hanya klep yang dibuka",
+   "Below this flow only the flaps open"
+  ],
+  "n": [
+   "Satu makalah mahasiswa yang mengutip pedoman operasi (sumber lemah).",
+   "One student paper quoting the operating manual (weak source)."
+  ]
+ },
+ "flood_rule": {
+  "v": {
+   "id": "Semua pintu dibuka saat sungai mulai naik; pada banjir rencana muka air mencapai EL 81,00",
+   "en": "All gates open as the river starts rising; in the design flood the pond reaches EL 81.00"
+  },
+  "s": "S",
+  "y": 2022,
+  "src": [
+   "r05:UNISMA22",
+   "r01:J19"
+  ],
+  "l": [
+   "Aturan banjir",
+   "Flood rule"
+  ]
+ },
+ "manual": {
+  "v": {
+   "id": "Buku pedoman dasar pengoperasian Bendung Gerak, dipegang Dinas PU OKU Timur; tidak daring",
+   "en": "Basic operating manual of the barrage, held by the OKU Timur public works office; not online"
+  },
+  "s": "S",
+  "y": 2022,
+  "src": [
+   "r05:UNISMA22"
+  ],
+  "l": [
+   "Pedoman operasi",
+   "Operating manual"
+  ],
+  "n": [
+   "Satu makalah mahasiswa yang mengutip pedoman operasi (sumber lemah).",
+   "One student paper quoting the operating manual (weak source)."
+  ]
+ },
+ "closure_2011": {
+  "v": 34000,
+  "u": "ha",
+  "s": "P",
+  "y": 2011,
+  "src": [
+   "r04:jpnn2011"
+  ],
+  "l": [
+   "Pengeringan 16 Jul-1 Agu 2011: sawah terancam",
+   "Intake closed 16 Jul-1 Aug 2011: paddy at risk"
+  ]
+ },
+ "condition": {
+  "v": {
+   "id": "\"Baik\" 2001, \"memadai\" 2003",
+   "en": "\"Good\" 2001, \"favourable\" 2003"
+  },
+  "s": "S",
+  "y": 2003,
+  "src": [
+   "r01:J02",
+   "r02:J04"
+  ],
+  "l": [
+   "Kondisi menurut evaluasi",
+   "Condition in the evaluations"
+  ]
+ },
+ "rehab_2025": {
+  "v": 318.54,
+  "u": "Rp bn",
+  "s": "P",
+  "y": 2025,
+  "src": [
+   "r02:MTV25",
+   "r01:AK25"
+  ],
+  "l": [
+   "Paket rehabilitasi 2025 (seluruh paket)",
+   "2025 rehabilitation package (whole package)"
+  ],
+  "n": [
+   "Rehabilitasi bendung bagian dari paket DI Komering Sub DI Lempuing Fase 3 Paket I.",
+   "The weir's rehabilitation is part of a larger irrigation package."
+  ]
+ },
+ "fish_species": {
+  "v": 36,
+  "u": "-",
+  "s": "S",
+  "y": 2024,
+  "src": [
+   "r11:Atminarso-2024"
+  ],
+  "l": [
+   "Jenis ikan tercatat",
+   "Fish species recorded"
+  ],
+  "n": [
+   "Tangga ikan dilalui 27 jenis; 11 tidak mampu mendaki seluruh panjangnya.",
+   "27 pass the fishway; 11 cannot climb its whole length."
+  ]
+ },
+ "renewal_2024": {
+  "v": {
+   "id": "Menteri PU (Okt 2024): bendung sekitar 30 tahun, perlu peremajaan",
+   "en": "Public Works minister (Oct 2024): the weir is about 30 years old and due for renewal"
+  },
+  "s": "P",
+  "y": 2024,
+  "src": [
+   "r05:RMOL24"
+  ],
+  "l": [
+   "Peremajaan",
+   "Renewal"
+  ]
+ }
+}

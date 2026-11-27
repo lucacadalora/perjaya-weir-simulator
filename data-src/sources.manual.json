@@ -1,0 +1,56 @@
+{
+ "b18:assume": {
+  "title": "Assumption made for this simulator where no source gives the value; the reason is in the fact's note",
+  "publisher": null,
+  "year": 2026,
+  "url": null
+ },
+ "lead:A1": {
+  "title": "Flow direction at the weir checked on the D8 flow grid built from Copernicus GLO-30 (the river runs south to north through the weir)",
+  "publisher": null,
+  "year": 2026,
+  "url": null
+ },
+ "g02:GRID": {
+  "title": "Hydrology grids for this simulator: D8 flow directions, upstream area and height above drainage, computed from Copernicus DEM GLO-30 with mapped rivers burned in",
+  "publisher": "Copernicus / ESA (terrain), Overture Maps Foundation (rivers)",
+  "year": 2026,
+  "url": null
+ },
+ "g01:GLO30": {
+  "title": "Copernicus DEM GLO-30, 30 m surface model, data 2011-2015",
+  "publisher": "Copernicus / ESA, DLR, Airbus",
+  "year": 2021,
+  "url": "https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model"
+ },
+ "r09:OVT": {
+  "title": "Overture Maps Foundation, release 2026-10-21.0: divisions, water, infrastructure, transport and places (data from OpenStreetMap contributors, ODbL)",
+  "publisher": "Overture Maps Foundation",
+  "year": 2026,
+  "url": "https://overturemaps.org"
+ },
+ "r13:SPEC": {
+  "title": "Kriteria Perencanaan KP-01 and KP-02 (2013) and the usual F.J. Mock, NRECA and HAND practice, as applied in this simulator's engine specification",
+  "publisher": "Ditjen SDA, Kementerian PU (KP series)",
+  "year": 2013,
+  "url": "https://luk.tsipil.ugm.ac.id/atur/sda/kp/"
+ },
+ "r13:CHOW": {
+  "title": "Chow, V.T., Open-Channel Hydraulics, table of Manning roughness for natural channels",
+  "publisher": "McGraw-Hill",
+  "year": 1959,
+  "url": null
+ },
+ "lead:A5": {
+  "title": "Ruling on the two levels: the O&M spec sheet in the 2019 JICA report lists EL 79.70 (intake water level, the normal pond) and EL 81.00 (design high water) as separate lines",
+  "publisher": null,
+  "year": 2026,
+  "url": null
+ },
+ "lead:A7": {
+  "title": "Ruling on the hydraulic review: one tailwater rating anchored on the sourced design case (tail EL 80.00 at 2,200 m3/s); flooding counted beyond the normal river",
+  "publisher": null,
+  "year": 2026,
+  "url": null
+ }
+}

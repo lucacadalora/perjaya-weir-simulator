@@ -1,0 +1,217 @@
+{
+ "_doc": "values fitted or requested by other lanes (b13, b14, b15/s01)",
+ "rainflow": {
+  "bucket_smax_mm": [
+   117,
+   "mm",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "bucket_k_days": [
+   11.6,
+   "days",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "bucket_k_slow_days": [
+   152,
+   "days",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "bucket_gw_share": [
+   0.686,
+   "-",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "bucket_perc_mm_day": [
+   0,
+   "mm/day",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "bucket_et_factor": [
+   1.207,
+   "-",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "bucket_fc": [
+   0.92,
+   "-",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "template_year": [
+   2003,
+   "year",
+   "C",
+   "r14:OM",
+   "the 1991-2020 year closest to the mean annual rain; daily pattern of the mean year (lane b13)"
+  ],
+  "spin_years": [
+   3,
+   "years",
+   "A",
+   "r13:SPEC",
+   "model warm-up (lane b13)"
+  ],
+  "design_tp_days": [
+   3,
+   "days",
+   "A",
+   "r13:SPEC",
+   "rise time of the design flood wave (CONTRACT A7 L12, was 2)"
+  ],
+  "design_shape": [
+   4,
+   "-",
+   "A",
+   "r13:SPEC",
+   "shape factor of the design flood wave (lane b13)"
+  ],
+  "bucket_slow_exp": [
+   1.057,
+   "-",
+   "C",
+   [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  ],
+  "bucket_g_ref_mm": [
+   100,
+   "mm",
+   "A",
+   "r13:SPEC",
+   "reference store depth for the slow store's exponent (lane b13)"
+  ],
+  "design_len_days": [
+   30,
+   "days",
+   "A",
+   "r13:SPEC",
+   "length of the design flood scenario (lane b13)"
+  ],
+  "design_step_days": [
+   0.125,
+   "days",
+   "A",
+   "r13:SPEC",
+   "3-hour points of the design wave (lane b13)"
+  ]
+ },
+ "weir": {
+  "length_m": [
+   215.5,
+   "m",
+   "S",
+   [
+    "r01:J02",
+    "r01:J19"
+   ],
+   "abutment to abutment"
+  ],
+  "intake_gate_h_m": [
+   2.7,
+   "m",
+   "A",
+   "b18:assume",
+   "from the sill 78.30 up to the design high water 81.00, so the closed intake holds the flood"
+  ],
+  "intake_canal_wl_el": [
+   79.5,
+   "m EL",
+   "C",
+   [
+    "r01:J19",
+    "r13:KP02"
+   ],
+   "intake design water level 79.70 minus the 0.20 m head loss (C on A)"
+  ],
+  "tail_side_z": [
+   2,
+   "-",
+   "A",
+   "b18:assume",
+   "bank slope 1:2 of the trapezoid section below the weir"
+  ]
+ },
+ "flood": {
+  "side_z": [
+   2,
+   "-",
+   "A",
+   "b18:assume",
+   "bank slope 1:2 of the trapezoid section"
+  ]
+ },
+ "irrigation": {
+  "kc_palawija": [
+   [
+    0.5,
+    0.75,
+    1.0,
+    1.0,
+    0.82,
+    0.45
+   ],
+   "-",
+   "A",
+   "r13:KP01",
+   "per half-month, the soybean (kedelai) row of KP-01 as given by lane b17; not checked against our research note"
+  ],
+  "palawija_share": [
+   1.0,
+   "-",
+   "C",
+   "r02:FIDAMS",
+   "planned intensity 300 % (padi-padi-palawija) means the third crop on the whole area"
+  ],
+  "start_hm": [
+   20,
+   "half-month",
+   "A",
+   "b18:assume",
+   "first planting 1 November (half-months counted from 0 = 1-15 January), when the rains return; no planting calendar found"
+  ]
+ }
+}

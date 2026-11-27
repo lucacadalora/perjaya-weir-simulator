@@ -1,0 +1,2695 @@
+{
+ "meta": {
+  "built": "2026-11-23T21:10:38Z",
+  "by": "tools/data/build.mjs",
+  "statuses": {
+   "S": "sourced",
+   "C": "computed",
+   "R": "read from a picture or map",
+   "A": "assumed",
+   "P": "press"
+  },
+  "key_facts": [
+   "length",
+   "flood_gates_n",
+   "design_flood",
+   "catchment_area",
+   "area_legal",
+   "mean_flow"
+  ],
+  "sections": [
+   "identity",
+   "people",
+   "structure",
+   "river",
+   "irrigation",
+   "operation",
+   "money",
+   "upstream",
+   "floods"
+  ]
+ },
+ "facts": {
+  "name": {
+   "v": {
+    "id": "Bendung Perjaya (juga Bendung Gerak Perjaya)",
+    "en": "Perjaya Weir (Bendung Gerak Perjaya); Perjaya Headworks in project documents"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r05:UNISMA22",
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Nama",
+    "en": "Name"
+   },
+   "section": "identity",
+   "note": {
+    "id": "Sebutan populer \"Bendungan Perjaya\" kurang tepat: bendung ini tidak membentuk waduk.",
+    "en": "The popular name \"Bendungan Perjaya\" (a dam) is wrong: the weir forms no reservoir."
+   }
+  },
+  "name_early": {
+   "v": {
+    "id": "Pracak Headworks (studi kelayakan 1981)",
+    "en": "Pracak Headworks (1981 feasibility study)"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 1981,
+   "src": [
+    "r03:JICA81"
+   ],
+   "label": {
+    "id": "Nama awal",
+    "en": "Early name"
+   },
+   "section": "identity"
+  },
+  "type": {
+   "v": {
+    "id": "Bendung gerak pengalih air; tidak membentuk waduk",
+    "en": "Gated diversion weir (barrage); forms no reservoir"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2015,
+   "src": [
+    "r01:PP37",
+    "r01:PM27"
+   ],
+   "label": {
+    "id": "Jenis",
+    "en": "Type"
+   },
+   "section": "identity"
+  },
+  "purpose": {
+   "v": {
+    "id": "Mengalihkan air Sungai Komering ke Daerah Irigasi Komering; pasokan musim kemarau dibantu Danau Ranau",
+    "en": "Diverts the Komering into the Komering irrigation system; the dry-season supply is backed by Lake Ranau"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Fungsi",
+    "en": "Purpose"
+   },
+   "section": "identity"
+  },
+  "river": {
+   "v": {
+    "id": "Sungai Komering, DAS Musi",
+    "en": "Sungai Komering, Musi basin"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Sungai",
+    "en": "River"
+   },
+   "section": "identity"
+  },
+  "location": {
+   "v": {
+    "id": "Kec. Martapura, Kab. Ogan Komering Ulu Timur, Sumatera Selatan; antara Desa Keromongan (tepi kiri, barat) dan Desa Perjaya (tepi kanan, timur)",
+    "en": "Martapura district, OKU Timur regency, South Sumatra; between Keromongan (left, west bank) and Perjaya (right, east bank)"
+   },
+   "unit": "-",
+   "status": "R",
+   "year": 2026,
+   "src": [
+    "r05:UNISMA22",
+    "r10:P14",
+    "g04:OV"
+   ],
+   "label": {
+    "id": "Lokasi",
+    "en": "Location"
+   },
+   "section": "identity",
+   "note": {
+    "id": "Kecamatan dan kabupaten bersumber (S); tepi kiri dan kanan dibaca dari peta (R).",
+    "en": "District and regency are sourced (S); the banks are read from the map (R)."
+   }
+  },
+  "weir_lon": {
+   "v": 104.38101,
+   "unit": "deg",
+   "status": "R",
+   "year": 2026,
+   "src": [
+    "g04:OV"
+   ],
+   "label": {
+    "id": "Bujur",
+    "en": "Longitude"
+   },
+   "section": "identity",
+   "note": {
+    "id": "Garis bendung OpenStreetMap yang ditelusuri dari citra, bukan koordinat survei.",
+    "en": "OpenStreetMap weir line traced on imagery, not a surveyed coordinate."
+   }
+  },
+  "weir_lat": {
+   "v": -4.30512,
+   "unit": "deg",
+   "status": "R",
+   "year": 2026,
+   "src": [
+    "g04:OV"
+   ],
+   "label": {
+    "id": "Lintang",
+    "en": "Latitude"
+   },
+   "section": "identity"
+  },
+  "martapura_dist_km": {
+   "v": 4.3,
+   "unit": "km",
+   "status": "C",
+   "year": 2026,
+   "src": [
+    "g04:OV"
+   ],
+   "label": {
+    "id": "Jarak ke Martapura (hulu, sepanjang sungai)",
+    "en": "Distance to Martapura (upstream, along the river)"
+   },
+   "section": "identity"
+  },
+  "rail_bridge_km": {
+   "v": 5.1,
+   "unit": "km",
+   "status": "R",
+   "year": 2026,
+   "src": [
+    "g04:OV"
+   ],
+   "label": {
+    "id": "Jembatan kereta api (hulu, sepanjang sungai)",
+    "en": "Rail bridge (upstream, along the river)"
+   },
+   "section": "identity"
+  },
+  "built_civil_start": {
+   "v": "1991-10",
+   "unit": "date",
+   "status": "S",
+   "year": 2002,
+   "src": [
+    "r01:J02"
+   ],
+   "label": {
+    "id": "Mulai pekerjaan sipil",
+    "en": "Civil works began"
+   },
+   "section": "identity"
+  },
+  "built_civil_end": {
+   "v": "1996-02",
+   "unit": "date",
+   "status": "S",
+   "year": 2002,
+   "src": [
+    "r01:J02"
+   ],
+   "label": {
+    "id": "Pekerjaan sipil selesai",
+    "en": "Civil works finished"
+   },
+   "section": "identity"
+  },
+  "completed": {
+   "v": "1996-10",
+   "unit": "date",
+   "status": "S",
+   "year": 2002,
+   "src": [
+    "r01:J02"
+   ],
+   "label": {
+    "id": "Skema selesai",
+    "en": "Scheme completed"
+   },
+   "section": "identity",
+   "note": {
+    "id": "1,5 tahun terlambat (perubahan desain, pembebasan lahan).",
+    "en": "1.5 years late (design changes, land acquisition)."
+   }
+  },
+  "executing_agency": {
+   "v": {
+    "id": "Ditjen Sumber Daya Air, Kementerian PU",
+    "en": "Directorate General of Water Resources, Ministry of Public Works"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2002,
+   "src": [
+    "r01:J02"
+   ],
+   "label": {
+    "id": "Pelaksana",
+    "en": "Executing agency"
+   },
+   "section": "identity"
+  },
+  "operator": {
+   "v": {
+    "id": "BBWS Sumatera VIII; kantor lapangan Kantor O&P SDA II Bendung Perjaya",
+    "en": "BBWS Sumatera VIII; site office Kantor O&P SDA II Bendung Perjaya"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2026,
+   "src": [
+    "r10:P14",
+    "r10:BB8",
+    "g04:OV"
+   ],
+   "label": {
+    "id": "Pengelola",
+    "en": "Operator"
+   },
+   "section": "identity"
+  },
+  "hydropower": {
+   "v": {
+    "id": "Tidak ada PLTA di bendung; hanya disebut sebagai calon lokasi",
+    "en": "No hydropower at the weir; named only as a candidate site"
+   },
+   "unit": "-",
+   "status": "P",
+   "year": 2025,
+   "src": [
+    "r06:BAPPENAS"
+   ],
+   "label": {
+    "id": "PLTA",
+    "en": "Hydropower"
+   },
+   "section": "identity"
+  },
+  "population_martapura": {
+   "v": 54806,
+   "unit": "persons",
+   "status": "S",
+   "year": 2020,
+   "src": [
+    "r09:WP-OKUT"
+   ],
+   "label": {
+    "id": "Penduduk Kec. Martapura (sensus 2020)",
+    "en": "Martapura district population (2020 census)"
+   },
+   "section": "people"
+  },
+  "population_river": {
+   "v": 225573,
+   "unit": "persons",
+   "status": "C",
+   "year": 2020,
+   "src": [
+    "r09:WP-OKUT",
+    "study:calc"
+   ],
+   "label": {
+    "id": "Penduduk 8 kecamatan di tepi sungai (-20 sampai +50 km)",
+    "en": "Population of the 8 riverside districts (-20 to +50 km)"
+   },
+   "section": "people"
+  },
+  "gauge_peracak": {
+   "v": {
+    "id": "Pos duga air Pracak (Peracak), salah satu dari dua pos duga air Komering untuk sistem ini; letak tepatnya tidak ditemukan (Desa Peracak Jaya 12,6 km di hulu)",
+    "en": "Pracak (Peracak) water-level gauge, one of the two Komering gauges serving the system; its exact point was not found (Peracak Jaya village is 12.6 km upstream)"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19",
+    "g04:OV"
+   ],
+   "label": {
+    "id": "Pos duga air di hulu",
+    "en": "Gauge upstream"
+   },
+   "section": "river"
+  },
+  "length": {
+   "v": 215.5,
+   "unit": "m",
+   "status": "S",
+   "year": 1996,
+   "src": [
+    "r01:J02",
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Panjang bendung",
+    "en": "Weir length"
+   },
+   "section": "structure",
+   "alt": [
+    {
+     "v": 217,
+     "src": [
+      "g04:OV"
+     ],
+     "note": "OpenStreetMap line (R)"
+    }
+   ]
+  },
+  "flood_gates_n": {
+   "v": 7,
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Pintu banjir",
+    "en": "Flood gates"
+   },
+   "section": "structure"
+  },
+  "flood_gate_width": {
+   "v": 20,
+   "unit": "m",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Lebar pintu banjir",
+    "en": "Flood gate width"
+   },
+   "section": "structure"
+  },
+  "flood_gate_h_low": {
+   "v": 2.9,
+   "unit": "m",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Tinggi pintu FG1-5",
+    "en": "Height of gates FG1-5"
+   },
+   "section": "structure"
+  },
+  "flood_gate_h_high": {
+   "v": 3.9,
+   "unit": "m",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Tinggi pintu FG6-7",
+    "en": "Height of gates FG6-7"
+   },
+   "section": "structure"
+  },
+  "sluice_n": {
+   "v": 3,
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Pintu pembilas",
+    "en": "Scouring sluices"
+   },
+   "section": "structure"
+  },
+  "sluice_size": {
+   "v": {
+    "id": "12,5 m x 4,2 m, di atas pembilas bawah 12,5 m x 2,0 m",
+    "en": "12.5 m x 4.2 m, over under-sluices of 12.5 m x 2.0 m"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Ukuran pintu pembilas",
+    "en": "Scouring sluice size"
+   },
+   "section": "structure"
+  },
+  "clear_width": {
+   "v": 177.5,
+   "unit": "m",
+   "status": "C",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Lebar bersih semua pintu",
+    "en": "Clear width of all gates"
+   },
+   "section": "structure",
+   "note": {
+    "id": "7 x 20,0 + 3 x 12,5",
+    "en": "7 x 20.0 + 3 x 12.5"
+   }
+  },
+  "bay_order": {
+   "v": {
+    "id": "Dari tepi kiri (barat): tujuh pintu banjir FG1-FG7, lalu tiga pintu pembilas di ujung timur, di samping pengambilan",
+    "en": "From the left (west) bank: seven flood gates FG1-FG7, then the three scouring sluices at the east end beside the intake"
+   },
+   "unit": "-",
+   "status": "R",
+   "year": 2026,
+   "src": [
+    "r08:ESRI",
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "label": {
+    "id": "Urutan pintu",
+    "en": "Order of the bays"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Tiga bukaan sempit terlihat di ujung timur pada citra (R). Penomoran FG1-FG7 dan letak dua pintu 3,9 m (diandaikan di samping pintu pembilas) adalah asumsi (A).",
+    "en": "Three narrow bays are seen at the east end on imagery (R). The numbering FG1-FG7 and the place of the two 3.9 m gates (assumed next to the sluices) are assumptions (A)."
+   }
+  },
+  "pier_width": {
+   "v": 3,
+   "unit": "m",
+   "status": "C",
+   "year": 2026,
+   "src": [
+    "r08:ESRI",
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Tebal pilar",
+    "en": "Pier width"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Jarak as 22,9 m dari citra dikurangi lebar pintu 20,0 m.",
+    "en": "22.9 m centre to centre on imagery minus the 20.0 m gate."
+   },
+   "alt": [
+    {
+     "v": 6,
+     "src": [
+      "r01:J19"
+     ],
+     "note": "drawn for some piers on a blurry scan"
+    }
+   ]
+  },
+  "gate_type": {
+   "v": {
+    "id": "Pintu angkat dengan daun klep di atasnya (jenis pintu utama tidak ditemukan)",
+    "en": "Lift gates with a flap on top (main gate type not found)"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r05:UNISMA22",
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Jenis pintu",
+    "en": "Gate type"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Sumber lemah (makalah mahasiswa). Model 3D memakai pintu angkat beroda (A).",
+    "en": "Weak source (a student paper). The 3D model uses vertical-lift roller gates (A)."
+   }
+  },
+  "stilling_basin": {
+   "v": {
+    "id": "FG1-3: 30 m; FG4-7: 40 m; pintu pembilas: 50 m",
+    "en": "FG1-3: 30 m; FG4-7: 40 m; sluices: 50 m"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Panjang kolam olak",
+    "en": "Stilling basin lengths"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Tertulis \"330\" untuk FG1-3, dibaca sebagai salah ketik.",
+    "en": "Printed \"330\" for FG1-3, ruled a typo."
+   }
+  },
+  "intake_width": {
+   "v": 49.5,
+   "unit": "m",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Lebar pengambilan (5 daun pintu)",
+    "en": "Intake width (5 gate leaves)"
+   },
+   "section": "structure"
+  },
+  "intake_capacity": {
+   "v": 91.68,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Kapasitas rencana pengambilan",
+    "en": "Intake design capacity"
+   },
+   "section": "structure",
+   "alt": [
+    {
+     "v": 81,
+     "src": [
+      "r01:J02",
+      "r02:LUC20"
+     ],
+     "note": "Phase I design and operator figure, kept as the operating target"
+    }
+   ]
+  },
+  "intake_capacity_max": {
+   "v": 101,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Kapasitas maksimum pengambilan",
+    "en": "Intake maximum"
+   },
+   "section": "structure"
+  },
+  "intake_operating": {
+   "v": 81,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2020,
+   "src": [
+    "r01:J02",
+    "r02:LUC20"
+   ],
+   "label": {
+    "id": "Debit pengambilan operasi",
+    "en": "Operating intake flow"
+   },
+   "section": "structure"
+  },
+  "intake_bank": {
+   "v": {
+    "id": "Tepi kanan (timur)",
+    "en": "Right (east) bank"
+   },
+   "unit": "-",
+   "status": "R",
+   "year": 2026,
+   "src": [
+    "g04:OV",
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "label": {
+    "id": "Tepi pengambilan",
+    "en": "Intake bank"
+   },
+   "section": "structure"
+  },
+  "settling_basins": {
+   "v": 5,
+   "unit": "-",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Kantong lumpur",
+    "en": "Settling basins"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Masing-masing 16 m3/detik, 45 x 140 m; 3 dibangun Tahap I, 2 ditambah Tahap II.",
+    "en": "Each 16 m3/s, 45 x 140 m; 3 built in Phase I, 2 added in Phase II."
+   },
+   "alt": [
+    {
+     "v": 3,
+     "src": [
+      "r02:J04"
+     ],
+     "note": "Phase I count"
+    }
+   ]
+  },
+  "settling_capacity": {
+   "v": 80,
+   "unit": "m3/s",
+   "status": "C",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Kapasitas kantong lumpur",
+    "en": "Settling basin capacity"
+   },
+   "section": "structure"
+  },
+  "fish_ladder": {
+   "v": 75.5,
+   "unit": "m",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Tangga ikan (kolam bertingkat, kemiringan 1:11,7)",
+    "en": "Fish ladder (pool and weir, slope 1:11.7)"
+   },
+   "section": "structure"
+  },
+  "fish_ladder_side": {
+   "v": {
+    "id": "Sisi timur",
+    "en": "East side"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r11:Nizar-2022"
+   ],
+   "label": {
+    "id": "Letak tangga ikan",
+    "en": "Fish ladder side"
+   },
+   "section": "structure"
+  },
+  "control_house": {
+   "v": 638,
+   "unit": "m2",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Gedung kendali (4 lantai)",
+    "en": "Control house (4 storeys)"
+   },
+   "section": "structure"
+  },
+  "design_flood": {
+   "v": 2200,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Banjir rencana",
+    "en": "Design flood"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Kala ulang tidak disebut.",
+    "en": "Return period not stated."
+   },
+   "alt": [
+    {
+     "v": 1398,
+     "src": [
+      "r03:JICA81"
+     ],
+     "note": "1981 plan, a 100-year daily mean; superseded"
+    }
+   ]
+  },
+  "design_high_water": {
+   "v": 81,
+   "unit": "m EL",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Muka air banjir rencana",
+    "en": "Design high water level"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Hanya tercapai saat banjir rencana dengan semua pintu terbuka.",
+    "en": "Reached only in the design flood with every gate open."
+   }
+  },
+  "intake_water_level": {
+   "v": 79.7,
+   "unit": "m EL",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Muka air rencana pengambilan",
+    "en": "Intake design water level"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Sama dengan muka air normal yang ditahan pintu.",
+    "en": "The same as the normal pond the gates hold."
+   }
+  },
+  "riverbed": {
+   "v": 74,
+   "unit": "m EL",
+   "status": "C",
+   "year": 1981,
+   "src": [
+    "r03:JICA81"
+   ],
+   "label": {
+    "id": "Dasar sungai di bendung",
+    "en": "River bed at the weir"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Mercu rencana 1981 EL 79,30 dikurangi tinggi 5,3 m (desain yang diganti). Penampang sungai di hilir (lebar, kemiringan tebing dan kekasaran diasumsikan, A) diberi dasar yang membuat muka air EL 80,00 pada banjir rencana; dasar itu ada di parameter.",
+    "en": "1981 design crest EL 79.30 minus its 5.3 m height (superseded design). The river section below the weir (width, bank slope and roughness assumed, A) gets the bed that gives the design tail level EL 80.00 at the design flood; that bed is in the parameters."
+   }
+  },
+  "sill_levels": {
+   "v": {
+    "id": "Ambang FG1-5 EL 77,00; FG6-7 EL 76,00; daun atas pembilas EL 75,70; lantai pembilas bawah EL 73,70; pengambilan EL 78,30",
+    "en": "Sills FG1-5 EL 77.00; FG6-7 EL 76.00; upper sluice leaf EL 75.70; under-sluice floor EL 73.70; intake EL 78.30"
+   },
+   "unit": "-",
+   "status": "A",
+   "year": 2026,
+   "src": [
+    "study:assume",
+    "r13:KP02"
+   ],
+   "label": {
+    "id": "Elevasi ambang",
+    "en": "Sill levels"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Tidak ada gambar yang terbaca. Diandaikan puncak pintu tertutup 0,20 m di atas muka air normal EL 79,70; ambang pengambilan dari bukaan yang perlu untuk 91,68 m3/detik.",
+    "en": "No legible drawing. Assumed: closed gate tops 0.20 m above the normal pond EL 79.70; the intake sill from the opening needed for 91.68 m3/s."
+   }
+  },
+  "deck_level": {
+   "v": 83,
+   "unit": "m EL",
+   "status": "A",
+   "year": 2026,
+   "src": [
+    "study:assume"
+   ],
+   "label": {
+    "id": "Elevasi lantai jembatan",
+    "en": "Deck level"
+   },
+   "section": "structure",
+   "note": {
+    "id": "Diandaikan 2 m di atas muka air banjir rencana.",
+    "en": "Assumed 2 m above the design high water."
+   }
+  },
+  "design_1981": {
+   "v": {
+    "id": "Rencana 1981 (tidak dibangun): mercu tetap EL 79,30, 171 m, 2 pintu rol 17,5 x 5,4 m",
+    "en": "1981 plan (not built): fixed crest EL 79.30, 171 m, 2 roller gates 17.5 x 5.4 m"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 1981,
+   "src": [
+    "r03:JICA81"
+   ],
+   "label": {
+    "id": "Desain awal",
+    "en": "Early design"
+   },
+   "section": "structure"
+  },
+  "catchment_area": {
+   "v": 4305,
+   "unit": "km2",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "label": {
+    "id": "Luas DAS di bendung",
+    "en": "Catchment at the weir"
+   },
+   "section": "river",
+   "alt": [
+    {
+     "v": 4260,
+     "src": [
+      "r03:JICA82"
+     ],
+     "note": "at the Martapura gauge"
+    },
+    {
+     "v": 4317.7,
+     "src": [
+      "study:terrain",
+      "g01:GLO30"
+     ],
+     "note": "D8 area at the weir on our 92 m grid (C)"
+    }
+   ]
+  },
+  "catchment_d8": {
+   "v": 4317.7,
+   "unit": "km2",
+   "status": "C",
+   "year": 2026,
+   "src": [
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "label": {
+    "id": "Luas DAS dari grid medan kita",
+    "en": "Catchment from our terrain grid"
+   },
+   "section": "river",
+   "note": {
+    "id": "Hanya 0,3 % dari angka sumber.",
+    "en": "Within 0.3 % of the sourced figure."
+   }
+  },
+  "ranau_basin": {
+   "v": 508,
+   "unit": "km2",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "DAS Danau Ranau",
+    "en": "Lake Ranau basin"
+   },
+   "section": "river"
+  },
+  "river_length": {
+   "v": 360,
+   "unit": "km",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r03:JICA03-S"
+   ],
+   "label": {
+    "id": "Panjang Sungai Komering",
+    "en": "Length of the Komering"
+   },
+   "section": "river"
+  },
+  "mean_flow": {
+   "v": 203.1,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Debit rata-rata tahunan",
+    "en": "Mean annual flow"
+   },
+   "section": "river",
+   "note": {
+    "id": "Martapura 1963-1980, sebagian terukur, celah diisi model.",
+    "en": "Martapura 1963-80, part measured, gaps filled by a model."
+   },
+   "alt": [
+    {
+     "v": 214.2,
+     "src": [
+      "r07:OM-FLOOD"
+     ],
+     "note": "GloFAS v4 1997-2026, a model"
+    },
+    {
+     "v": 235.9,
+     "src": [
+      "r03:JICA03-G"
+     ],
+     "note": "MIKE 11 model on 4,527 km2"
+    }
+   ]
+  },
+  "monthly_flow": {
+   "v": [
+    235.6,
+    253.9,
+    238.1,
+    291.8,
+    252.3,
+    188.8,
+    146.5,
+    135.7,
+    134.9,
+    140.9,
+    183.7,
+    235.4
+   ],
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Debit rata-rata bulanan (Jan-Des)",
+    "en": "Mean monthly flow (Jan-Dec)"
+   },
+   "section": "river"
+  },
+  "q80_monthly": {
+   "v": [
+    196,
+    176,
+    185,
+    182,
+    174,
+    110,
+    88,
+    73,
+    68,
+    56,
+    109,
+    157
+   ],
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "label": {
+    "id": "Debit andalan 80 % (Jan-Des)",
+    "en": "80 % dependable flow (Jan-Dec)"
+   },
+   "section": "river"
+  },
+  "wettest_year_flow": {
+   "v": 274.2,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1976,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Tahun terbasah (1976)",
+    "en": "Wettest year (1976)"
+   },
+   "section": "river"
+  },
+  "driest_year_flow": {
+   "v": 149,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1964,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Tahun terkering (1964)",
+    "en": "Driest year (1964)"
+   },
+   "section": "river"
+  },
+  "low_flow": {
+   "v": 23,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r07:JICA03-I"
+   ],
+   "label": {
+    "id": "Debit rendah 10 tahunan (hari ke-355)",
+    "en": "10-year low flow (355th day)"
+   },
+   "section": "river"
+  },
+  "maintenance_flow": {
+   "v": 35,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r07:JICA03-I"
+   ],
+   "label": {
+    "id": "Debit pemeliharaan di hilir bendung",
+    "en": "Maintenance flow below the weir"
+   },
+   "section": "river"
+  },
+  "flood_largest": {
+   "v": 1438,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1980,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Banjir terbesar tercatat (22 Jun 1980)",
+    "en": "Largest recorded flood (22 Jun 1980)"
+   },
+   "section": "river"
+  },
+  "flood_q2": {
+   "v": 917,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Banjir 2 tahunan",
+    "en": "2-year flood"
+   },
+   "section": "river"
+  },
+  "flood_q10": {
+   "v": 1372,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Banjir 10 tahunan",
+    "en": "10-year flood"
+   },
+   "section": "river"
+  },
+  "flood_q50": {
+   "v": 1771,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Banjir 50 tahunan",
+    "en": "50-year flood"
+   },
+   "section": "river"
+  },
+  "flood_q100": {
+   "v": 1939,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Banjir 100 tahunan",
+    "en": "100-year flood"
+   },
+   "section": "river",
+   "note": {
+    "id": "Gumbel atas 11 puncak 1971-1981 di Martapura.",
+    "en": "Gumbel on 11 peaks 1971-81 at Martapura."
+   }
+  },
+  "flood_season": {
+   "v": {
+    "id": "Februari sampai Mei",
+    "en": "February to May"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Musim banjir tahunan",
+    "en": "Annual flood season"
+   },
+   "section": "river"
+  },
+  "rain_basin": {
+   "v": 2818,
+   "unit": "mm",
+   "status": "C",
+   "year": 2020,
+   "src": [
+    "r14:OM",
+    "r14:ERA5"
+   ],
+   "label": {
+    "id": "Hujan tahunan rata-rata DAS (ERA5 1991-2020)",
+    "en": "Mean annual basin rain (ERA5 1991-2020)"
+   },
+   "section": "river",
+   "alt": [
+    {
+     "v": 2829,
+     "src": [
+      "r03:JICA82"
+     ],
+     "note": "Martapura gauge 1951-81"
+    }
+   ]
+  },
+  "rain_driest": {
+   "v": 1608,
+   "unit": "mm",
+   "status": "C",
+   "year": 1997,
+   "src": [
+    "r14:OM"
+   ],
+   "label": {
+    "id": "Tahun terkering ERA5 (1997)",
+    "en": "Driest ERA5 year (1997)"
+   },
+   "section": "river"
+  },
+  "et0": {
+   "v": 1311,
+   "unit": "mm",
+   "status": "C",
+   "year": 2020,
+   "src": [
+    "r14:OM"
+   ],
+   "label": {
+    "id": "Evapotranspirasi acuan tahunan",
+    "en": "Annual reference evapotranspiration"
+   },
+   "section": "river"
+  },
+  "pan_evaporation": {
+   "v": 4.6,
+   "unit": "mm/day",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Penguapan panci (Belitang)",
+    "en": "Pan evaporation (Belitang)"
+   },
+   "section": "river"
+  },
+  "sediment_yield": {
+   "v": 5.02,
+   "unit": "Mt/yr",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r03:JICA03-S"
+   ],
+   "label": {
+    "id": "Angkutan sedimen di Martapura",
+    "en": "Sediment load at Martapura"
+   },
+   "section": "river",
+   "note": {
+    "id": "Rata-rata 1988-1998, 1.162 t/km2/tahun.",
+    "en": "1988-98 mean, 1,162 t/km2/yr."
+   }
+  },
+  "river_below": {
+   "v": {
+    "id": "Lebar, dangkal, berpasir, mengendap dan tidak stabil",
+    "en": "Wide, shallow, sandy, aggrading and unstable"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r11:JICA-Musi-M"
+   ],
+   "label": {
+    "id": "Sungai di hilir bendung",
+    "en": "River below the weir"
+   },
+   "section": "river"
+  },
+  "scheme": {
+   "v": {
+    "id": "Daerah Irigasi Komering (D.I. Komering Selatan/Way Komering)",
+    "en": "Komering irrigation system (D.I. Komering Selatan/Way Komering)"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2015,
+   "src": [
+    "r10:P14"
+   ],
+   "label": {
+    "id": "Daerah irigasi",
+    "en": "Irrigation system"
+   },
+   "section": "irrigation"
+  },
+  "area_legal": {
+   "v": 62536,
+   "unit": "ha",
+   "status": "S",
+   "year": 2015,
+   "src": [
+    "r10:P14"
+   ],
+   "label": {
+    "id": "Luas sah (2015)",
+    "en": "Legal area (2015)"
+   },
+   "section": "irrigation",
+   "note": {
+    "id": "OKU Timur 47.988 + OKI 9.500 + Way Kanan 5.048 ha. Angka bawaan simulator.",
+    "en": "OKU Timur 47,988 + OKI 9,500 + Way Kanan 5,048 ha. The simulator's default."
+   }
+  },
+  "area_served_2019": {
+   "v": 59148,
+   "unit": "ha",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Luas yang dilayani bendung (2019)",
+    "en": "Area served by the headworks (2019)"
+   },
+   "section": "irrigation"
+  },
+  "area_after_phase3": {
+   "v": 72639,
+   "unit": "ha",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "label": {
+    "id": "Luas setelah Tahap 3",
+    "en": "Area after Phase 3"
+   },
+   "section": "irrigation"
+  },
+  "area_master_plan": {
+   "v": 100000,
+   "unit": "ha",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r02:J04"
+   ],
+   "label": {
+    "id": "Rencana induk 1982",
+    "en": "1982 master plan"
+   },
+   "section": "irrigation"
+  },
+  "main_canal": {
+   "v": 30.5,
+   "unit": "km",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r02:J04"
+   ],
+   "label": {
+    "id": "Saluran Induk Komering (Tahap I)",
+    "en": "Komering main canal (Phase I)"
+   },
+   "section": "irrigation"
+  },
+  "unit_demand": {
+   "v": 1.1,
+   "unit": "l/s/ha",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "label": {
+    "id": "Kebutuhan air puncak",
+    "en": "Peak unit demand"
+   },
+   "section": "irrigation"
+  },
+  "peak_demand": {
+   "v": 68.8,
+   "unit": "m3/s",
+   "status": "C",
+   "year": 2022,
+   "src": [
+    "r02:FIDAMS",
+    "r10:P14"
+   ],
+   "label": {
+    "id": "Kebutuhan puncak pada luas sah",
+    "en": "Peak demand on the legal area"
+   },
+   "section": "irrigation",
+   "note": {
+    "id": "62.536 ha x 1,10 l/dt/ha",
+    "en": "62,536 ha x 1.10 l/s/ha"
+   }
+  },
+  "efficiency": {
+   "v": 0.65,
+   "unit": "-",
+   "status": "S",
+   "year": 2013,
+   "src": [
+    "r13:KP01"
+   ],
+   "label": {
+    "id": "Efisiensi irigasi keseluruhan",
+    "en": "Overall irrigation efficiency"
+   },
+   "section": "irrigation"
+  },
+  "cropping": {
+   "v": {
+    "id": "Padi-padi-palawija, intensitas 300 %",
+    "en": "Rice-rice-second crop, 300 % intensity"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "label": {
+    "id": "Pola tanam",
+    "en": "Cropping pattern"
+   },
+   "section": "irrigation"
+  },
+  "belitang_deficit": {
+   "v": {
+    "id": "Kurang air dari awal Agustus sampai akhir Oktober tanpa golongan; cukup dengan golongan",
+    "en": "Short of water from early August to late October without rotation; enough with rotation groups"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r02:UGM22"
+   ],
+   "label": {
+    "id": "Defisit Belitang",
+    "en": "Belitang deficit"
+   },
+   "section": "irrigation"
+  },
+  "rice_2002": {
+   "v": 371059,
+   "unit": "t",
+   "status": "S",
+   "year": 2002,
+   "src": [
+    "r02:J04"
+   ],
+   "label": {
+    "id": "Produksi gabah daerah Tahap I+II (2002)",
+    "en": "Paddy output, Phase I+II area (2002)"
+   },
+   "section": "irrigation"
+  },
+  "rice_oku_timur": {
+   "v": 923413,
+   "unit": "t",
+   "status": "S",
+   "year": 2025,
+   "src": [
+    "r09:BRS25"
+   ],
+   "label": {
+    "id": "Produksi padi OKU Timur (2025)",
+    "en": "Rice output of OKU Timur (2025)"
+   },
+   "section": "irrigation",
+   "note": {
+    "id": "Kedua di Sumatera Selatan.",
+    "en": "Second in South Sumatra."
+   }
+  },
+  "pond_normal": {
+   "v": 79.7,
+   "unit": "m EL",
+   "status": "S",
+   "year": 2019,
+   "src": [
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Muka air normal yang ditahan pintu",
+    "en": "Normal pond held by the gates"
+   },
+   "section": "operation",
+   "note": {
+    "id": "Muka air pengambilan pada lembar spesifikasi pedoman O&P (JICA 2019).",
+    "en": "The intake water level on the O&M spec sheet (JICA 2019)."
+   },
+   "alt": [
+    {
+     "v": 81,
+     "src": [
+      "r05:UNISMA22"
+     ],
+     "note": "student paper: pond held at +81.00 (weak)"
+    }
+   ]
+  },
+  "pond_min_intake": {
+   "v": 79.6,
+   "unit": "m EL",
+   "status": "A",
+   "year": 2026,
+   "src": [
+    "study:assume"
+   ],
+   "label": {
+    "id": "Muka air terendah untuk pengambilan rencana",
+    "en": "Lowest pond for design intake"
+   },
+   "section": "operation",
+   "note": {
+    "id": "Satu langkah pintu (0,1 m) di bawah muka air normal.",
+    "en": "One gate step (0.1 m) under the normal pond."
+   }
+  },
+  "gate_order": {
+   "v": [
+    6,
+    7,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "label": {
+    "id": "Urutan membuka pintu",
+    "en": "Gate opening order"
+   },
+   "section": "operation",
+   "note": {
+    "id": "Satu makalah mahasiswa yang mengutip pedoman operasi (sumber lemah). Lalu semua dinaikkan bersama: langkah 0,1 m biasa, 0,6 m saat banjir.",
+    "en": "One student paper quoting the operating manual (weak source). Then all raised together: 0.1 m steps normally, 0.6 m in a flood."
+   }
+  },
+  "flap_threshold": {
+   "v": 9.36,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "label": {
+    "id": "Di bawah debit ini hanya klep yang dibuka",
+    "en": "Below this flow only the flaps open"
+   },
+   "section": "operation",
+   "note": {
+    "id": "Satu makalah mahasiswa yang mengutip pedoman operasi (sumber lemah).",
+    "en": "One student paper quoting the operating manual (weak source)."
+   }
+  },
+  "flood_rule": {
+   "v": {
+    "id": "Semua pintu dibuka saat sungai mulai naik; pada banjir rencana muka air mencapai EL 81,00",
+    "en": "All gates open as the river starts rising; in the design flood the pond reaches EL 81.00"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r05:UNISMA22",
+    "r01:J19"
+   ],
+   "label": {
+    "id": "Aturan banjir",
+    "en": "Flood rule"
+   },
+   "section": "operation"
+  },
+  "manual": {
+   "v": {
+    "id": "Buku pedoman dasar pengoperasian Bendung Gerak, dipegang Dinas PU OKU Timur; tidak daring",
+    "en": "Basic operating manual of the barrage, held by the OKU Timur public works office; not online"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "label": {
+    "id": "Pedoman operasi",
+    "en": "Operating manual"
+   },
+   "section": "operation",
+   "note": {
+    "id": "Satu makalah mahasiswa yang mengutip pedoman operasi (sumber lemah).",
+    "en": "One student paper quoting the operating manual (weak source)."
+   }
+  },
+  "closure_2011": {
+   "v": 34000,
+   "unit": "ha",
+   "status": "P",
+   "year": 2011,
+   "src": [
+    "r04:jpnn2011"
+   ],
+   "label": {
+    "id": "Pengeringan 16 Jul-1 Agu 2011: sawah terancam",
+    "en": "Intake closed 16 Jul-1 Aug 2011: paddy at risk"
+   },
+   "section": "operation"
+  },
+  "condition": {
+   "v": {
+    "id": "\"Baik\" 2001, \"memadai\" 2003",
+    "en": "\"Good\" 2001, \"favourable\" 2003"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r01:J02",
+    "r02:J04"
+   ],
+   "label": {
+    "id": "Kondisi menurut evaluasi",
+    "en": "Condition in the evaluations"
+   },
+   "section": "operation"
+  },
+  "rehab_2025": {
+   "v": 318.54,
+   "unit": "Rp bn",
+   "status": "P",
+   "year": 2025,
+   "src": [
+    "r02:MTV25",
+    "r01:AK25"
+   ],
+   "label": {
+    "id": "Paket rehabilitasi 2025 (seluruh paket)",
+    "en": "2025 rehabilitation package (whole package)"
+   },
+   "section": "operation",
+   "note": {
+    "id": "Rehabilitasi bendung bagian dari paket DI Komering Sub DI Lempuing Fase 3 Paket I.",
+    "en": "The weir's rehabilitation is part of a larger irrigation package."
+   }
+  },
+  "fish_species": {
+   "v": 36,
+   "unit": "-",
+   "status": "S",
+   "year": 2024,
+   "src": [
+    "r11:Atminarso-2024"
+   ],
+   "label": {
+    "id": "Jenis ikan tercatat",
+    "en": "Fish species recorded"
+   },
+   "section": "operation",
+   "note": {
+    "id": "Tangga ikan dilalui 27 jenis; 11 tidak mampu mendaki seluruh panjangnya.",
+    "en": "27 pass the fishway; 11 cannot climb its whole length."
+   }
+  },
+  "renewal_2024": {
+   "v": {
+    "id": "Menteri PU (Okt 2024): bendung sekitar 30 tahun, perlu peremajaan",
+    "en": "Public Works minister (Oct 2024): the weir is about 30 years old and due for renewal"
+   },
+   "unit": "-",
+   "status": "P",
+   "year": 2024,
+   "src": [
+    "r05:RMOL24"
+   ],
+   "label": {
+    "id": "Peremajaan",
+    "en": "Renewal"
+   },
+   "section": "operation"
+  },
+  "owner": {
+   "v": {
+    "id": "Republik Indonesia; Ditjen SDA, Kementerian PU (kewenangan pusat)",
+    "en": "Republic of Indonesia; Directorate General of Water Resources (central government)"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2015,
+   "src": [
+    "r01:J02",
+    "r10:P14"
+   ],
+   "label": {
+    "id": "Pemilik",
+    "en": "Owner"
+   },
+   "section": "money"
+  },
+  "loan_stage1": {
+   "v": 10426,
+   "unit": "M yen",
+   "status": "S",
+   "year": 2002,
+   "src": [
+    "r01:J02"
+   ],
+   "label": {
+    "id": "Pinjaman Tahap I (IP-347, 1989)",
+    "en": "Stage I loan (IP-347, 1989)"
+   },
+   "section": "money",
+   "note": {
+    "id": "Dari biaya paket 13.324 juta yen.",
+    "en": "Of a 13,324 M yen package cost."
+   },
+   "alt": [
+    {
+     "v": 11223,
+     "src": [
+      "r01:J02"
+     ],
+     "note": "allotment at signing"
+    }
+   ]
+  },
+  "loan_stage2": {
+   "v": 5335,
+   "unit": "M yen",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r02:J04"
+   ],
+   "label": {
+    "id": "Pinjaman Tahap II dicairkan (IP-453, 1995)",
+    "en": "Stage II loan disbursed (IP-453, 1995)"
+   },
+   "section": "money"
+  },
+  "loan_phase3": {
+   "v": 15896,
+   "unit": "M yen",
+   "status": "S",
+   "year": 2017,
+   "src": [
+    "r10:IP574"
+   ],
+   "label": {
+    "id": "Pinjaman Tahap 3 (IP-574, 2017)",
+    "en": "Phase 3 loan (IP-574, 2017)"
+   },
+   "section": "money"
+  },
+  "eirr": {
+   "v": 12.9,
+   "unit": "%",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r02:J04"
+   ],
+   "label": {
+    "id": "EIRR dihitung ulang (Tahap I+II)",
+    "en": "EIRR recomputed (Phase I+II)"
+   },
+   "section": "money"
+  },
+  "om_budget_2003": {
+   "v": 1184.9,
+   "unit": "Rp M",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r02:J04"
+   ],
+   "label": {
+    "id": "Anggaran O&P 2003",
+    "en": "O&M budget 2003"
+   },
+   "section": "money",
+   "note": {
+    "id": "Tidak ditemukan angka setelah 2003.",
+    "en": "No figure found after 2003."
+   }
+  },
+  "ranau_area": {
+   "v": 127,
+   "unit": "km2",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Luas Danau Ranau",
+    "en": "Area of Lake Ranau"
+   },
+   "section": "upstream"
+  },
+  "ranau_regulator": {
+   "v": {
+    "id": "Bendung pengatur dibangun Tahap I: panjang 144 m, tinggi 7 m",
+    "en": "Regulating weir built in Phase I: 144 m long, 7 m high"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2002,
+   "src": [
+    "r01:J02"
+   ],
+   "label": {
+    "id": "Pengatur Danau Ranau",
+    "en": "Lake Ranau regulator"
+   },
+   "section": "upstream"
+  },
+  "ranau_hwl": {
+   "v": 541.7,
+   "unit": "m",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r03:JICA03-S"
+   ],
+   "label": {
+    "id": "Muka air tinggi operasi Ranau",
+    "en": "Ranau operating high water"
+   },
+   "section": "upstream"
+  },
+  "ranau_storage": {
+   "v": 254,
+   "unit": "Mm3",
+   "status": "S",
+   "year": 2003,
+   "src": [
+    "r03:JICA03-S"
+   ],
+   "label": {
+    "id": "Tampungan efektif Ranau",
+    "en": "Ranau effective storage"
+   },
+   "section": "upstream"
+  },
+  "ranau_outflow": {
+   "v": 17.6,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1981,
+   "src": [
+    "r03:JICA81"
+   ],
+   "label": {
+    "id": "Aliran keluar alami Ranau",
+    "en": "Ranau natural outflow"
+   },
+   "section": "upstream"
+  },
+  "tiga_dihaji_height": {
+   "v": 122,
+   "unit": "m",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r06:KUR22"
+   ],
+   "label": {
+    "id": "Bendungan Tiga Dihaji: tinggi",
+    "en": "Tiga Dihaji Dam: height"
+   },
+   "section": "upstream",
+   "note": {
+    "id": "Urugan batu berinti tegak di Sungai Selabung, OKU Selatan; puncak 950 m.",
+    "en": "Zoned rockfill with a vertical core on the Selabung, OKU Selatan; crest 950 m."
+   }
+  },
+  "tiga_dihaji_storage": {
+   "v": 129,
+   "unit": "Mm3",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r06:KUR22"
+   ],
+   "label": {
+    "id": "Tiga Dihaji: tampungan total",
+    "en": "Tiga Dihaji: total storage"
+   },
+   "section": "upstream",
+   "alt": [
+    {
+     "v": 139.77,
+     "src": [
+      "r06:DET26"
+     ],
+     "note": "press, Jul 2026"
+    }
+   ]
+  },
+  "tiga_dihaji_catchment": {
+   "v": 1158.2,
+   "unit": "km2",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r06:KUR22"
+   ],
+   "label": {
+    "id": "Tiga Dihaji: luas DAS",
+    "en": "Tiga Dihaji: catchment"
+   },
+   "section": "upstream"
+  },
+  "tiga_dihaji_status": {
+   "v": {
+    "id": "Dibangun sejak akhir 2018, target 2029; belum digenangi",
+    "en": "Under construction since late 2018, target 2029; not filling"
+   },
+   "unit": "-",
+   "status": "P",
+   "year": 2026,
+   "src": [
+    "r06:DET26",
+    "r06:DET25"
+   ],
+   "label": {
+    "id": "Tiga Dihaji: status",
+    "en": "Tiga Dihaji: status"
+   },
+   "section": "upstream"
+  },
+  "tiga_dihaji_fsl": {
+   "v": 326,
+   "unit": "m",
+   "status": "A",
+   "year": 2026,
+   "src": [
+    "study:assume",
+    "r06:KUR22"
+   ],
+   "label": {
+    "id": "Tiga Dihaji: muka air penuh (asumsi)",
+    "en": "Tiga Dihaji: full supply level (assumed)"
+   },
+   "section": "upstream",
+   "note": {
+    "id": "Sedikit di bawah muka banjir 2 tahunan 326,38 m; data teknis tidak ditemukan.",
+    "en": "Just below the routed 2-year flood pool 326.38 m; the data sheet was not found."
+   }
+  },
+  "flood_gauge_max": {
+   "v": 5.08,
+   "unit": "m",
+   "status": "S",
+   "year": 1988,
+   "src": [
+    "r03:JICA03-G"
+   ],
+   "label": {
+    "id": "Bacaan papan duga tertinggi Martapura 1971-1997 (1988)",
+    "en": "Highest Martapura staff reading 1971-97 (1988)"
+   },
+   "section": "floods"
+  },
+  "ev_2023_bunga_mayang": {
+   "v": 164,
+   "unit": "houses",
+   "status": "P",
+   "year": 2023,
+   "src": [
+    "r04:antara2023a"
+   ],
+   "label": {
+    "id": "Banjir Bunga Mayang, 23 Apr 2023: rumah terendam",
+    "en": "Bunga Mayang flood, 23 Apr 2023: houses flooded"
+   },
+   "section": "floods"
+  },
+  "ev_2026_belitang": {
+   "v": 1359,
+   "unit": "houses",
+   "status": "P",
+   "year": 2026,
+   "src": [
+    "r04:detik2026"
+   ],
+   "label": {
+    "id": "Banjir 7-9 Jan 2026 di sisi Belitang: rumah terendam",
+    "en": "Flood 7-9 Jan 2026 on the Belitang side: houses flooded"
+   },
+   "section": "floods",
+   "note": {
+    "id": "Dari Sungai Macak dan Muara Bala, bukan dari alur utama Komering.",
+    "en": "From the Macak and Muara Bala streams, not the Komering main stem."
+   }
+  },
+  "ev_2011_closure": {
+   "v": 34000,
+   "unit": "ha",
+   "status": "P",
+   "year": 2011,
+   "src": [
+    "r04:jpnn2011"
+   ],
+   "label": {
+    "id": "Pengeringan saluran Jul 2011: sawah Belitang terancam",
+    "en": "Canal closure Jul 2011: Belitang paddy at risk"
+   },
+   "section": "floods"
+  },
+  "drought_q10": {
+   "v": 104,
+   "unit": "m3/s",
+   "status": "S",
+   "year": 1982,
+   "src": [
+    "r03:JICA82"
+   ],
+   "label": {
+    "id": "Debit rata-rata Jun-Okt, kering 10 tahunan",
+    "en": "Jun-Oct mean flow, 10-year dry"
+   },
+   "section": "floods"
+  },
+  "flood_prone": {
+   "v": {
+    "id": "Martapura, BP Bangsa Raja, Madang Suku I dan II, Semendawai Barat, Cempaka",
+    "en": "Martapura, BP Bangsa Raja, Madang Suku I and II, Semendawai Barat, Cempaka"
+   },
+   "unit": "-",
+   "status": "S",
+   "year": 2022,
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "label": {
+    "id": "Kecamatan rawan banjir",
+    "en": "Flood-prone districts"
+   },
+   "section": "floods",
+   "note": {
+    "id": "Satu makalah mahasiswa yang mengutip BPBD (sumber lemah).",
+    "en": "One student paper quoting the disaster agency (weak source)."
+   }
+  },
+  "downstream_claim": {
+   "v": {
+    "id": "Warga hilir menyebut sungai kering di musim kemarau sejak ada bendung",
+    "en": "Lower-river villages say the river runs dry in the dry season since the weir"
+   },
+   "unit": "-",
+   "status": "P",
+   "year": 2026,
+   "src": [
+    "r04:mongabay2026"
+   ],
+   "label": {
+    "id": "Keluhan di hilir",
+    "en": "Downstream complaint"
+   },
+   "section": "floods"
+  },
+  "datum_offset": {
+   "v": -3.2,
+   "unit": "m",
+   "status": "C",
+   "year": 2026,
+   "src": [
+    "study:terrain",
+    "g01:GLO30",
+    "r01:J19"
+   ],
+   "section": "structure",
+   "label": {
+    "id": "Selisih datum: model medan = EL proyek + selisih",
+    "en": "Datum offset: terrain model = project EL + offset"
+   },
+   "note": {
+    "id": "Muka genangan di model medan 76.5 m dikurangi EL 79.70.",
+    "en": "Pond surface in the terrain model 76.5 m minus EL 79.70."
+   }
+  }
+ },
+ "sources": {
+  "g01:GLO30": {
+   "title": "Copernicus DEM GLO-30 (30 m surface model, data 2011-2015)",
+   "publisher": "DLR, Airbus Defence and Space, ESA (Copernicus)",
+   "year": 2021,
+   "url": "https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model"
+  },
+  "g04:OV": {
+   "title": "Overture Maps release 2026-11-18.0 (OpenStreetMap contributors, ODbL)",
+   "publisher": "Overture Maps Foundation",
+   "year": 2026,
+   "url": "https://overturemaps.org"
+  },
+  "r01:AK25": {
+   "title": "Waskita Karya garap proyek irigasi Rp318,5 M di Sumatera Selatan",
+   "publisher": "Akurat",
+   "year": 2025,
+   "url": "https://www.akurat.co/infrastruktur/814268/waskita-karya-garap-proyek-irigasi-rp318-5-m-di-sumatera-selatan"
+  },
+  "r01:J02": {
+   "title": "Ex-post evaluation: Rehabilitation of Irrigation and Flood Alleviation Works, Komering-I Irrigation Project Package I",
+   "publisher": "JBIC",
+   "year": 2002,
+   "url": "https://www.jica.go.jp/english/activities/evaluation/oda_loan/post/2002/n_files/051_full.pdf"
+  },
+  "r01:J1207": {
+   "title": "Report listing yen-loan irrigation projects (Komering Irrigation Stage 1 IP-347, IP-453)",
+   "publisher": "JICA",
+   "year": null,
+   "url": "https://openjicareport.jica.go.jp/pdf/12078523_02.pdf"
+  },
+  "r01:J19": {
+   "title": "The Project for Assessing and Integrating Climate Change Impacts into the Water Resources Management Plans for Brantas and Musi River Basins, Final Report, Supporting Report G, sec. G7.6 Perjaya Headworks",
+   "publisher": "JICA and DG Water Resources (Nippon Koei, CTI Engineering, University of Tokyo)",
+   "year": 2019,
+   "url": "https://openjicareport.jica.go.jp/pdf/12353215_01.pdf"
+  },
+  "r01:PM27": {
+   "title": "Peraturan Menteri PUPR No. 27/PRT/M/2015 tentang Bendungan",
+   "publisher": "Kementerian PUPR",
+   "year": 2015,
+   "url": "https://peraturan.go.id/files/bn771-2015.pdf"
+  },
+  "r01:PP37": {
+   "title": "Peraturan Pemerintah No. 37 Tahun 2010 tentang Bendungan",
+   "publisher": "Republik Indonesia",
+   "year": 2010,
+   "url": "https://sda.pu.go.id/assets/uploads/files/PP-37%20TAHUN%202010%20ttg%20BENDUNGAN.pdf"
+  },
+  "r02:FIDAMS": {
+   "title": "Project on Formulation of Irrigation Development and Management Strategy for Food Security (F-IDAMS), Final Report Part II",
+   "publisher": "JICA and DG Water Resources",
+   "year": 2022,
+   "url": "https://openjicareport.jica.go.jp/pdf/12336608_02.pdf"
+  },
+  "r02:J04": {
+   "title": "Ex-post evaluation: Komering Irrigation Project (2)",
+   "publisher": "JBIC",
+   "year": 2004,
+   "url": "https://www.jica.go.jp/english/our_work/evaluation/oda_loan/post/2004/pdf/2-15_full.pdf"
+  },
+  "r02:LUC20": {
+   "title": "Lucyana, Analisa peningkatan saluran tersier BBG 6 Kiri di Irigasi Komering, Bandar: Journal of Civil Engineering 2(2)",
+   "publisher": "Universitas Sulawesi Barat",
+   "year": 2020,
+   "url": "https://ojs.unsulbar.ac.id/index.php/bjce/article/download/770/421"
+  },
+  "r02:MTV25": {
+   "title": "Waskita Karya kantongi kontrak baru proyek irigasi Rp318,54 miliar di Sumsel",
+   "publisher": "Metro TV News",
+   "year": 2025,
+   "url": "https://www.metrotvnews.com/read/b3JCpwVP-waskita-karya-kantongi-kontrak-baru-proyek-irigasi-rp31854-miliar-di-sumsel"
+  },
+  "r02:UGM22": {
+   "title": "Imron F. et al., Kesiapan modernisasi irigasi dan optimasi alokasi air, Daerah Irigasi Belitang, agriTECH 42(4), doi:10.22146/agritech.67203",
+   "publisher": "Universitas Gadjah Mada",
+   "year": 2022,
+   "url": "https://jurnal.ugm.ac.id/agritech/article/download/67203/35220"
+  },
+  "r03:JICA03-G": {
+   "title": "The Study on Comprehensive Water Management of Musi River Basin, Final Report, Sector G (hydrology)",
+   "publisher": "JICA (CTI Engineering, Nikken Consultants)",
+   "year": 2003,
+   "url": "https://openjicareport.jica.go.jp/pdf/11740495_070.pdf"
+  },
+  "r03:JICA03-S": {
+   "title": "The Study on Comprehensive Water Management of Musi River Basin, Final Report, Summary",
+   "publisher": "JICA (CTI Engineering, Nikken Consultants)",
+   "year": 2003,
+   "url": "https://openjicareport.jica.go.jp/pdf/11740479_07.pdf"
+  },
+  "r03:JICA81": {
+   "title": "Feasibility Study on the Komering-I Irrigation Development Project in the Upper Komering River Basin, Vol. II",
+   "publisher": "JICA and DG Water Resources Development",
+   "year": 1981,
+   "url": "https://openjicareport.jica.go.jp/pdf/10559169_01.pdf"
+  },
+  "r03:JICA82": {
+   "title": "Pre-Feasibility Study on the Upper Komering River Basin Development Project, Vol. II-1, Annex I Meteorology and Hydrology",
+   "publisher": "JICA and Ministry of Public Works",
+   "year": 1982,
+   "url": "https://openjicareport.jica.go.jp/pdf/10310845_01.pdf"
+  },
+  "r04:antara2023a": {
+   "title": "Warga OKU Timur Sumsel rayakan Lebaran di tengah banjir",
+   "publisher": "Antara",
+   "year": 2023,
+   "url": "https://bengkulu.antaranews.com/berita/284310/warga-oku-timur-sumsel-rayakan-lebaran-di-tengah-banjir"
+  },
+  "r04:antara2025": {
+   "title": "Diterjang banjir, jembatan gantung di Sumsel putus",
+   "publisher": "Antara",
+   "year": 2025,
+   "url": "https://jatim.antaranews.com/berita/891265/diterjang-banjir-jembatan-gantung-di-sumsel-putus"
+  },
+  "r04:detik2026": {
+   "title": "Banjir OKU Timur meluas ke 23 desa, 1.359 rumah terendam",
+   "publisher": "detik.com",
+   "year": 2026,
+   "url": "https://www.detik.com/sumbagsel/berita/d-8300177/banjir-oku-timur-meluas-ke-23-desa-1-359-rumah-terendam"
+  },
+  "r04:jpnn2011": {
+   "title": "34 ribu ha sawah bakal kering",
+   "publisher": "JPNN",
+   "year": 2011,
+   "url": "https://m.jpnn.com/news/34-ribu-ha-sawah-bakal-kering"
+  },
+  "r04:mongabay2026": {
+   "title": "Singkong pernah jadi kuliner andalan masyarakat Komering",
+   "publisher": "Mongabay Indonesia",
+   "year": 2026,
+   "url": "https://mongabay.co.id/2026/02/26/singkong-pernah-jadi-kuliner-andalan-masyarakat-komering/"
+  },
+  "r05:RMOL24": {
+   "title": "Menteri PU: SDA penting untuk dukung target swasembada pangan",
+   "publisher": "RMOL",
+   "year": 2024,
+   "url": "https://rmol.id/bisnis/read/2024/11/02/643190/menteri-pu-sda-penting-untuk-dukung-target-swasembada-pangan",
+   "access": "search snippet or summary only"
+  },
+  "r05:UNISMA22": {
+   "title": "Ayun F.Q., Noerhayati E., Suprapto B., Studi evaluasi pengoperasian pintu bendung gerak untuk pengendali banjir di Kabupaten OKU Timur Sumatera Selatan, Jurnal Rekayasa Sipil 12(4) (student paper)",
+   "publisher": "Universitas Islam Malang",
+   "year": 2022,
+   "url": "https://jim.unisma.ac.id/index.php/ft/article/download/17742/13493"
+  },
+  "r06:BAPPENAS": {
+   "title": "Knowledge document on sustainability pre-assessments of mini-hydro in irrigation networks (names PLTM Bendung Perjaya as a site)",
+   "publisher": "Bappenas",
+   "year": null,
+   "url": null,
+   "access": "search snippet or summary only"
+  },
+  "r06:DET25": {
+   "title": "DPR sentil PU soal temuan BPK, proyek Bendungan Tiga Dihaji molor jadi 9 tahun",
+   "publisher": "detik.com",
+   "year": 2025,
+   "url": "https://finance.detik.com/infrastruktur/d-8229349/dpr-sentil-pu-soal-temuan-bpk-proyek-bendungan-tiga-dihaji-molor-jadi-9-tahun"
+  },
+  "r06:DET26": {
+   "title": "RI bakal punya 15 bendungan baru, anggarannya Rp 32,8 triliun",
+   "publisher": "detik.com",
+   "year": 2026,
+   "url": "https://finance.detik.com/infrastruktur/d-8595451/ri-bakal-punya-15-bendungan-baru-anggarannya-rp-32-8-triliun"
+  },
+  "r06:KUR22": {
+   "title": "Kurnia Sari Y., Wasono A., Sangkawati S., Kodoatie R.J., Analisis Keruntuhan Bendungan Tiga Dihaji menggunakan HEC-RAS 2D, AGREGAT 7(2)",
+   "publisher": "Universitas Muhammadiyah Surabaya",
+   "year": 2022,
+   "url": "https://journal.um-surabaya.ac.id/Agregat/article/download/14870/pdf/38224"
+  },
+  "r07:JICA03-I": {
+   "title": "The Study on Comprehensive Water Management of Musi River Basin, Annex I2.1.3 Drought Discharges",
+   "publisher": "JICA (CTI Engineering, Nikken Consultants)",
+   "year": 2003,
+   "url": "https://openjicareport.jica.go.jp/pdf/11740495_128.pdf"
+  },
+  "r07:OM-FLOOD": {
+   "title": "GloFAS v4 river discharge via the Open-Meteo flood API",
+   "publisher": "Copernicus EMS / Open-Meteo",
+   "year": 2026,
+   "url": "https://open-meteo.com/en/docs/flood-api"
+  },
+  "r08:ESRI": {
+   "title": "World Imagery (aerial and satellite pictures)",
+   "publisher": "Esri",
+   "year": 2026,
+   "url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9"
+  },
+  "r09:BRS25": {
+   "title": "Luas panen dan produksi padi di Provinsi Sumatera Selatan 2025 (angka tetap)",
+   "publisher": "BPS Provinsi Sumatera Selatan",
+   "year": 2026,
+   "url": "https://satudata.sumselprov.go.id/storage/brs/698359b120c32.pdf"
+  },
+  "r09:WP-OKUT": {
+   "title": "East Ogan Komering Ulu Regency (district table from the 2010 and 2020 censuses)",
+   "publisher": "Wikipedia",
+   "year": 2025,
+   "url": "https://en.wikipedia.org/wiki/East_Ogan_Komering_Ulu_Regency"
+  },
+  "r10:BB8": {
+   "title": "Website of BBWS Sumatera VIII",
+   "publisher": "Kementerian PU",
+   "year": 2026,
+   "url": "https://sda.pu.go.id/balai/bbwssumatera8/"
+  },
+  "r10:IP574": {
+   "title": "ODA project page IP-574, Komering Irrigation Project (Phase 3)",
+   "publisher": "JICA",
+   "year": 2017,
+   "url": "https://www.jica.go.jp/oda/project/IP-574/index.html"
+  },
+  "r10:P14": {
+   "title": "Peraturan Menteri PUPR No. 14/PRT/M/2015 tentang Kriteria dan Penetapan Status Daerah Irigasi",
+   "publisher": "Kementerian PUPR",
+   "year": 2015,
+   "url": "https://peraturan.go.id/files/bn638-2015.pdf"
+  },
+  "r11:Atminarso-2024": {
+   "title": "Atminarso D., The impact of Perjaya Dam on fisheries, biodiversity and livelihoods in the Komering River, Indonesia (PhD thesis)",
+   "publisher": "Charles Sturt University",
+   "year": 2024,
+   "url": "https://researchoutput.csu.edu.au/en/publications/the-impact-of-perjaya-dam-on-fisheries-biodiversity-and-livelihoo/"
+  },
+  "r11:JICA-Musi-M": {
+   "title": "Studi Pengelolaan Air Secara Menyeluruh pada Wilayah Sungai Musi, Laporan Akhir, Laporan Utama",
+   "publisher": "JICA (CTI Engineering, Nikken Consultants)",
+   "year": 2003,
+   "url": "https://openjicareport.jica.go.jp/pdf/11740537_06.pdf"
+  },
+  "r11:Nizar-2022": {
+   "title": "Nizar M., Augusta R.C., Karolina A., Catharica A., Kajian persepsi masyarakat terhadap pengelolaan tangga ikan Bendung Perjaya, Jurnal LEMURU 4(1)",
+   "publisher": "Universitas PGRI Banyuwangi",
+   "year": 2022,
+   "url": "https://ejournal.unibabwi.ac.id/index.php/lemuru/article/view/2515"
+  },
+  "r13:CHOW": {
+   "title": "Chow V.T., Open-Channel Hydraulics (Manning roughness of natural channels)",
+   "publisher": "McGraw-Hill",
+   "year": 1959,
+   "url": null
+  },
+  "r13:KP01": {
+   "title": "Kriteria Perencanaan KP-01, Perencanaan Jaringan Irigasi",
+   "publisher": "Ditjen SDA, Kementerian PU",
+   "year": 2013,
+   "url": "https://luk.tsipil.ugm.ac.id/atur/sda/kp/KP01-PerencanaanJaringanIrigasi.pdf"
+  },
+  "r13:KP02": {
+   "title": "Kriteria Perencanaan KP-02, Bangunan Utama",
+   "publisher": "Ditjen SDA, Kementerian PU",
+   "year": 2013,
+   "url": "https://luk.tsipil.ugm.ac.id/atur/sda/kp/KP02-BangunanUtama.pdf"
+  },
+  "r14:ERA5": {
+   "title": "Hersbach H. et al., ERA5 hourly data on single levels from 1940 to present, doi:10.24381/cds.adbb2d47",
+   "publisher": "ECMWF / Copernicus C3S",
+   "year": 2023,
+   "url": "https://doi.org/10.24381/cds.adbb2d47"
+  },
+  "r14:OM": {
+   "title": "ERA5 daily rain and reference evapotranspiration via the Open-Meteo historical weather API",
+   "publisher": "Open-Meteo",
+   "year": 2026,
+   "url": "https://open-meteo.com/en/docs/historical-weather-api"
+  },
+  "study:assume": {
+   "title": "This study: assumed where no source gives the value (the reason is in the note)",
+   "publisher": null,
+   "year": 2026,
+   "url": null,
+   "title_id": "Kajian ini: asumsi, karena tidak ada sumber yang memberi nilainya (alasan ada di catatan)"
+  },
+  "study:calc": {
+   "title": "This study: computed from the figures cited with it (the arithmetic is in the note)",
+   "publisher": null,
+   "year": 2026,
+   "url": null,
+   "title_id": "Kajian ini: dihitung dari angka sumber yang disebut bersamanya (hitungan ada di catatan)"
+  },
+  "study:method": {
+   "title": "This study: usual values of the KP-01 and KP-02 design criteria and the rainfall-runoff literature, used where no basin value exists",
+   "publisher": null,
+   "year": 2026,
+   "url": null,
+   "title_id": "Kajian ini: nilai lazim kriteria perencanaan KP-01 dan KP-02 serta pustaka hujan-aliran, dipakai bila tidak ada nilai untuk DAS ini"
+  },
+  "study:rain": {
+   "title": "This study: computed from the ERA5 daily basin rain 1991-2025",
+   "publisher": null,
+   "year": 2026,
+   "url": null,
+   "title_id": "Kajian ini: dihitung dari hujan harian DAS ERA5 1991-2025"
+  },
+  "study:terrain": {
+   "title": "This study: computed from the Copernicus DEM GLO-30 terrain model (flow directions, upstream area, water surfaces)",
+   "publisher": null,
+   "year": 2026,
+   "url": null,
+   "title_id": "Kajian ini: dihitung dari model medan Copernicus DEM GLO-30 (arah aliran, luas hulu, muka air)"
+  }
+ },
+ "timeline": [
+  {
+   "date": "1961",
+   "id": "Kemarau panjang dan gagal panen padi 1961, 1963, 1967 (sebelum bendung)",
+   "en": "Long dry seasons and failed rice in 1961, 1963 and 1967 (before the weir)",
+   "src": [
+    "r04:mongabay2026"
+   ],
+   "status": "P",
+   "date_label": {
+    "id": "1961-1967",
+    "en": "1961-1967"
+   }
+  },
+  {
+   "date": "1980-06-22",
+   "id": "Banjir terbesar catatan 1971-1981 di Martapura: 1.438 m³/s",
+   "en": "Largest flood of the 1971-81 record at Martapura: 1,438 m³/s",
+   "src": [
+    "r03:JICA82"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1981",
+   "id": "Studi kelayakan \"Pracak Headworks\": mercu tetap dengan dua pintu (tidak dibangun)",
+   "en": "Feasibility study of the \"Pracak Headworks\": a fixed crest with two gates (not built)",
+   "src": [
+    "r03:JICA81"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1982",
+   "id": "Rencana induk irigasi Komering untuk sekitar 100.000 ha",
+   "en": "Komering irrigation master plan for about 100,000 ha",
+   "src": [
+    "r02:J04"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1988",
+   "id": "Bacaan tertinggi papan duga Martapura 1971-1997: 5,08 m",
+   "en": "Highest Martapura staff reading 1971-97: 5.08 m",
+   "src": [
+    "r03:JICA03-G"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1989-12",
+   "id": "Perjanjian pinjaman Tahap I (IP-347)",
+   "en": "Stage I loan agreement (IP-347)",
+   "src": [
+    "r01:J02",
+    "r01:J1207"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1991-10",
+   "id": "Pekerjaan sipil bendung dimulai",
+   "en": "Civil works of the weir begin",
+   "src": [
+    "r01:J02"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1995-12",
+   "id": "Perjanjian pinjaman Tahap II (IP-453)",
+   "en": "Stage II loan agreement (IP-453)",
+   "src": [
+    "r02:J04"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1996-02",
+   "id": "Pekerjaan sipil dan pintu selesai",
+   "en": "Civil works and gates finished",
+   "src": [
+    "r01:J02"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1996-10",
+   "id": "Skema Tahap I selesai",
+   "en": "Phase I scheme completed",
+   "src": [
+    "r01:J02"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "1997",
+   "id": "Tahun terkering ERA5 1991-2025: 1.608 mm",
+   "en": "Driest ERA5 year 1991-2025: 1,608 mm",
+   "src": [
+    "r14:OM"
+   ],
+   "status": "C"
+  },
+  {
+   "date": "2011-07-16",
+   "id": "Pengambilan utama ditutup sampai 1 Agustus; sekitar 34.000 ha sawah terancam",
+   "en": "Main intake closed until 1 August; about 34,000 ha of paddy at risk",
+   "src": [
+    "r04:jpnn2011"
+   ],
+   "status": "P"
+  },
+  {
+   "date": "2015",
+   "id": "Status D.I. Komering ditetapkan (Permen PUPR 14/2015): 62.536 ha",
+   "en": "Komering irrigation status set (ministerial rule 14/2015): 62,536 ha",
+   "src": [
+    "r10:P14"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "2017-03-30",
+   "id": "Perjanjian pinjaman Tahap 3 (IP-574)",
+   "en": "Phase 3 loan agreement (IP-574)",
+   "src": [
+    "r10:IP574"
+   ],
+   "status": "S"
+  },
+  {
+   "date": "2018",
+   "id": "Pembangunan Bendungan Tiga Dihaji dimulai di hulu",
+   "en": "Construction of Tiga Dihaji Dam begins upstream",
+   "src": [
+    "r06:DET26"
+   ],
+   "status": "P"
+  },
+  {
+   "date": "2019",
+   "id": "Tahun kering El Nino: 2.162 mm hujan DAS",
+   "en": "El Nino dry year: 2,162 mm of basin rain",
+   "src": [
+    "r14:OM"
+   ],
+   "status": "C"
+  },
+  {
+   "date": "2023-04-23",
+   "id": "Banjir Bunga Mayang, OKU Timur: 164 rumah",
+   "en": "Bunga Mayang flood, OKU Timur: 164 houses",
+   "src": [
+    "r04:antara2023a"
+   ],
+   "status": "P"
+  },
+  {
+   "date": "2024-10-31",
+   "id": "Kunjungan Menteri PU: bendung berumur sekitar 30 tahun, peremajaan direncanakan",
+   "en": "Public Works minister's visit: the weir is about 30 years old, renewal planned",
+   "src": [
+    "r05:RMOL24"
+   ],
+   "status": "P"
+  },
+  {
+   "date": "2025-03-06",
+   "id": "Banjir Komering di Negeri Sakti, Kec. Cempaka: jembatan gantung putus",
+   "en": "Komering flood at Negeri Sakti, Cempaka: suspension bridge down",
+   "src": [
+    "r04:antara2025"
+   ],
+   "status": "P"
+  },
+  {
+   "date": "2025-10",
+   "id": "Paket rehabilitasi bendung dan irigasi Rp 318,5 miliar dikontrakkan",
+   "en": "Rp 318.5 bn weir and irrigation rehabilitation package contracted",
+   "src": [
+    "r02:MTV25",
+    "r01:AK25"
+   ],
+   "status": "P"
+  },
+  {
+   "date": "2026-01-07",
+   "id": "Banjir 7-9 Januari di sisi Belitang: 1.359 rumah (dari Sungai Macak dan Muara Bala)",
+   "en": "Floods 7-9 January on the Belitang side: 1,359 houses (from the Macak and Muara Bala streams)",
+   "src": [
+    "r04:detik2026"
+   ],
+   "status": "P"
+  }
+ ],
+ "standins": [
+  {
+   "id": "Medan adalah model permukaan satelit 30 m (Copernicus GLO-30, 2011-2015) yang ikut memuat atap dan pucuk pohon, bukan hasil survei; dasar sungai dan dasar genangan tidak ada di dalamnya.",
+   "en": "The terrain is a 30 m satellite surface model (Copernicus GLO-30, 2011-2015) with roofs and tree tops, not a survey; the river bed and the pond bottom are not in it."
+  },
+  {
+   "id": "Dasar sungai diasumsikan: model medan hanya melihat permukaan air pada hari pengambilannya. Muka air sungai di model medan dianggap tepi alur normal; hanya lahan di luar alur itu yang dihitung tergenang.",
+   "en": "The river bed is assumed: the terrain model sees only the water surface on the days it was flown. The river level in the terrain model is taken as the edge of the normal channel; only ground beyond it counts as flooded."
+  },
+  {
+   "id": "Muka air di hilir bendung dihitung dengan satu penampang Manning yang melewati muka air rencana EL 80,00 pada debit banjir rencana.",
+   "en": "The level below the weir comes from one Manning section drawn through the design tail level EL 80.00 at the design flood."
+  },
+  {
+   "id": "Letak bendung adalah garis OpenStreetMap yang ditelusuri dari citra, bukan koordinat survei.",
+   "en": "The weir's position is an OpenStreetMap line traced on imagery, not a surveyed coordinate."
+  },
+  {
+   "id": "Tiga pintu pembilas di ujung timur terlihat di citra; penomoran pintu banjir dan letak dua pintu yang lebih tinggi adalah asumsi kami.",
+   "en": "The three sluice bays at the east end are seen on imagery; the numbering of the flood gates and where the two taller gates sit are our assumption."
+  },
+  {
+   "id": "Elevasi ambang pintu, ambang pengambilan, lantai jembatan, tinggi menara dan lebar tembok pangkal diandaikan dari tinggi pintu dan muka air normal; gambar aslinya tidak tersedia.",
+   "en": "The gate sills, the intake sill, the deck level, tower heights and abutment widths are assumed from the gate heights and the held pond level; the real drawings were not available."
+  },
+  {
+   "id": "Jenis pintu (pintu angkat dengan klep di atas) berasal dari makalah mahasiswa dan desain 1981; mungkin tidak sama dengan di lapangan.",
+   "en": "The gate type (vertical lift with a flap on top) comes from a student paper and the 1981 design; it may not match the gates on site."
+  },
+  {
+   "id": "Elevasi proyek (EL 79,70 dan seterusnya) diikat ke model medan dengan satu angka: muka genangan di model medan dikurangi EL 79,70. Tidak ada sumber yang menyebut datum proyek.",
+   "en": "Project levels (EL 79.70 and so on) are tied to the terrain model by one number: the pond surface in the terrain model minus EL 79.70. No source states the project datum."
+  },
+  {
+   "id": "Muka air normal EL 79,70 adalah muka air pengambilan pada lembar spesifikasi; urutan membuka pintu berasal dari makalah mahasiswa yang mengutip pedoman operasi.",
+   "en": "The normal pond EL 79.70 is the intake water level of the spec sheet; the gate opening order comes from a student paper quoting the operating manual."
+  },
+  {
+   "id": "Debit harian dihitung model dari hujan ERA5 dan dicocokkan dengan rata-rata bulanan pos Martapura 1963-1980; deret GloFAS hanya untuk pembanding.",
+   "en": "Daily flow is modelled from ERA5 rain and fitted to the 1963-80 Martapura monthly means; the GloFAS series is only a comparison."
+  },
+  {
+   "id": "Hujan adalah reanalisis (ERA5) yang dirata-ratakan di atas DAS hulu; puncak badai menjadi sekitar setengah nilai pos hujan.",
+   "en": "Rain is a reanalysis (ERA5) averaged over the upper basin; it smooths storm peaks to about half of gauge values."
+  },
+  {
+   "id": "Tidak ada muka air, bukaan pintu atau debit pengambilan yang dipublikasikan; pintu di simulator adalah model, bukan catatan operator.",
+   "en": "No pond level, gate setting or intake flow is published; the simulator's gates are a model, not the operator's log."
+  },
+  {
+   "id": "Danau Ranau adalah tampungan sederhana dengan satu volume dan satu debit keluar; pola operasinya tidak ditemukan.",
+   "en": "Lake Ranau is a simple store with one stated storage and one release; its rule curve was not found."
+  },
+  {
+   "id": "Tiga Dihaji ditampilkan sebagai rencana: masih dibangun dan belum digenangi; muka air penuhnya asumsi kami.",
+   "en": "Tiga Dihaji is shown as planned: it is under construction and not filling; its full supply level is our assumption."
+  },
+  {
+   "id": "Luas irigasi adalah angka sah 2015; luas yang benar-benar diairi tiap musim tidak dipublikasikan.",
+   "en": "The irrigated area is the legal 2015 figure; the area actually watered each season is not published."
+  },
+  {
+   "id": "Debit dari hujan dihitung dengan model tampungan sederhana yang disesuaikan dengan tabel debit terbitan: rata-rata tahunan 4,5 % terlalu rendah, debit andalan Juli-Oktober dalam 15 %, Maret 16 % terlalu tinggi, dan debit rata-rata bulan kemarau 20 sampai 30 % terlalu rendah.",
+   "en": "Flow from rain comes from a simple store model fitted to the published flow tables: the yearly mean is 4.5 % low, the July to October dependable flows are within 15 %, March is 16 % high, and the average flows of the dry months are 20 to 30 % low."
+  },
+  {
+   "id": "Muka air terendah untuk pengambilan, EL 79,60, adalah asumsi: satu langkah pintu 0,1 m di bawah muka air normal.",
+   "en": "The lowest pond for the intake, EL 79.60, is an assumption: one 0.1 m gate step under the normal pond."
+  },
+  {
+   "id": "Batas siaga banjir tidak ditemukan untuk pos Komering mana pun.",
+   "en": "No flood warning levels were found for any Komering gauge."
+  }
+ ]
+}

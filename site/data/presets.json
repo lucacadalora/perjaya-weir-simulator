@@ -1,0 +1,262 @@
+[
+ {
+  "id": "weir",
+  "kind": "view",
+  "name": {
+   "id": "Bendung Perjaya",
+   "en": "Perjaya Weir"
+  },
+  "lon": 104.38101,
+  "lat": -4.30512,
+  "zoom": 16.2,
+  "pitch": 62,
+  "bearing": 195,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "weir-downstream",
+  "kind": "view",
+  "name": {
+   "id": "Bendung dari hilir",
+   "en": "Weir from downstream"
+  },
+  "lon": 104.3811,
+  "lat": -4.3036,
+  "zoom": 16.6,
+  "pitch": 68,
+  "bearing": 180,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "weir-pond",
+  "kind": "view",
+  "name": {
+   "id": "Genangan di hulu bendung",
+   "en": "Pond above the weir"
+  },
+  "lon": 104.3785,
+  "lat": -4.311,
+  "zoom": 15.2,
+  "pitch": 60,
+  "bearing": 20,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "intake",
+  "kind": "view",
+  "name": {
+   "id": "Pengambilan dan kantong lumpur",
+   "en": "Intake and settling basins"
+  },
+  "lon": 104.3838,
+  "lat": -4.3045,
+  "zoom": 16.6,
+  "pitch": 55,
+  "bearing": 300,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "canal-head",
+  "kind": "place",
+  "name": {
+   "id": "Hulu Saluran Induk Komering",
+   "en": "Komering main canal head"
+  },
+  "lon": 104.3855,
+  "lat": -4.302,
+  "zoom": 15.5,
+  "pitch": 50,
+  "bearing": 0,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "martapura",
+  "kind": "place",
+  "name": {
+   "id": "Martapura",
+   "en": "Martapura"
+  },
+  "lon": 104.3485,
+  "lat": -4.31631,
+  "zoom": 14,
+  "pitch": 45,
+  "bearing": 0,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "rail-bridge",
+  "kind": "place",
+  "name": {
+   "id": "Jembatan KA Komering",
+   "en": "Komering rail bridge"
+  },
+  "lon": 104.34868,
+  "lat": -4.32338,
+  "zoom": 16,
+  "pitch": 55,
+  "bearing": 90,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "perjaya",
+  "kind": "place",
+  "name": {
+   "id": "Desa Perjaya",
+   "en": "Perjaya village"
+  },
+  "lon": 104.38777,
+  "lat": -4.29851,
+  "zoom": 15,
+  "pitch": 45,
+  "bearing": 0,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "keromongan",
+  "kind": "place",
+  "name": {
+   "id": "Desa Keromongan",
+   "en": "Keromongan village"
+  },
+  "lon": 104.37083,
+  "lat": -4.30958,
+  "zoom": 15,
+  "pitch": 45,
+  "bearing": 0,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "kurungan-nyawa",
+  "kind": "place",
+  "name": {
+   "id": "Kurungan Nyawa",
+   "en": "Kurungan Nyawa"
+  },
+  "lon": 104.45462,
+  "lat": -4.21843,
+  "zoom": 13.5,
+  "pitch": 45,
+  "bearing": 0,
+  "src": [
+   "g04:OV"
+  ]
+ },
+ {
+  "id": "basin",
+  "kind": "view",
+  "name": {
+   "id": "DAS Komering di hulu bendung",
+   "en": "Komering basin above the weir"
+  },
+  "lon": 104.08,
+  "lat": -4.58,
+  "zoom": 9.2,
+  "pitch": 40,
+  "bearing": 20,
+  "src": [
+   "study:terrain",
+   "g01:GLO30"
+  ]
+ },
+ {
+  "id": "ranau",
+  "kind": "dam",
+  "name": {
+   "id": "Danau Ranau (bendung pengatur)",
+   "en": "Lake Ranau (regulating weir)"
+  },
+  "lon": 103.905,
+  "lat": -4.798,
+  "zoom": 11,
+  "pitch": 50,
+  "bearing": 30,
+  "src": [
+   "r01:J02",
+   "r03:JICA03-S",
+   "g04:OV"
+  ],
+  "dam": {
+   "type": "embankment",
+   "crest_el": 541.7,
+   "height_m": 7,
+   "crest_len_m": 144,
+   "status": "built",
+   "real": true,
+   "crest_note": "operating high water level 541.7 m (S) used as the top; GLO-30 shows the lake at 541.0 m; the regulator is 144 m long and 7 m high (S)",
+   "release_m3s": 17.6,
+   "release_max_m3s": 50,
+   "effective_storage_mm3": 254
+  }
+ },
+ {
+  "id": "tiga-dihaji",
+  "kind": "dam",
+  "name": {
+   "id": "Bendungan Tiga Dihaji (sedang dibangun, belum digenangi)",
+   "en": "Tiga Dihaji Dam (under construction, not filling)"
+  },
+  "lon": 103.87687,
+  "lat": -4.62893,
+  "zoom": 12.5,
+  "pitch": 55,
+  "bearing": 0,
+  "src": [
+   "r06:KUR22",
+   "r06:DET26"
+  ],
+  "dam": {
+   "type": "embankment",
+   "crest_el": 326,
+   "height_m": 122,
+   "crest_len_m": 950,
+   "crest_width_m": 12,
+   "status": "under construction, not filling",
+   "real": true,
+   "crest_note": "full supply level 326.0 m is assumed (A): just below the routed 2-year flood pool 326.38 m; the crest is not settled (+322 in the text contradicts flood levels up to 332.47)",
+   "storage_mm3": 129,
+   "effective_storage_mm3": 64.68,
+   "catchment_km2": 1158.2
+  }
+ },
+ {
+  "id": "try-selabung",
+  "kind": "dam",
+  "name": {
+   "id": "Coba: Sungai Selabung",
+   "en": "Try: Selabung river"
+  },
+  "lon": 103.95,
+  "lat": -4.55,
+  "zoom": 12,
+  "pitch": 55,
+  "bearing": 0,
+  "src": [
+   "study:terrain",
+   "g01:GLO30"
+  ],
+  "dam": {
+   "type": "gravity",
+   "height_m": 40,
+   "real": false,
+   "crest_note": "a what-if site for maker mode; the crest is set from the ground plus the height"
+  }
+ }
+]

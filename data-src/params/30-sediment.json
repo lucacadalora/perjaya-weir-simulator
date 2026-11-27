@@ -1,0 +1,166 @@
+{
+ "_doc": "sediment in the settling basins (lane s, 24 Nov 2026): the rating and the yield are sourced (S), every other entry is an assumption (A); engine site/js/engine/sediment.js",
+ "sediment": {
+  "rating_a": [
+   0.053,
+   "t/day per (m3/s)^b",
+   "S",
+   [
+    "r03:JICA03-G"
+   ],
+   "sediment rating Qs = a Qw^b (Qs t/day, Qw m3/s), 1986-87 survey"
+  ],
+  "rating_b": [
+   2.5199,
+   "-",
+   "S",
+   [
+    "r03:JICA03-G"
+   ],
+   "exponent of the sediment rating"
+  ],
+  "yield_t_yr": [
+   5020000,
+   "t/yr",
+   "S",
+   [
+    "r03:JICA03-S"
+   ],
+   "at Martapura, 1988-98 mean (1,162 t/km2/yr); mostly sand bed load in the description, about 15 % bed load in the estimate"
+  ],
+  "rating_fit_yield": [
+   true,
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "the sourced rating on the mean year's monthly flows (hydro.monthly_mean_m3s) carries 14.2 Mt/yr, 2.8 times the sourced yield; with this on, the coefficient is scaled so the mean year carries 5.02 Mt/yr (a = 0.0187, computed in engine/sediment.js ratingA), keeping the sourced exponent"
+  ],
+  "conc_max_mgL": [
+   10000,
+   "mg/L",
+   "A",
+   [
+    "study:assume"
+   ],
+   "the rating is extrapolated beyond its survey flows: the river concentration is held at this value (reached near 1,000 m3/s with the fitted rating)"
+  ],
+  "intake_factor": [
+   0.4,
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "concentration of the water the intake draws / the river's mean concentration: the scouring sluices and the intake sill keep the bed load (about 15 %) and most sand near the bed out"
+  ],
+  "intake_sand_share": [
+   0.3,
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "share of sand (coarser than about 0.06 mm) in the load the intake draws; the rest is silt and clay"
+  ],
+  "trap_sand": [
+   0.85,
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "share of that sand a settling basin keeps at its design flow of 16 m3/s"
+  ],
+  "trap_fine": [
+   0.1,
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "share of the silt and clay a settling basin keeps"
+  ],
+  "trap_full_from": [
+   0.8,
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "a basin keeps less as it fills: full trapping up to this share of its storage, falling to nothing at full"
+  ],
+  "dry_density_t_m3": [
+   1.4,
+   "t/m3",
+   "A",
+   [
+    "study:assume"
+   ],
+   "dry bulk density of a fresh sand and silt deposit"
+  ],
+  "storage_depth_m": [
+   1,
+   "m",
+   "A",
+   [
+    "study:assume"
+   ],
+   "mean depth of the storage for deposit below the flowing water, about a quarter of the 2.9-4.3 m section: storage per basin = 45 x 140 x 1.0 = 6,300 m3"
+  ],
+  "flush_at": [
+   0.8,
+   "-",
+   "A",
+   [
+    "r01:J02",
+    "study:assume"
+   ],
+   "automatic rule: the fullest basin is flushed when its storage is this full, one basin at a time, so the canal keeps running from the other four; no flushing schedule was found (2001 O&M records)"
+  ],
+  "flush_hours": [
+   4,
+   "h",
+   "A",
+   [
+    "study:assume"
+   ],
+   "time a flush takes to clear the deposit down to flush_left"
+  ],
+  "flush_left": [
+   0.02,
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "share of the deposit left in the basin when a flush ends"
+  ],
+  "flush_q_m3s": [
+   16,
+   "m3/s",
+   "A",
+   [
+    "r01:J19",
+    "study:assume"
+   ],
+   "flushing flow through the basin's 10 flushing gates (3.0 x 0.8 m) and Saluran Bilas back to the river: taken as the basin's design flow; it runs only on water the river can spare beyond the intake"
+  ],
+  "start_fill": [
+   [
+    0.55,
+    0.15,
+    0.7,
+    0.3,
+    0.45
+   ],
+   "-",
+   "A",
+   [
+    "study:assume"
+   ],
+   "fill of each basin (west first) at the start of a run: a scheme that flushes in turn has its basins at different fills"
+  ]
+ }
+}

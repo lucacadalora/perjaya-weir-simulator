@@ -1,0 +1,35 @@
+{
+ "tilejson": "3.0.0",
+ "name": "ESA WorldCover 2021 land cover, 10 m, weir reach (fine box), quiet palette",
+ "tiles": [
+  "data/tiles/lc10/{z}/{x}/{y}.png"
+ ],
+ "scheme": "xyz",
+ "format": "png",
+ "tileSize": 256,
+ "bounds": [
+  104.2,
+  -4.5,
+  104.55,
+  -4.1
+ ],
+ "minzoom": 11,
+ "maxzoom": 15,
+ "attribution": "\u00a9 ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+ "license": "CC BY 4.0",
+ "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S06E102_Map.tif (window read)",
+ "palette": {
+  "10 tree cover": "#cfe3bf",
+  "20 shrubland": "#dbe8c4",
+  "30 grassland": "#e3edc8",
+  "40 cropland": "#f1efc6",
+  "50 built-up": "#e6e0d8",
+  "60 bare / sparse": "#efe6d0",
+  "80 permanent water": "#c6def0",
+  "90 herbaceous wetland": "#b6dcd3",
+  "95 mangroves": "#a9d4c4",
+  "100 moss and lichen": "#e8eedb"
+ },
+ "resampling": "z11-13 mode of the 10 m classes (class-preserving downsample), z14 nearest neighbour (native 10 m, crisp class edges), z15 nearest then colour Gaussian blur sigma 0.9 px (soft edges, no new classes)",
+ "transparency": "outside the fine box pixels are transparent"
+}

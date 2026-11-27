@@ -1,0 +1,199 @@
+[
+ {
+  "date": "1961",
+  "id": "Kemarau panjang dan gagal panen padi 1961, 1963, 1967 (sebelum bendung)",
+  "en": "Long dry seasons and failed rice in 1961, 1963 and 1967 (before the weir)",
+  "src": [
+   "r04:mongabay2026"
+  ],
+  "status": "P",
+  "date_label": {
+   "id": "1961-1967",
+   "en": "1961-1967"
+  }
+ },
+ {
+  "date": "1980-06-22",
+  "id": "Banjir terbesar catatan 1971-1981 di Martapura: 1.438 m³/s",
+  "en": "Largest flood of the 1971-81 record at Martapura: 1,438 m³/s",
+  "src": [
+   "r03:JICA82"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1981",
+  "id": "Studi kelayakan \"Pracak Headworks\": mercu tetap dengan dua pintu (tidak dibangun)",
+  "en": "Feasibility study of the \"Pracak Headworks\": a fixed crest with two gates (not built)",
+  "src": [
+   "r03:JICA81",
+   "r06:JICA81"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1982",
+  "id": "Rencana induk irigasi Komering untuk sekitar 100.000 ha",
+  "en": "Komering irrigation master plan for about 100,000 ha",
+  "src": [
+   "r02:J04"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1988",
+  "id": "Bacaan tertinggi papan duga Martapura 1971-1997: 5,08 m",
+  "en": "Highest Martapura staff reading 1971-97: 5.08 m",
+  "src": [
+   "r03:JICA03-G"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1989-12",
+  "id": "Perjanjian pinjaman Tahap I (IP-347)",
+  "en": "Stage I loan agreement (IP-347)",
+  "src": [
+   "r01:J02",
+   "r01:J1207"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1991-10",
+  "id": "Pekerjaan sipil bendung dimulai",
+  "en": "Civil works of the weir begin",
+  "src": [
+   "r01:J02"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1995-12",
+  "id": "Perjanjian pinjaman Tahap II (IP-453)",
+  "en": "Stage II loan agreement (IP-453)",
+  "src": [
+   "r10:E04"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1996-02",
+  "id": "Pekerjaan sipil dan pintu selesai",
+  "en": "Civil works and gates finished",
+  "src": [
+   "r01:J02"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1996-10",
+  "id": "Skema Tahap I selesai",
+  "en": "Phase I scheme completed",
+  "src": [
+   "r01:J02",
+   "r10:E02"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "1997",
+  "id": "Tahun terkering ERA5 1991-2025: 1.608 mm",
+  "en": "Driest ERA5 year 1991-2025: 1,608 mm",
+  "src": [
+   "r14:OM"
+  ],
+  "status": "C"
+ },
+ {
+  "date": "2011-07-16",
+  "id": "Pengambilan utama ditutup sampai 1 Agustus; sekitar 34.000 ha sawah terancam",
+  "en": "Main intake closed until 1 August; about 34,000 ha of paddy at risk",
+  "src": [
+   "r04:jpnn2011"
+  ],
+  "status": "P"
+ },
+ {
+  "date": "2015",
+  "id": "Status D.I. Komering ditetapkan (Permen PUPR 14/2015): 62.536 ha",
+  "en": "Komering irrigation status set (ministerial rule 14/2015): 62,536 ha",
+  "src": [
+   "r10:P14"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "2017-03-30",
+  "id": "Perjanjian pinjaman Tahap 3 (IP-574)",
+  "en": "Phase 3 loan agreement (IP-574)",
+  "src": [
+   "r10:IP574"
+  ],
+  "status": "S"
+ },
+ {
+  "date": "2018",
+  "id": "Pembangunan Bendungan Tiga Dihaji dimulai di hulu",
+  "en": "Construction of Tiga Dihaji Dam begins upstream",
+  "src": [
+   "r06:DET26"
+  ],
+  "status": "P"
+ },
+ {
+  "date": "2019",
+  "id": "Tahun kering El Nino: 2.162 mm hujan DAS",
+  "en": "El Nino dry year: 2,162 mm of basin rain",
+  "src": [
+   "r14:OM"
+  ],
+  "status": "C"
+ },
+ {
+  "date": "2023-04-23",
+  "id": "Banjir Bunga Mayang, OKU Timur: 164 rumah",
+  "en": "Bunga Mayang flood, OKU Timur: 164 houses",
+  "src": [
+   "r04:antara2023a"
+  ],
+  "status": "P"
+ },
+ {
+  "date": "2024-10-31",
+  "id": "Kunjungan Menteri PU: bendung berumur sekitar 30 tahun, peremajaan direncanakan",
+  "en": "Public Works minister's visit: the weir is about 30 years old, renewal planned",
+  "src": [
+   "r05:RMOL24"
+  ],
+  "status": "P"
+ },
+ {
+  "date": "2025-03-06",
+  "id": "Banjir Komering di Negeri Sakti, Kec. Cempaka: jembatan gantung putus",
+  "en": "Komering flood at Negeri Sakti, Cempaka: suspension bridge down",
+  "src": [
+   "r04:antara2025"
+  ],
+  "status": "P"
+ },
+ {
+  "date": "2025-10",
+  "id": "Paket rehabilitasi bendung dan irigasi Rp 318,5 miliar dikontrakkan",
+  "en": "Rp 318.5 bn weir and irrigation rehabilitation package contracted",
+  "src": [
+   "r02:MTV25",
+   "r01:AK25"
+  ],
+  "status": "P"
+ },
+ {
+  "date": "2026-01-07",
+  "id": "Banjir 7-9 Januari di sisi Belitang: 1.359 rumah (dari Sungai Macak dan Muara Bala)",
+  "en": "Floods 7-9 January on the Belitang side: 1,359 houses (from the Macak and Muara Bala streams)",
+  "src": [
+   "r04:detik2026"
+  ],
+  "status": "P"
+ }
+]

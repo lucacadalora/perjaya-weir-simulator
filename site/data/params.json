@@ -1,0 +1,1995 @@
+{
+ "datum": {
+  "offset_m": {
+   "v": -3.2,
+   "unit": "m",
+   "status": "C",
+   "src": [
+    "study:terrain",
+    "g01:GLO30",
+    "r01:J19"
+   ],
+   "note": "model = EL + offset. Fine grid (GLO-30, EGM2008): 129 cells within 300 m upstream (south) of the weir axis; median of the lowest 13 (10 %) = 76.50 m, read as the pond surface on the flight day (2011-15); held pond EL 79.70; offset = 76.50 - 79.70 = -3.20 m. Assumes the pond was at its held level when the surface model was flown; GLO-30 vertical error is up to 4 m.",
+   "alt": [
+    {
+     "v": 0,
+     "src": [
+      "study:assume"
+     ],
+     "note": "earlier settled stand-in: project EL = EGM2008 height"
+    }
+   ],
+   "calc": {
+    "tail_low_m": 75,
+    "tail_cells": 112,
+    "cells": 129,
+    "lowest_n": 13,
+    "median_low_m": 76.5,
+    "lowest_m": 76.5,
+    "pond_el": 79.7
+   }
+  }
+ },
+ "catchment": {
+  "area_km2": {
+   "v": 4305,
+   "unit": "km2",
+   "status": "S",
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "note": "stated for the weir in a JICA 2022 water balance",
+   "alt": [
+    {
+     "v": 4260,
+     "src": [
+      "r03:JICA82"
+     ],
+     "note": "at the Martapura gauge, the area behind the 1963-80 flows"
+    }
+   ]
+  },
+  "area_gauge_km2": {
+   "v": 4260,
+   "unit": "km2",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "Martapura gauge: Ranau basin 508 + residual 3,752"
+  },
+  "ranau_basin_km2": {
+   "v": 508,
+   "unit": "km2",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ]
+  }
+ },
+ "hydro": {
+  "mean_flow_m3s": {
+   "v": 203.1,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "1963-80 at Martapura, gauge with gaps filled by a tank model"
+  },
+  "monthly_mean_m3s": {
+   "v": [
+    235.6,
+    253.9,
+    238.1,
+    291.8,
+    252.3,
+    188.8,
+    146.5,
+    135.7,
+    134.9,
+    140.9,
+    183.7,
+    235.4
+   ],
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "Jan to Dec"
+  },
+  "monthly_q80_m3s": {
+   "v": [
+    196,
+    176,
+    185,
+    182,
+    174,
+    110,
+    88,
+    73,
+    68,
+    56,
+    109,
+    157
+   ],
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "note": "Jan to Dec, at the weir"
+  },
+  "low_flow_m3s": {
+   "v": 23,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r07:JICA03-I"
+   ],
+   "note": "355th-day flow, 10-year return, modelled natural flow"
+  },
+  "maintenance_flow_m3s": {
+   "v": 35,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r07:JICA03-I"
+   ],
+   "note": "kept in the river below the weir"
+  },
+  "design_flood_m3s": {
+   "v": 2200,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "return period not stated"
+  },
+  "flood_T": {
+   "v": [
+    2,
+    5,
+    10,
+    20,
+    50,
+    100,
+    200,
+    1000
+   ],
+   "unit": "years",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "return periods of flood_q_m3s"
+  },
+  "flood_q_m3s": {
+   "v": [
+    917,
+    1190,
+    1372,
+    1546,
+    1771,
+    1939,
+    2107,
+    2497
+   ],
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "Gumbel on 11 annual peaks 1971-81 at Martapura"
+  },
+  "flood_largest_m3s": {
+   "v": 1438,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "22 Jun 1980"
+  },
+  "ranau_flood_share_m3s": {
+   "v": [
+    19,
+    32
+   ],
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "lake outlet's share at flood peaks"
+  },
+  "flood_season_months": {
+   "v": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "unit": "month",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "annual maximum usually February to May"
+  }
+ },
+ "rainflow": {
+  "rain_monthly_mm": {
+   "v": [
+    335,
+    305,
+    327,
+    283,
+    186,
+    116,
+    114,
+    99,
+    123,
+    225,
+    329,
+    375
+   ],
+   "unit": "mm",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "ERA5 basin mean 1991-2020, Jan to Dec; annual 2,818"
+  },
+  "rain_annual_mm": {
+   "v": 2818,
+   "unit": "mm",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "ERA5 basin mean 1991-2020"
+  },
+  "et0_monthly_mm": {
+   "v": [
+    102,
+    97,
+    110,
+    105,
+    106,
+    100,
+    109,
+    122,
+    129,
+    127,
+    105,
+    97
+   ],
+   "unit": "mm",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "ERA5 FAO-56, basin mean 1991-2020; annual 1,311"
+  },
+  "runoff_coeff": {
+   "v": 0.53,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r14:OM"
+   ],
+   "note": "1,504 mm runoff (1963-80) over 2,818 mm rain (1991-2020); the periods differ"
+  },
+  "runoff_coeff_range": {
+   "v": [
+    0.2,
+    0.8
+   ],
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "r13:KP01"
+   ],
+   "note": "slider range"
+  },
+  "rain_scale_range": {
+   "v": [
+    0.5,
+    1.5
+   ],
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "slider range"
+  },
+  "mock_m": {
+   "v": 0.3,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "exposed surface fraction"
+  },
+  "mock_smc_mm": {
+   "v": 200,
+   "unit": "mm",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "soil moisture capacity (range 50-250)"
+  },
+  "mock_i": {
+   "v": 0.4,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "infiltration coefficient (example value)"
+  },
+  "mock_k": {
+   "v": 0.6,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "groundwater recession; calibrated in every study"
+  },
+  "bucket_smax_mm": {
+   "v": 117,
+   "unit": "mm",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "bucket_k_days": {
+   "v": 11.6,
+   "unit": "days",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "bucket_k_slow_days": {
+   "v": 152,
+   "unit": "days",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "bucket_gw_share": {
+   "v": 0.686,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "bucket_perc_mm_day": {
+   "v": 0,
+   "unit": "mm/day",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "bucket_et_factor": {
+   "v": 1.207,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "bucket_fc": {
+   "v": 0.92,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "template_year": {
+   "v": 2003,
+   "unit": "year",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "the 1991-2020 year closest to the mean annual rain; daily pattern of the mean year (lane b13)"
+  },
+  "spin_years": {
+   "v": 3,
+   "unit": "years",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "model warm-up (lane b13)"
+  },
+  "design_tp_days": {
+   "v": 3,
+   "unit": "days",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "rise time of the design flood wave (CONTRACT A7 L12, was 2)"
+  },
+  "design_shape": {
+   "v": 4,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "shape factor of the design flood wave (lane b13)"
+  },
+  "bucket_slow_exp": {
+   "v": 1.057,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r03:JICA82",
+    "r02:FIDAMS",
+    "r14:OM"
+   ],
+   "note": "refitted by lane b13 (A7 M5) on the 1991-2024 ERA5 replay against hydro.monthly_mean_m3s and hydro.monthly_q80_m3s, area 4,260 km2: mean -4.5 %; dependable flow Jul to Oct +15, +10, -3, +6 %; March +16 %; dry-month average flows 20 to 30 % low"
+  },
+  "bucket_g_ref_mm": {
+   "v": 100,
+   "unit": "mm",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "reference store depth for the slow store's exponent (lane b13)"
+  },
+  "design_len_days": {
+   "v": 30,
+   "unit": "days",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "length of the design flood scenario (lane b13)"
+  },
+  "design_step_days": {
+   "v": 0.125,
+   "unit": "days",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "3-hour points of the design wave (lane b13)"
+  }
+ },
+ "weir": {
+  "pond_normal_el": {
+   "v": 79.7,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "normal pond held by the gates: the intake water level of the O&M spec sheet (CONTRACT A5)",
+   "alt": [
+    {
+     "v": 81,
+     "src": [
+      "r05:UNISMA22"
+     ],
+     "note": "student paper: pond held at +81.00 (weak)"
+    }
+   ]
+  },
+  "design_high_water_el": {
+   "v": 81,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "reached only in the design flood with every gate open"
+  },
+  "pond_min_intake_el": {
+   "v": 79.6,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "r01:J19",
+    "study:assume"
+   ],
+   "note": "one 0.1 m gate step under the normal pond 79.70: the lowest pond at which the intake is still taken as giving its design flow"
+  },
+  "riverbed_el": {
+   "v": 74,
+   "unit": "m EL",
+   "status": "C",
+   "src": [
+    "r03:JICA81"
+   ],
+   "note": "bed at the weir axis in the 1981 design's own project datum: crest 79.30 minus height 5.3; the Manning section below the weir uses tail_bed_el instead"
+  },
+  "deck_el": {
+   "v": 83,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "2.0 m over the design high water EL 81.00; no drawing found"
+  },
+  "sill_fg1_5_el": {
+   "v": 77,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "79.70 + 0.20 - 2.9"
+  },
+  "sill_fg6_7_el": {
+   "v": 76,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "79.70 + 0.20 - 3.9"
+  },
+  "sill_sluice_el": {
+   "v": 73.7,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "under-sluice floor: 79.70 + 0.20 - 4.2 - 2.0"
+  },
+  "intake_sill_el": {
+   "v": 78.3,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume",
+    "r13:KP02"
+   ],
+   "note": "79.70 - 0.20 lip cover - 1.17 m opening; opening = 91.68 / (0.80 x 49.5 x sqrt(2g x 0.20)) = 1.17 m (KP-02 eq 5-3)"
+  },
+  "gate_count": {
+   "v": 7,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "gate_width_m": {
+   "v": 20,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "gate_h_m": {
+   "v": [
+    2.9,
+    2.9,
+    2.9,
+    2.9,
+    2.9,
+    3.9,
+    3.9
+   ],
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "gate 1 first (west); which two are 3.9 m is assumed"
+  },
+  "gate_sill_el": {
+   "v": [
+    77,
+    77,
+    77,
+    77,
+    77,
+    76,
+    76
+   ],
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "79.70 + 0.20 - gate height, gate 1 first"
+  },
+  "sluice_count": {
+   "v": 3,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "sluice_width_m": {
+   "v": 12.5,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "sluice_h_m": {
+   "v": 4.2,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "upper (scouring) leaf"
+  },
+  "under_sluice_h_m": {
+   "v": 2,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "lower leaf"
+  },
+  "gate_lift_max_m": {
+   "v": 4.5,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "full lift clears the tallest leaf"
+  },
+  "flap_h_m": {
+   "v": 0.6,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "top flap leaf height"
+  },
+  "crest_cd": {
+   "v": 1.3,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP02"
+   ],
+   "note": "range 1.1-1.49, round crest"
+  },
+  "gate_mu": {
+   "v": 0.6,
+   "unit": "-",
+   "status": "R",
+   "src": [
+    "r13:KP02"
+   ],
+   "note": "KP-02 Gambar 4-40, range 0.5-0.8"
+  },
+  "intake_mu": {
+   "v": 0.8,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP02"
+   ],
+   "note": "KP-02 eq 5-3"
+  },
+  "intake_head_loss_m": {
+   "v": 0.2,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r13:KP02"
+   ],
+   "note": "design head loss across the intake, typical 0.10-0.30"
+  },
+  "pier_kp": {
+   "v": 0.01,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP02"
+   ],
+   "note": "round piers"
+  },
+  "abut_ka": {
+   "v": 0.1,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP02"
+   ],
+   "note": "round abutment"
+  },
+  "pier_count": {
+   "v": 9,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "intake_capacity_m3s": {
+   "v": 91.68,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "design capacity"
+  },
+  "intake_capacity_max_m3s": {
+   "v": 101,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "intake_target_m3s": {
+   "v": 81,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J02",
+    "r02:LUC20"
+   ],
+   "note": "operating target"
+  },
+  "intake_width_m": {
+   "v": 49.5,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "5 leaves"
+  },
+  "settling_capacity_m3s": {
+   "v": 80,
+   "unit": "m3/s",
+   "status": "C",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "5 basins x 16"
+  },
+  "gate_order": {
+   "v": [
+    6,
+    7,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "note": "opening order (weak); then all raised together"
+  },
+  "gate_step_normal_m": {
+   "v": 0.1,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "note": "weak"
+  },
+  "gate_step_flood_m": {
+   "v": 0.6,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "note": "weak"
+  },
+  "first_main_opening_m": {
+   "v": 0.3,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "note": "weak"
+  },
+  "flap_threshold_m3s": {
+   "v": 9.36,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "note": "flaps alone below this flow (weak)"
+  },
+  "manning_n": {
+   "v": 0.035,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "r13:CHOW"
+   ],
+   "note": "clean winding natural channel"
+  },
+  "bed_slope": {
+   "v": 0.00042,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "slope below the weir from the long profile of the surface model (lower envelope), not a survey"
+  },
+  "tail_width_m": {
+   "v": 200,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "river width below the weir for the Manning rating, about the weir's clear span; replace from the fine grid"
+  },
+  "tail_bed_el": {
+   "v": 74.23,
+   "unit": "m EL",
+   "status": "C",
+   "src": [
+    "r05:UNISMA22",
+    "r01:J19",
+    "r13:CHOW",
+    "study:calc"
+   ],
+   "note": "Manning section b 200 m, side slope 1:2, n 0.035, S 0.00042: 2200 m3/s needs depth 5.77 m; bed = tail EL 80.00 - 5.77 = 74.23. (The terrain's tail surface, EL 78.2 on the survey days, is no longer an anchor.)"
+  },
+  "tailwater_flood_case_el": {
+   "v": 80,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r05:UNISMA22"
+   ],
+   "note": "paper's overflow case (weak)"
+  },
+  "maintenance_flow_m3s": {
+   "v": 35,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r07:JICA03-I"
+   ],
+   "note": "alert river_dry_below under this flow"
+  },
+  "design_flood_m3s": {
+   "v": 2200,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "sill_sluice_upper_el": {
+   "v": 75.7,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "upper (scouring) leaf sill: 79.70 + 0.20 - 4.2"
+  },
+  "gate_top_closed_el": {
+   "v": 79.9,
+   "unit": "m EL",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "normal pond 79.70 + 0.20 freeboard"
+  },
+  "length_m": {
+   "v": 215.5,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r01:J02",
+    "r01:J19"
+   ],
+   "note": "abutment to abutment"
+  },
+  "intake_gate_h_m": {
+   "v": 2.7,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "from the sill 78.30 up to the design high water 81.00, so the closed intake holds the flood"
+  },
+  "intake_canal_wl_el": {
+   "v": 79.5,
+   "unit": "m EL",
+   "status": "C",
+   "src": [
+    "r01:J19",
+    "r13:KP02"
+   ],
+   "note": "intake design water level 79.70 minus the 0.20 m head loss (C on A)"
+  },
+  "tail_side_z": {
+   "v": 2,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "bank slope 1:2 of the trapezoid section below the weir"
+  }
+ },
+ "flood": {
+  "manning_n": {
+   "v": 0.035,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "r13:CHOW"
+   ],
+   "note": "main channel"
+  },
+  "manning_n_floodplain": {
+   "v": 0.06,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "r13:CHOW"
+   ],
+   "note": "upper end of the spec range, for crops and trees on the flood plain"
+  },
+  "bed_slope": {
+   "v": 0.00042,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "slope below the weir from the long profile of the surface model (lower envelope), not a survey"
+  },
+  "channel_width_m": {
+   "v": 200,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "bank-full channel width near the weir; lane b15 may fit it from the grid"
+  },
+  "hand_drainage_km2": {
+   "v": 50,
+   "unit": "km2",
+   "status": "C",
+   "src": [
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "the drainage threshold used to build fine.hand.i16"
+  },
+  "min_depth_m": {
+   "v": 0.3,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "depth below which a cell is not counted"
+  },
+  "stage_max_m": {
+   "v": 10,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "slider top"
+  },
+  "river_seed_km2": {
+   "v": 1000,
+   "unit": "km2",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "upstream area above which a cell counts as the main river (lane b15's value)"
+  },
+  "weir_lon": {
+   "v": 104.38101,
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ]
+  },
+  "weir_lat": {
+   "v": -4.30512,
+   "unit": "deg",
+   "status": "R",
+   "src": [
+    "g04:OV"
+   ]
+  },
+  "ref_tail_el": {
+   "v": 78.2,
+   "unit": "m EL",
+   "status": "C",
+   "src": [
+    "study:terrain",
+    "g01:GLO30"
+   ],
+   "note": "terrain tail surface 75 m (median of the lowest 10 % of fine-grid cells 45-300 m downstream of the axis) - datum offset -3.2 = EL 78.20; taken as the edge of the normal channel below the weir"
+  },
+  "ref_pond_el": {
+   "v": 79.7,
+   "unit": "m EL",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "= weir.pond_normal_el; flooding above the weir counts the rise over it",
+   "alt": [
+    {
+     "v": 81,
+     "src": [
+      "r05:UNISMA22"
+     ],
+     "note": "student paper: pond held at +81.00 (weak)"
+    }
+   ]
+  },
+  "side_z": {
+   "v": 2,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "bank slope 1:2 of the trapezoid section"
+  }
+ },
+ "irrigation": {
+  "area_default_ha": {
+   "v": 62536,
+   "unit": "ha",
+   "status": "S",
+   "src": [
+    "r10:P14"
+   ],
+   "note": "legal area 2015"
+  },
+  "area_after_phase3_ha": {
+   "v": 72639,
+   "unit": "ha",
+   "status": "S",
+   "src": [
+    "r02:FIDAMS"
+   ]
+  },
+  "area_served_2019_ha": {
+   "v": 59148,
+   "unit": "ha",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "unit_demand_peak_lsha": {
+   "v": 1.1,
+   "unit": "l/s/ha",
+   "status": "S",
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "note": "November peak used by JICA"
+  },
+  "peak_demand_default_m3s": {
+   "v": 68.8,
+   "unit": "m3/s",
+   "status": "C",
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "note": "62,536 ha x 1.10 l/s/ha"
+  },
+  "efficiency": {
+   "v": 0.65,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP01"
+   ],
+   "note": "overall"
+  },
+  "groups": {
+   "v": 3,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP01"
+   ],
+   "note": "golongan"
+  },
+  "landprep_days": {
+   "v": 30,
+   "unit": "days",
+   "status": "S",
+   "src": [
+    "r13:KP01"
+   ]
+  },
+  "landprep_mm": {
+   "v": 250,
+   "unit": "mm",
+   "status": "S",
+   "src": [
+    "r13:KP01"
+   ]
+  },
+  "percolation_mm_day": {
+   "v": 2,
+   "unit": "mm/day",
+   "status": "S",
+   "src": [
+    "r13:KP01"
+   ],
+   "note": "range 1-5"
+  },
+  "kc_fao": {
+   "v": [
+    1.1,
+    1.1,
+    1.05,
+    1.05,
+    0.95,
+    0
+   ],
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP01"
+   ],
+   "note": "per half-month, FAO improved variety"
+  },
+  "intake_capacity_m3s": {
+   "v": 91.68,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ]
+  },
+  "intake_target_m3s": {
+   "v": 81,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J02",
+    "r02:LUC20"
+   ]
+  },
+  "env_flow_m3s": {
+   "v": 35,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r07:JICA03-I"
+   ],
+   "note": "maintenance flow below the weir"
+  },
+  "cropping": {
+   "v": "padi-padi-palawija, 300 %",
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r02:FIDAMS"
+   ]
+  },
+  "eto_monthly_source": {
+   "v": "climate/rain.json evap_monthly_mm",
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "monthly reference evapotranspiration (ERA5 FAO-56), read from the rain file, not a constant (CONTRACT A7.7)"
+  },
+  "r80_halfmonth_mm": {
+   "v": [
+    103.2,
+    120.8,
+    106,
+    109.8,
+    120,
+    115,
+    118.6,
+    94.3,
+    94.5,
+    34.6,
+    39,
+    19.8,
+    26.1,
+    22.1,
+    14.9,
+    16.9,
+    16.1,
+    28.4,
+    20.7,
+    41,
+    77.6,
+    144.9,
+    140,
+    144.6
+   ],
+   "unit": "mm",
+   "status": "C",
+   "src": [
+    "study:rain",
+    "r14:OM",
+    "r13:KP01"
+   ],
+   "note": "half-month basin rain (1-15, 16-end) exceeded in 80 % of the years 1991-2020 (Weibull m/(n+1)), from climate/rain.json daily_basin_mean; Jan first half first"
+  },
+  "re_factor": {
+   "v": 0.7,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r13:KP01"
+   ],
+   "note": "effective rain = 0.7 x R80 half-month / 15 per day"
+  },
+  "kc_palawija": {
+   "v": [
+    0.5,
+    0.75,
+    1,
+    1,
+    0.82,
+    0.45
+   ],
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "r13:KP01"
+   ],
+   "note": "per half-month, the soybean (kedelai) row of KP-01 as given by lane b17; not checked against our research note"
+  },
+  "palawija_share": {
+   "v": 1,
+   "unit": "-",
+   "status": "C",
+   "src": [
+    "r02:FIDAMS"
+   ],
+   "note": "planned intensity 300 % (padi-padi-palawija) means the third crop on the whole area"
+  },
+  "start_hm": {
+   "v": 20,
+   "unit": "half-month",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "first planting 1 November (half-months counted from 0 = 1-15 January), when the rains return; no planting calendar found"
+  }
+ },
+ "evap": {
+  "pan_mm_day": {
+   "v": 4.6,
+   "unit": "mm/day",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "Belitang Class A pan"
+  },
+  "pan_coeff": {
+   "v": 0.7,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "pan to open water"
+  },
+  "open_water_mm_day": {
+   "v": 3.2,
+   "unit": "mm/day",
+   "status": "C",
+   "src": [
+    "r03:JICA82"
+   ],
+   "note": "0.7 x 4.6"
+  }
+ },
+ "maker": {
+  "spill_cd": {
+   "v": 2.2,
+   "unit": "m^0.5/s",
+   "status": "C",
+   "src": [
+    "r13:KP02"
+   ],
+   "note": "Cd 1.30 x (2/3) x sqrt(2g/3) in Q = c B h^1.5"
+  },
+  "spill_width_default_m": {
+   "v": 50,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "default spillway width for a new dam"
+  },
+  "release_default_m3s": {
+   "v": 0,
+   "unit": "m3/s",
+   "status": "A",
+   "src": [
+    "study:method"
+   ]
+  },
+  "release_max_m3s": {
+   "v": 1000,
+   "unit": "m3/s",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "slider top"
+  },
+  "crest_width_m": {
+   "v": 10,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "for the 3D model"
+  }
+ },
+ "ranau": {
+  "area_km2": {
+   "v": 127,
+   "unit": "km2",
+   "status": "S",
+   "src": [
+    "r03:JICA82"
+   ]
+  },
+  "hwl_m": {
+   "v": 541.7,
+   "unit": "m",
+   "status": "S",
+   "src": [
+    "r03:JICA03-S"
+   ],
+   "note": "tentative operating high water level"
+  },
+  "effective_storage_mm3": {
+   "v": 254,
+   "unit": "million m3",
+   "status": "S",
+   "src": [
+    "r03:JICA03-S"
+   ]
+  },
+  "release_default_m3s": {
+   "v": 17.6,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r03:JICA81"
+   ],
+   "note": "natural mean outflow"
+  },
+  "release_max_m3s": {
+   "v": 50,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r03:JICA81"
+   ]
+  }
+ },
+ "scenario": {
+  "dry_year": {
+   "v": 2019,
+   "unit": "year",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "an El Nino / IOD dry year in ERA5: 2,162 mm against 2,818 mean; Jun-Nov far below normal (the driest, 1997, is in dry_years)"
+  },
+  "dry_years": {
+   "v": [
+    1997,
+    2015,
+    2019,
+    2023
+   ],
+   "unit": "year",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "driest ERA5 years 1991-2025: 1997 1,608 mm; 2015 2,092; 2019 2,162; 2023 2,135"
+  },
+  "design_q_m3s": {
+   "v": 2200,
+   "unit": "m3/s",
+   "status": "S",
+   "src": [
+    "r01:J19"
+   ],
+   "note": "design flood of the weir"
+  },
+  "design_T": {
+   "v": 100,
+   "unit": "years",
+   "status": "A",
+   "src": [
+    "study:method"
+   ],
+   "note": "return period of the return-period flood scenario only (1982 Gumbel: 1,939 m3/s); the weir's design flood 2,200 m3/s has NO return period and runs as its own scenario (scenario.design_q_m3s)"
+  },
+  "climatology_years": {
+   "v": [
+    1991,
+    2020
+   ],
+   "unit": "year",
+   "status": "C",
+   "src": [
+    "r14:OM"
+   ],
+   "note": "base period of the mean year"
+  }
+ },
+ "sediment": {
+  "rating_a": {
+   "v": 0.053,
+   "unit": "t/day per (m3/s)^b",
+   "status": "S",
+   "src": [
+    "r03:JICA03-G"
+   ],
+   "note": "sediment rating Qs = a Qw^b (Qs t/day, Qw m3/s), 1986-87 survey"
+  },
+  "rating_b": {
+   "v": 2.5199,
+   "unit": "-",
+   "status": "S",
+   "src": [
+    "r03:JICA03-G"
+   ],
+   "note": "exponent of the sediment rating"
+  },
+  "yield_t_yr": {
+   "v": 5020000,
+   "unit": "t/yr",
+   "status": "S",
+   "src": [
+    "r03:JICA03-S"
+   ],
+   "note": "at Martapura, 1988-98 mean (1,162 t/km2/yr); mostly sand bed load in the description, about 15 % bed load in the estimate"
+  },
+  "rating_fit_yield": {
+   "v": true,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "the sourced rating on the mean year's monthly flows (hydro.monthly_mean_m3s) carries 14.2 Mt/yr, 2.8 times the sourced yield; with this on, the coefficient is scaled so the mean year carries 5.02 Mt/yr (a = 0.0187, computed in engine/sediment.js ratingA), keeping the sourced exponent"
+  },
+  "conc_max_mgL": {
+   "v": 10000,
+   "unit": "mg/L",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "the rating is extrapolated beyond its survey flows: the river concentration is held at this value (reached near 1,000 m3/s with the fitted rating)"
+  },
+  "intake_factor": {
+   "v": 0.4,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "concentration of the water the intake draws / the river's mean concentration: the scouring sluices and the intake sill keep the bed load (about 15 %) and most sand near the bed out"
+  },
+  "intake_sand_share": {
+   "v": 0.3,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "share of sand (coarser than about 0.06 mm) in the load the intake draws; the rest is silt and clay"
+  },
+  "trap_sand": {
+   "v": 0.85,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "share of that sand a settling basin keeps at its design flow of 16 m3/s"
+  },
+  "trap_fine": {
+   "v": 0.1,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "share of the silt and clay a settling basin keeps"
+  },
+  "trap_full_from": {
+   "v": 0.8,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "a basin keeps less as it fills: full trapping up to this share of its storage, falling to nothing at full"
+  },
+  "dry_density_t_m3": {
+   "v": 1.4,
+   "unit": "t/m3",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "dry bulk density of a fresh sand and silt deposit"
+  },
+  "storage_depth_m": {
+   "v": 1,
+   "unit": "m",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "mean depth of the storage for deposit below the flowing water, about a quarter of the 2.9-4.3 m section: storage per basin = 45 x 140 x 1.0 = 6,300 m3"
+  },
+  "flush_at": {
+   "v": 0.8,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "r01:J02",
+    "study:assume"
+   ],
+   "note": "automatic rule: the fullest basin is flushed when its storage is this full, one basin at a time, so the canal keeps running from the other four; no flushing schedule was found (2001 O&M records)"
+  },
+  "flush_hours": {
+   "v": 4,
+   "unit": "h",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "time a flush takes to clear the deposit down to flush_left"
+  },
+  "flush_left": {
+   "v": 0.02,
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "share of the deposit left in the basin when a flush ends"
+  },
+  "flush_q_m3s": {
+   "v": 16,
+   "unit": "m3/s",
+   "status": "A",
+   "src": [
+    "r01:J19",
+    "study:assume"
+   ],
+   "note": "flushing flow through the basin's 10 flushing gates (3.0 x 0.8 m) and Saluran Bilas back to the river: taken as the basin's design flow; it runs only on water the river can spare beyond the intake"
+  },
+  "start_fill": {
+   "v": [
+    0.55,
+    0.15,
+    0.7,
+    0.3,
+    0.45
+   ],
+   "unit": "-",
+   "status": "A",
+   "src": [
+    "study:assume"
+   ],
+   "note": "fill of each basin (west first) at the start of a run: a scheme that flushes in turn has its basins at different fills"
+  }
+ },
+ "meta": {
+  "built": "2026-11-23T21:10:38Z",
+  "by": "tools/data/build.mjs",
+  "levels": "project EL unless the unit says otherwise; model m = EL + datum.offset_m"
+ },
+ "flat": {
+  "datum.offset_m": -3.2,
+  "catchment.area_km2": 4305,
+  "catchment.area_gauge_km2": 4260,
+  "catchment.ranau_basin_km2": 508,
+  "hydro.mean_flow_m3s": 203.1,
+  "hydro.monthly_mean_m3s": [
+   235.6,
+   253.9,
+   238.1,
+   291.8,
+   252.3,
+   188.8,
+   146.5,
+   135.7,
+   134.9,
+   140.9,
+   183.7,
+   235.4
+  ],
+  "hydro.monthly_q80_m3s": [
+   196,
+   176,
+   185,
+   182,
+   174,
+   110,
+   88,
+   73,
+   68,
+   56,
+   109,
+   157
+  ],
+  "hydro.low_flow_m3s": 23,
+  "hydro.maintenance_flow_m3s": 35,
+  "hydro.design_flood_m3s": 2200,
+  "hydro.flood_T": [
+   2,
+   5,
+   10,
+   20,
+   50,
+   100,
+   200,
+   1000
+  ],
+  "hydro.flood_q_m3s": [
+   917,
+   1190,
+   1372,
+   1546,
+   1771,
+   1939,
+   2107,
+   2497
+  ],
+  "hydro.flood_largest_m3s": 1438,
+  "hydro.ranau_flood_share_m3s": [
+   19,
+   32
+  ],
+  "hydro.flood_season_months": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "rainflow.rain_monthly_mm": [
+   335,
+   305,
+   327,
+   283,
+   186,
+   116,
+   114,
+   99,
+   123,
+   225,
+   329,
+   375
+  ],
+  "rainflow.rain_annual_mm": 2818,
+  "rainflow.et0_monthly_mm": [
+   102,
+   97,
+   110,
+   105,
+   106,
+   100,
+   109,
+   122,
+   129,
+   127,
+   105,
+   97
+  ],
+  "rainflow.runoff_coeff": 0.53,
+  "rainflow.runoff_coeff_range": [
+   0.2,
+   0.8
+  ],
+  "rainflow.rain_scale_range": [
+   0.5,
+   1.5
+  ],
+  "rainflow.mock_m": 0.3,
+  "rainflow.mock_smc_mm": 200,
+  "rainflow.mock_i": 0.4,
+  "rainflow.mock_k": 0.6,
+  "rainflow.bucket_smax_mm": 117,
+  "rainflow.bucket_k_days": 11.6,
+  "rainflow.bucket_k_slow_days": 152,
+  "rainflow.bucket_gw_share": 0.686,
+  "rainflow.bucket_perc_mm_day": 0,
+  "rainflow.bucket_et_factor": 1.207,
+  "rainflow.bucket_fc": 0.92,
+  "rainflow.template_year": 2003,
+  "rainflow.spin_years": 3,
+  "rainflow.design_tp_days": 3,
+  "rainflow.design_shape": 4,
+  "rainflow.bucket_slow_exp": 1.057,
+  "rainflow.bucket_g_ref_mm": 100,
+  "rainflow.design_len_days": 30,
+  "rainflow.design_step_days": 0.125,
+  "weir.pond_normal_el": 79.7,
+  "weir.design_high_water_el": 81,
+  "weir.pond_min_intake_el": 79.6,
+  "weir.riverbed_el": 74,
+  "weir.deck_el": 83,
+  "weir.sill_fg1_5_el": 77,
+  "weir.sill_fg6_7_el": 76,
+  "weir.sill_sluice_el": 73.7,
+  "weir.intake_sill_el": 78.3,
+  "weir.gate_count": 7,
+  "weir.gate_width_m": 20,
+  "weir.gate_h_m": [
+   2.9,
+   2.9,
+   2.9,
+   2.9,
+   2.9,
+   3.9,
+   3.9
+  ],
+  "weir.gate_sill_el": [
+   77,
+   77,
+   77,
+   77,
+   77,
+   76,
+   76
+  ],
+  "weir.sluice_count": 3,
+  "weir.sluice_width_m": 12.5,
+  "weir.sluice_h_m": 4.2,
+  "weir.under_sluice_h_m": 2,
+  "weir.gate_lift_max_m": 4.5,
+  "weir.flap_h_m": 0.6,
+  "weir.crest_cd": 1.3,
+  "weir.gate_mu": 0.6,
+  "weir.intake_mu": 0.8,
+  "weir.intake_head_loss_m": 0.2,
+  "weir.pier_kp": 0.01,
+  "weir.abut_ka": 0.1,
+  "weir.pier_count": 9,
+  "weir.intake_capacity_m3s": 91.68,
+  "weir.intake_capacity_max_m3s": 101,
+  "weir.intake_target_m3s": 81,
+  "weir.intake_width_m": 49.5,
+  "weir.settling_capacity_m3s": 80,
+  "weir.gate_order": [
+   6,
+   7,
+   5,
+   4,
+   3,
+   2,
+   1
+  ],
+  "weir.gate_step_normal_m": 0.1,
+  "weir.gate_step_flood_m": 0.6,
+  "weir.first_main_opening_m": 0.3,
+  "weir.flap_threshold_m3s": 9.36,
+  "weir.manning_n": 0.035,
+  "weir.bed_slope": 0.00042,
+  "weir.tail_width_m": 200,
+  "weir.tail_bed_el": 74.23,
+  "weir.tailwater_flood_case_el": 80,
+  "weir.maintenance_flow_m3s": 35,
+  "weir.design_flood_m3s": 2200,
+  "weir.sill_sluice_upper_el": 75.7,
+  "weir.gate_top_closed_el": 79.9,
+  "weir.length_m": 215.5,
+  "weir.intake_gate_h_m": 2.7,
+  "weir.intake_canal_wl_el": 79.5,
+  "weir.tail_side_z": 2,
+  "flood.manning_n": 0.035,
+  "flood.manning_n_floodplain": 0.06,
+  "flood.bed_slope": 0.00042,
+  "flood.channel_width_m": 200,
+  "flood.hand_drainage_km2": 50,
+  "flood.min_depth_m": 0.3,
+  "flood.stage_max_m": 10,
+  "flood.river_seed_km2": 1000,
+  "flood.weir_lon": 104.38101,
+  "flood.weir_lat": -4.30512,
+  "flood.ref_tail_el": 78.2,
+  "flood.ref_pond_el": 79.7,
+  "flood.side_z": 2,
+  "irrigation.area_default_ha": 62536,
+  "irrigation.area_after_phase3_ha": 72639,
+  "irrigation.area_served_2019_ha": 59148,
+  "irrigation.unit_demand_peak_lsha": 1.1,
+  "irrigation.peak_demand_default_m3s": 68.8,
+  "irrigation.efficiency": 0.65,
+  "irrigation.groups": 3,
+  "irrigation.landprep_days": 30,
+  "irrigation.landprep_mm": 250,
+  "irrigation.percolation_mm_day": 2,
+  "irrigation.kc_fao": [
+   1.1,
+   1.1,
+   1.05,
+   1.05,
+   0.95,
+   0
+  ],
+  "irrigation.intake_capacity_m3s": 91.68,
+  "irrigation.intake_target_m3s": 81,
+  "irrigation.env_flow_m3s": 35,
+  "irrigation.cropping": "padi-padi-palawija, 300 %",
+  "irrigation.eto_monthly_source": "climate/rain.json evap_monthly_mm",
+  "irrigation.r80_halfmonth_mm": [
+   103.2,
+   120.8,
+   106,
+   109.8,
+   120,
+   115,
+   118.6,
+   94.3,
+   94.5,
+   34.6,
+   39,
+   19.8,
+   26.1,
+   22.1,
+   14.9,
+   16.9,
+   16.1,
+   28.4,
+   20.7,
+   41,
+   77.6,
+   144.9,
+   140,
+   144.6
+  ],
+  "irrigation.re_factor": 0.7,
+  "irrigation.kc_palawija": [
+   0.5,
+   0.75,
+   1,
+   1,
+   0.82,
+   0.45
+  ],
+  "irrigation.palawija_share": 1,
+  "irrigation.start_hm": 20,
+  "evap.pan_mm_day": 4.6,
+  "evap.pan_coeff": 0.7,
+  "evap.open_water_mm_day": 3.2,
+  "maker.spill_cd": 2.2,
+  "maker.spill_width_default_m": 50,
+  "maker.release_default_m3s": 0,
+  "maker.release_max_m3s": 1000,
+  "maker.crest_width_m": 10,
+  "ranau.area_km2": 127,
+  "ranau.hwl_m": 541.7,
+  "ranau.effective_storage_mm3": 254,
+  "ranau.release_default_m3s": 17.6,
+  "ranau.release_max_m3s": 50,
+  "scenario.dry_year": 2019,
+  "scenario.dry_years": [
+   1997,
+   2015,
+   2019,
+   2023
+  ],
+  "scenario.design_q_m3s": 2200,
+  "scenario.design_T": 100,
+  "scenario.climatology_years": [
+   1991,
+   2020
+  ],
+  "sediment.rating_a": 0.053,
+  "sediment.rating_b": 2.5199,
+  "sediment.yield_t_yr": 5020000,
+  "sediment.rating_fit_yield": true,
+  "sediment.conc_max_mgL": 10000,
+  "sediment.intake_factor": 0.4,
+  "sediment.intake_sand_share": 0.3,
+  "sediment.trap_sand": 0.85,
+  "sediment.trap_fine": 0.1,
+  "sediment.trap_full_from": 0.8,
+  "sediment.dry_density_t_m3": 1.4,
+  "sediment.storage_depth_m": 1,
+  "sediment.flush_at": 0.8,
+  "sediment.flush_hours": 4,
+  "sediment.flush_left": 0.02,
+  "sediment.flush_q_m3s": 16,
+  "sediment.start_fill": [
+   0.55,
+   0.15,
+   0.7,
+   0.3,
+   0.45
+  ]
+ }
+}

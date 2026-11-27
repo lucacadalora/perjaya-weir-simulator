@@ -1,0 +1,16 @@
+{
+  "tilejson": "3.0.0",
+  "name": "Sentinel-2 cloudless 2016 (EOX), Komering basin",
+  "tiles": ["data/tiles/sat/{z}/{x}/{y}.jpg"],
+  "scheme": "xyz",
+  "format": "jpg",
+  "tileSize": 256,
+  "bounds": [103.30, -5.20, 105.00, -3.50],
+  "minzoom": 6,
+  "maxzoom": 14,
+  "zoom_note": "z6-13 cover the whole bounds; z14 covers only the fine box [104.20,-4.50,104.55,-4.10] plus a 4 km band along Sungai Komering from Muaradua to 3.50 S. Use overzoom of z13 elsewhere.",
+  "z14_bounds": [104.20, -4.50, 104.55, -4.10],
+  "attribution": "Sentinel-2 cloudless 2016 by <a href=\"https://cloudless.eox.at\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2016), <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>",
+  "source": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg (fetched 23 Nov 2026)",
+  "pixel_size_note": "imagery is 10 m per pixel; z14 (~9.5 m/px at 4.3 S) is the native level"
+}

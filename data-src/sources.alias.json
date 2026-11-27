@@ -1,0 +1,91 @@
+{
+ "b18:assume": [
+  "study:assume"
+ ],
+ "lead:A1": [
+  "study:terrain",
+  "g01:GLO30"
+ ],
+ "lead:A5": [
+  "r01:J19"
+ ],
+ "lead:A7": [
+  "study:calc"
+ ],
+ "g02:GRID": [
+  "study:terrain",
+  "g01:GLO30"
+ ],
+ "r13:SPEC": [
+  "study:method"
+ ],
+ "r01:U22": [
+  "r05:UNISMA22"
+ ],
+ "r04:unisma2022": [
+  "r05:UNISMA22"
+ ],
+ "r07:UNISMA22": [
+  "r05:UNISMA22"
+ ],
+ "r08:UNISMA22": [
+  "r05:UNISMA22"
+ ],
+ "r05:JICA02": [
+  "r01:J02"
+ ],
+ "r10:E02": [
+  "r01:J02"
+ ],
+ "r01:J02j": [
+  "r01:J02"
+ ],
+ "r10:E04": [
+  "r02:J04"
+ ],
+ "r05:JICA04": [
+  "r02:J04"
+ ],
+ "r08:JICA04": [
+  "r02:J04"
+ ],
+ "r03:JBIC04": [
+  "r02:J04"
+ ],
+ "r01:J04": [
+  "r02:J04"
+ ],
+ "g02:J04": [
+  "r02:J04"
+ ],
+ "r13:JICA82": [
+  "r03:JICA82"
+ ],
+ "r08:JICA82": [
+  "r03:JICA82"
+ ],
+ "g02:JICA82": [
+  "r03:JICA82"
+ ],
+ "r07:JICA03-G": [
+  "r03:JICA03-G"
+ ],
+ "r09:OVT": [
+  "g04:OV"
+ ],
+ "r08:OSM": [
+  "g04:OV"
+ ],
+ "r06:JICA81": [
+  "r03:JICA81"
+ ],
+ "r07:KUR22": [
+  "r06:KUR22"
+ ],
+ "g02:KUR22": [
+  "r06:KUR22"
+ ],
+ "r06:JICA03": [
+  "r11:JICA-Musi-M"
+ ]
+}

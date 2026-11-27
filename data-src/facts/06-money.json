@@ -1,0 +1,9 @@
+{
+  "_doc": "Dossier section 'money'.",
+  "owner": {"v": {"id": "Republik Indonesia; Ditjen SDA, Kementerian PU (kewenangan pusat)", "en": "Republic of Indonesia; Directorate General of Water Resources (central government)"}, "s": "S", "y": 2015, "src": ["r10:E02", "r10:P14"], "l": ["Pemilik", "Owner"]},
+  "loan_stage1": {"v": 10426, "u": "M yen", "s": "S", "y": 2002, "src": ["r01:J02", "r10:E02"], "l": ["Pinjaman Tahap I (IP-347, 1989)", "Stage I loan (IP-347, 1989)"], "n": ["Dari biaya paket 13.324 juta yen.", "Of a 13,324 M yen package cost."], "alt": [{"v": 11223, "src": ["r10:E02"], "note": "allotment at signing"}]},
+  "loan_stage2": {"v": 5335, "u": "M yen", "s": "S", "y": 2003, "src": ["r10:E04"], "l": ["Pinjaman Tahap II dicairkan (IP-453, 1995)", "Stage II loan disbursed (IP-453, 1995)"]},
+  "loan_phase3": {"v": 15896, "u": "M yen", "s": "S", "y": 2017, "src": ["r10:IP574"], "l": ["Pinjaman Tahap 3 (IP-574, 2017)", "Phase 3 loan (IP-574, 2017)"]},
+  "eirr": {"v": 12.9, "u": "%", "s": "S", "y": 2003, "src": ["r10:E04"], "l": ["EIRR dihitung ulang (Tahap I+II)", "EIRR recomputed (Phase I+II)"]},
+  "om_budget_2003": {"v": 1184.9, "u": "Rp M", "s": "S", "y": 2003, "src": ["r10:E04"], "l": ["Anggaran O&P 2003", "O&M budget 2003"], "n": ["Tidak ditemukan angka setelah 2003.", "No figure found after 2003."]}
+}

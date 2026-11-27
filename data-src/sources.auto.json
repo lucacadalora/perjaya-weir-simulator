@@ -1,0 +1,1046 @@
+{
+ "g01:glo30": {
+  "title": "Copernicus DEM GLO-30 (Public), DLR e.V. / Airbus Defence and Space, ESA / EU Copernicus, data 2011-2015",
+  "publisher": "Copernicus / ESA",
+  "year": 2015,
+  "url": "https://copernicus-dem-30m.s3.amazonaws.com/"
+ },
+ "g02:GLO": {
+  "title": "Copernicus DEM GLO-30, (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the EU and ESA",
+  "publisher": "Copernicus / ESA",
+  "year": 2018,
+  "url": "https://copernicus-dem-30m.s3.amazonaws.com/"
+ },
+ "g02:JICA82": {
+  "title": ", [JICA03] as cited in r03-hydrology-ranau.md (same folder)",
+  "publisher": null,
+  "year": null,
+  "url": null
+ },
+ "g02:KUR22": {
+  "title": "as cited in r06-upstream-dams-plans.md (same folder)",
+  "publisher": null,
+  "year": null,
+  "url": null
+ },
+ "g02:J04": {
+  "title": "as cited in r02-irrigation-system.md (same folder)",
+  "publisher": null,
+  "year": null,
+  "url": null
+ },
+ "g03:caps": {
+  "title": "EOX WMTS Capabilities, EOX IT Services GmbH",
+  "publisher": null,
+  "year": null,
+  "url": "https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml"
+ },
+ "g03:lic": {
+  "title": "License summary, EOxCloudless",
+  "publisher": null,
+  "year": null,
+  "url": "https://cloudless.eox.at/documentation/license"
+ },
+ "g03:use": {
+  "title": "Usage, EOxCloudless",
+  "publisher": null,
+  "year": null,
+  "url": "https://cloudless.eox.at/documentation/usage"
+ },
+ "g03:stac": {
+  "title": "Element84 earth-search v1 STAC",
+  "publisher": null,
+  "year": null,
+  "url": "https://earth-search.aws.element84.com/v1/search"
+ },
+ "g03:s2": {
+  "title": "Copernicus Sentinel-2 L2A TCI",
+  "publisher": "Copernicus / ESA",
+  "year": null,
+  "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/48/M/VA/2026/4/S2B_48MVA_20260426_0_L2A/TCI.tif"
+ },
+ "g04:OV": {
+  "title": "Overture Maps Foundation, release 2026-11-18.0, themes base, transportation, divisions, places, buildings",
+  "publisher": "Overture Maps Foundation",
+  "year": 2026,
+  "url": "s3://overturemaps-us-west-2/release/2026-11-18.0/"
+ },
+ "g04:WC": {
+  "title": "ESA WorldCover 10 m 2021 v200",
+  "publisher": "Copernicus / ESA",
+  "year": 2021,
+  "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S06E102_Map.tif"
+ },
+ "g04:GSW": {
+  "title": "EC JRC / Google Global Surface Water v1.4",
+  "publisher": null,
+  "year": null,
+  "url": "https://storage.googleapis.com/global-surface-water/downloads2021/occurrence/occurrence_100E_0Nv1_4_2021.tif"
+ },
+ "r01:J02": {
+  "title": "Ex-post evaluation \"Rehabilitation of Irrigation and Flood Alleviation Works\", sub-project B Komering-I Irrigation Project Package I, JBIC/JICA, Oct 2002",
+  "publisher": "JICA",
+  "year": 2002,
+  "url": "https://www.jica.go.jp/english/activities/evaluation/oda_loan/post/2002/n_files/051_full.pdf"
+ },
+ "r01:J02j": {
+  "title": "Japanese version of the same",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://www.jica.go.jp/activities/evaluation/oda_loan/after/2002/pdf/project_113_allj.pdf"
+ },
+ "r01:J04": {
+  "title": "Ex-post evaluation \"Komering Irrigation Project (2)\", JBIC/JICA, field survey Jul 2003",
+  "publisher": "JICA",
+  "year": 2003,
+  "url": "https://www.jica.go.jp/english/our_work/evaluation/oda_loan/post/2004/pdf/2-15_full.pdf"
+ },
+ "r01:J19": {
+  "title": "\"The Project for Assessing and Integrating Climate Change Impacts into the Water Resources Management Plans for Brantas and Musi River Basins\", Final Report, Supporting Report G, sec. G7.6 Perjaya Headworks, Nippon Koei / CTI Engineering International / Univ. of Tokyo for JICA and DG Water Resources, Dec 2019",
+  "publisher": "JICA",
+  "year": 2019,
+  "url": "https://openjicareport.jica.go.jp/pdf/12353215_01.pdf"
+ },
+ "r01:J1207": {
+  "title": "JICA report with list of yen-loan irrigation projects (Komering Irrigation Stage-1 IP-347 Dec-89, IP-453 Dec-95)",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/12078523_02.pdf"
+ },
+ "r01:J135": {
+  "title": "JICA Musi basin study annex I3.3.7 \"Inventory of Irrigation Weirs\"",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740495_135.pdf"
+ },
+ "r01:U22": {
+  "title": "Ayun, Noerhayati, Suprapto, \"Studi evaluasi pengoperasian pintu bendung gerak untuk pengendali banjir di Kabupaten OKU Timur\", Jurnal Rekayasa Sipil 12(4), Unisma, Aug 2022",
+  "publisher": "Universitas Islam Malang",
+  "year": 2022,
+  "url": "https://jim.unisma.ac.id/index.php/ft/article/download/17742/13493"
+ },
+ "r01:CSU24": {
+  "title": "Atminarso, D., \"The impact of Perjaya Dam on fisheries, biodiversity and livelihoods\", PhD thesis, Charles Sturt University, 2024",
+  "publisher": "Charles Sturt University",
+  "year": 2024,
+  "url": "https://researchoutput.csu.edu.au/en/publications/the-impact-of-perjaya-dam-on-fisheries-biodiversity-and-livelihoo/"
+ },
+ "r01:AK25": {
+  "title": "\"Waskita Karya garap proyek irigasi Rp318,5 M di Sumatera Selatan\", Akurat, 9 Oct 2025",
+  "publisher": null,
+  "year": 2025,
+  "url": "https://www.akurat.co/infrastruktur/814268/waskita-karya-garap-proyek-irigasi-rp318-5-m-di-sumatera-selatan"
+ },
+ "r01:RM24": {
+  "title": "\"Menteri PU: SDA penting untuk dukung target swasembada pangan\", RMOL, 2 Nov 2024",
+  "publisher": null,
+  "year": 2024,
+  "url": "https://rmol.id/bisnis/read/2024/11/02/643190/",
+  "access": "search snippet or summary only"
+ },
+ "r01:RF24": {
+  "title": "Suluh (UIN Raden Fatah) article on Belitang history, 2024",
+  "publisher": null,
+  "year": 2024,
+  "url": "https://jurnal.radenfatah.ac.id/index.php/Suluh/article/download/35961/10078/117049",
+  "access": "search snippet or summary only"
+ },
+ "r01:OKZ21": {
+  "title": "\"Menteri Basuki: potensi air di RI tinggi tapi tidak merata\", Okezone, 10 Aug 2021",
+  "publisher": null,
+  "year": 2021,
+  "url": "https://economy.okezone.com/read/2021/08/10/470/2453656/"
+ },
+ "r01:PP37": {
+  "title": "PP No. 37 Tahun 2010 tentang Bendungan",
+  "publisher": "Kementerian PU",
+  "year": 2010,
+  "url": "https://sda.pu.go.id/assets/uploads/files/PP-37%20TAHUN%202010%20ttg%20BENDUNGAN.pdf"
+ },
+ "r01:PM27": {
+  "title": "Permen PUPR No. 27/PRT/M/2015 tentang Bendungan, Berita Negara 2015 No. 771",
+  "publisher": "Kementerian PU",
+  "year": 2015,
+  "url": "https://peraturan.go.id/files/bn771-2015.pdf"
+ },
+ "r01:PP20": {
+  "title": "PP No. 20 Tahun 2006 tentang Irigasi",
+  "publisher": "Republik Indonesia",
+  "year": 2006,
+  "url": "https://peraturan.go.id/files/pp20-2006.pdf"
+ },
+ "r01:JPNN11": {
+  "title": "\"34 ribu ha sawah bakal kering\", JPNN, 2011",
+  "publisher": "JPNN",
+  "year": 2011,
+  "url": "https://www.jpnn.com/news/34-ribu-ha-sawah-bakal-kering",
+  "access": "search snippet or summary only"
+ },
+ "r02:J04": {
+  "title": "Komering Irrigation Project (2), ex-post evaluation (field survey July 2003), JBIC/JICA, 2004",
+  "publisher": "JICA",
+  "year": 2004,
+  "url": "https://www.jica.go.jp/english/our_work/evaluation/oda_loan/post/2004/pdf/2-15_full.pdf"
+ },
+ "r02:JIP574": {
+  "title": "コメリン灌漑事業（フェーズ3）, JICA ODA project page IP-574",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://www.jica.go.jp/oda/project/IP-574/index.html"
+ },
+ "r02:JENV": {
+  "title": "Komering Irrigation Project III, JICA environmental and social considerations page",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://www.jica.go.jp/english/our_work/social_environmental/id/asia/southeast/indonesia/c8h0vm00009wuthc.html"
+ },
+ "r02:FIDAMS": {
+  "title": "Project on Formulation of Irrigation Development and Management Strategy for Food Security (F-IDAMS), Final report Part II pre-FS, JICA/DGWR, PDF dated Jul 2022",
+  "publisher": "JICA",
+  "year": 2022,
+  "url": "https://openjicareport.jica.go.jp/pdf/12336608_02.pdf"
+ },
+ "r02:LUC20": {
+  "title": "Lucyana, \"Analisa peningkatan saluran tersier BBG 6 Kiri di Irigasi Komering, Desa Sumber Agung, Kec. Buay Madang\", Bandar: Journal of Civil Engineering 2(2), Aug 2020",
+  "publisher": "Copernicus / ESA",
+  "year": 2020,
+  "url": "https://ojs.unsulbar.ac.id/index.php/bjce/article/download/770/421"
+ },
+ "r02:UGM22": {
+  "title": "F. Imron et al., \"Kesiapan modernisasi irigasi dan optimasi alokasi air, Daerah Irigasi Belitang\", agriTECH 42(4) 2022, 329-341, doi 10.22146/agritech.67203",
+  "publisher": null,
+  "year": 2022,
+  "url": "https://jurnal.ugm.ac.id/agritech/article/download/67203/35220"
+ },
+ "r02:MTV25": {
+  "title": "\"Waskita Karya kantongi kontrak baru proyek irigasi Rp318,54 miliar di Sumsel\", Metro TV News, 16 Oct 2025",
+  "publisher": null,
+  "year": 2025,
+  "url": "https://www.metrotvnews.com/read/b3JCpwVP-waskita-karya-kantongi-kontrak-baru-proyek-irigasi-rp31854-miliar-di-sumsel"
+ },
+ "r02:RMOL24": {
+  "title": "\"Menteri PU: SDA penting untuk dukung target swasembada pangan\", RMOL, 2 Nov 2024",
+  "publisher": null,
+  "year": 2024,
+  "url": "https://rmol.id/bisnis/read/2024/11/02/643190/menteri-pu-sda-penting-untuk-dukung-target-swasembada-pangan",
+  "access": "search snippet or summary only"
+ },
+ "r02:DET25": {
+  "title": "\"15 bendungan baru bisa dongkrak kesejahteraan petani\", detikFinance, 29 Sep 2025",
+  "publisher": "detik.com",
+  "year": 2025,
+  "url": "https://finance.detik.com/infrastruktur/d-8135313/15-bendungan-baru-bisa-dongkrak-kesejahteraan-petani/amp"
+ },
+ "r02:AKU26": {
+  "title": "\"Gubernur Herman Deru dampingi Wamentan tinjau irigasi hingga percepatan tanam di OKU Timur\", Akurat, 23 Apr 2026",
+  "publisher": null,
+  "year": 2026,
+  "url": "https://www.akurat.co/daerah/851218/.."
+ },
+ "r02:MONG26": {
+  "title": "\"Singkong pernah jadi kuliner andalan masyarakat Komering\", Mongabay Indonesia, 26 Feb 2026",
+  "publisher": "Mongabay",
+  "year": 2026,
+  "url": "https://mongabay.co.id/2026/02/26/singkong-pernah-jadi-kuliner-andalan-masyarakat-komering/"
+ },
+ "r02:JPNN11": {
+  "title": "\"34 ribu ha sawah bakal kering\", JPNN, 15 Jun 2011",
+  "publisher": "JPNN",
+  "year": 2011,
+  "url": "https://www.jpnn.com/news/34-ribu-ha-sawah-bakal-kering"
+ },
+ "r02:J8503": {
+  "title": "JICA open report 10310852_03 (scanned, Lampung irrigation study, chapter \"Irrigation and drainage plans\")",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/10310852_03.pdf"
+ },
+ "r02:RF": {
+  "title": "Raden Fatah journal Suluh article 35961 (history of Belitang irrigation)",
+  "publisher": null,
+  "year": null,
+  "url": "https://jurnal.radenfatah.ac.id/index.php/Suluh/article/download/35961/10078/117049",
+  "access": "search snippet or summary only"
+ },
+ "r03:JICA81": {
+  "title": "Feasibility Study on the Komering-I Irrigation Development Project in the Upper Komering River Basin, Vol. II, Annex I Meteorology and Hydrology, JICA, June 1981",
+  "publisher": "JICA",
+  "year": 1981,
+  "url": "https://openjicareport.jica.go.jp/pdf/10559169_01.pdf"
+ },
+ "r03:JICA03-G": {
+  "title": "Musi study Final Report Sector G (hydrology)",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740495_070.pdf"
+ },
+ "r03:JICA03-I2.1.3": {
+  "title": "Musi study Annex I2.1.3 Drought Discharges of Musi River System",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740495_128.pdf"
+ },
+ "r03:LIPI00": {
+  "title": "Eko Harsono, Hendro Wibowo, Iwan Ridwansyah, \"Estimasi Pola Arus Danau Ranau\", Laporan Teknik Puslit Limnologi LIPI 2000, pp. 242-251",
+  "publisher": null,
+  "year": 2000,
+  "url": "https://karya.brin.go.id/15803/1/Laporan%20Teknik_Eko%20Harsono_Limnologi_242-251_2000.PDF"
+ },
+ "r03:JBIC04": {
+  "title": "Komering Irrigation Project (2), JBIC ex-post evaluation 2004",
+  "publisher": "JICA",
+  "year": 2004,
+  "url": "https://www.jica.go.jp/english/our_work/evaluation/oda_loan/post/2004/pdf/2-15_full.pdf"
+ },
+ "r03:UNSRI-P": {
+  "title": "Unsri Lahan Suboptimal conference paper on dependable flow in the upper Komering (Bendung Perjaya data 2005-2019)",
+  "publisher": null,
+  "year": 2019,
+  "url": "https://conference.unsri.ac.id/index.php/lahansuboptimal/article/download/1569/945",
+  "access": "search snippet or summary only"
+ },
+ "r03:MEK17": {
+  "title": "Forum Mekanika 2017, flood frequency of Sungai Komering (search snippet only)",
+  "publisher": null,
+  "year": 2017,
+  "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/853336",
+  "access": "search snippet or summary only"
+ },
+ "r03:PRESS": {
+  "title": "detik.com sumbagsel d-8300177 (Jan 2026 OKU Timur floods); antaranews jatim 891265 (bridge at Negeri Sakti); search snippets only",
+  "publisher": "Antara",
+  "year": 2026,
+  "url": null,
+  "access": "search snippet or summary only"
+ },
+ "r03:JICA82": {
+  "title": "Pre-Feasibility Study on the Upper Komering River Basin Development Project, Vol. II-1, Annex I Meteorology and Hydrology, JICA / Ministry of Public Works DGWRD, March 1982",
+  "publisher": "JICA",
+  "year": 1982,
+  "url": "https://openjicareport.jica.go.jp/pdf/10310845_01.pdf"
+ },
+ "r03:JICA03-S": {
+  "title": "The Study on Comprehensive Water Management of Musi River Basin, Final Report, Summary, JICA / CTI Engineering and NIKKEN, 2003",
+  "publisher": "JICA",
+  "year": 2003,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740479_07.pdf"
+ },
+ "r03:JICA03-M": {
+  "title": "Same study, Main Report Chapter 7",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740487_11.pdf"
+ },
+ "r03:JICA-EIA": {
+  "title": "Ranau regulating dam environmental chapter (scanned, first pages only)",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/10310852_05.pdf"
+ },
+ "r04:jpnn2011": {
+  "title": "\"34 Ribu Ha Sawah Bakal Kering\", JPNN, 15 Jun 2011",
+  "publisher": "JPNN",
+  "year": 2011,
+  "url": "https://m.jpnn.com/news/34-ribu-ha-sawah-bakal-kering"
+ },
+ "r04:jpnn2022": {
+  "title": "\"Banjir di OKU Selatan, 600 Rumah Warga Terendam\", JPNN, 13 Nov 2022",
+  "publisher": "JPNN",
+  "year": 2022,
+  "url": "https://www.jpnn.com/news/banjir-di-oku-selatan-600-rumah-warga-terendam"
+ },
+ "r04:antara2023a": {
+  "title": "\"Warga OKU Timur Sumsel rayakan Lebaran di tengah banjir\", Antara Bengkulu, 24 Apr 2023",
+  "publisher": "Antara",
+  "year": 2023,
+  "url": "https://bengkulu.antaranews.com/berita/284310/warga-oku-timur-sumsel-rayakan-lebaran-di-tengah-banjir"
+ },
+ "r04:detik2023": {
+  "title": "\"Banjir di OKU Selatan surut, warga mulai pulang ke rumah\", detikSumbagsel, 6 Jul 2023",
+  "publisher": "detik.com",
+  "year": 2023,
+  "url": "https://www.detik.com/sumbagsel/berita/d-6810081/banjir-di-oku-selatan-surut-warga-mulai-pulang-ke-rumah/amp"
+ },
+ "r04:medcom2023": {
+  "title": "\"1 orang tewas dan 5 hilang akibat luapan air sungai di OKU Selatan\", Medcom, 5 Jul 2023",
+  "publisher": "Medcom",
+  "year": 2023,
+  "url": "https://www.medcom.id/foto/news/Wb7zemBN-1-orang-tewas-dan-5-hilang-akibat-luapan-air-sungai-di-oku-selatan"
+ },
+ "r04:antara2025": {
+  "title": "\"Diterjang banjir, jembatan gantung di Sumsel putus\", Antara Jatim, 7 Mar 2025",
+  "publisher": "Antara",
+  "year": 2025,
+  "url": "https://jatim.antaranews.com/berita/891265/diterjang-banjir-jembatan-gantung-di-sumsel-putus"
+ },
+ "r04:kumparan2025": {
+  "title": "\"3 warga OKU Selatan tewas tersapu banjir bandang\", Kumparan, Sep 2025",
+  "publisher": "kumparan",
+  "year": 2025,
+  "url": "https://kumparan.com/urbanid/3-warga-oku-selatan-tewas-tersapu-banjir-bandang-25uU3eqgX2M"
+ },
+ "r04:koranjkt2025": {
+  "title": "\"Belum usai longsor Aceh, kini OKU Timur direndam banjir\", Koran Jakarta, 11 Dec 2025",
+  "publisher": "Koran Jakarta",
+  "year": 2025,
+  "url": "https://koran-jakarta.com/2025-12-11/belum-usai-longsor-aceh-kini-oku-timur-direndam-banjir"
+ },
+ "r04:detik2026": {
+  "title": "\"Banjir OKU Timur meluas ke 23 desa, 1.359 rumah terendam\", detikSumbagsel, 9 Jan 2026",
+  "publisher": "Copernicus / ESA",
+  "year": 2026,
+  "url": "https://www.detik.com/sumbagsel/berita/d-8300177/banjir-oku-timur-meluas-ke-23-desa-1-359-rumah-terendam"
+ },
+ "r04:tirto2026": {
+  "title": "\"Banjir OKU Timur Sumsel rendam 1.359 rumah di 4 kecamatan\", Tirto, Jan 2026",
+  "publisher": null,
+  "year": 2026,
+  "url": "https://tirto.id/banjir-oku-timur-sumsel-rendam-1359-rumah-di-4-kecamatan-ho3N"
+ },
+ "r04:antara2026": {
+  "title": "\"Ministry sets up emergency kitchens in flood-hit S Sumatra's East OKU\", Antara, 10 Jan 2026",
+  "publisher": "Antara",
+  "year": 2026,
+  "url": "https://mataram.antaranews.com/berita/519429/ministry-sets-up-emergency-kitchens-in-flood-hit-s-sumatras-east-oku"
+ },
+ "r04:metrotv2026": {
+  "title": "\"Ratusan rumah di OKU Timur terendam banjir luapan Sungai Macak\", Metro TV, Jan 2026",
+  "publisher": null,
+  "year": 2026,
+  "url": "https://www.metrotvnews.com/play/N6GCVqJd-ratusan-rumah-di-oku-timur-terendam-banjir-luapan-sungai-macak"
+ },
+ "r04:mongabay2026": {
+  "title": "\"Singkong pernah jadi kuliner andalan masyarakat Komering\", Mongabay Indonesia, 26 Feb 2026",
+  "publisher": "Mongabay",
+  "year": 2026,
+  "url": "https://mongabay.co.id/2026/02/26/singkong-pernah-jadi-kuliner-andalan-masyarakat-komering/"
+ },
+ "r04:mongabay2023": {
+  "title": "\"Ketika rawa dan sungai di Sumatera Selatan mulai mengering\", Mongabay, 27 Aug 2023",
+  "publisher": "Mongabay",
+  "year": 2023,
+  "url": "https://mongabay.co.id/2023/08/27/ketika-rawa-dan-sungai-di-sumatera-selatan-mulai-mengering/"
+ },
+ "r04:medcom2024": {
+  "title": "\"Masyarakat OKU Timur diminta waspada dampak kekeringan\", Medcom/Antara, 4 Aug 2024",
+  "publisher": "Antara",
+  "year": 2024,
+  "url": "https://www.medcom.id/nasional/daerah/JKR5xVQk-masyarakat-oku-timur-diminta-waspada-dampak-kekeringan"
+ },
+ "r04:antara2024": {
+  "title": "\"Sebanyak 10 sungai di Sumsel berstatus siaga\", Antara, 14 Jan 2024",
+  "publisher": "Antara",
+  "year": 2024,
+  "url": "https://megapolitan.antaranews.com/berita/275268/sebanyak-10-sungai-di-sumsel-berstatus-siaga"
+ },
+ "r04:detik-siaga2025": {
+  "title": "\"10 daerah Sumsel tetapkan status siaga bencana hidrometeorologi\", detik, Dec 2025",
+  "publisher": "detik.com",
+  "year": 2025,
+  "url": "https://www.detik.com/sumbagsel/berita/d-8270429/10-daerah-sumsel-tetapkan-status-siaga-bencana-hidrometeorologi"
+ },
+ "r04:bbws-search": {
+  "title": "Feb 2025 OKI Komering overflow, press mention via search results, not opened",
+  "publisher": null,
+  "year": 2025,
+  "url": null,
+  "access": "search snippet or summary only"
+ },
+ "r04:unisma2022": {
+  "title": "Ayun, F.Q., Noerhayati, E., Suprapto, B., \"Studi evaluasi pengoperasian pintu bendung gerak untuk pengendali banjir di Kabupaten OKU Timur Sumatera Selatan\", Jurnal Rekayasa Sipil 12(4), Universitas Islam Malang, Aug 2022",
+  "publisher": "Universitas Islam Malang",
+  "year": 2022,
+  "url": "https://jim.unisma.ac.id/index.php/ft/article/download/17742/13493"
+ },
+ "r04:unsri-conf1569": {
+  "title": "Universitas Sriwijaya, Seminar Lahan Suboptimal paper on dependable flow of the upper Komering sub-basin at Perjaya 2005-2019",
+  "publisher": null,
+  "year": 2019,
+  "url": "https://conference.unsri.ac.id/index.php/lahansuboptimal/article/download/1569/945"
+ },
+ "r05:UNISMA22": {
+  "title": "Ayun F.Q., Noerhayati E., Suprapto B., \"Studi evaluasi pengoperasian pintu bendung gerak untuk pengendali banjir di Kabupaten OKU Timur Sumatera Selatan\", Jurnal Rekayasa Sipil (Unisma) 12(4), Aug 2022, pp. 41-48",
+  "publisher": "Universitas Islam Malang",
+  "year": 2022,
+  "url": "https://jim.unisma.ac.id/index.php/ft/article/download/17742/13493"
+ },
+ "r05:JICA02": {
+  "title": "JICA, ex-post evaluation \"Rehabilitation of Irrigation and Flood Alleviation Works\" (Komering sub-project), Oct 2002",
+  "publisher": "JICA",
+  "year": 2002,
+  "url": "https://www.jica.go.jp/english/activities/evaluation/oda_loan/post/2002/n_files/051_full.pdf"
+ },
+ "r05:JICA04": {
+  "title": "JICA, ex-post evaluation \"Komering Irrigation Project (2)\", field survey Jul 2003",
+  "publisher": "JICA",
+  "year": 2003,
+  "url": "https://www.jica.go.jp/english/our_work/evaluation/oda_loan/post/2004/pdf/2-15_full.pdf"
+ },
+ "r05:JPNN11": {
+  "title": "JPNN, \"34 Ribu Ha Sawah Bakal Kering\", 15 Jun 2011",
+  "publisher": "JPNN",
+  "year": 2011,
+  "url": "https://www.jpnn.com/news/34-ribu-ha-sawah-bakal-kering"
+ },
+ "r05:MTV25": {
+  "title": "Metro TV News, \"Waskita Karya kantongi kontrak baru proyek irigasi Rp318,54 miliar di Sumsel\", 16 Oct 2025",
+  "publisher": null,
+  "year": 2025,
+  "url": "https://www.metrotvnews.com/read/b3JCpwVP-waskita-karya-kantongi-kontrak-baru-proyek-irigasi-rp31854-miliar-di-sumsel"
+ },
+ "r05:RMOL24": {
+  "title": "RMOL, \"Menteri PU: SDA penting untuk dukung target swasembada pangan\", 2 Nov 2024",
+  "publisher": null,
+  "year": 2024,
+  "url": "https://rmol.id/bisnis/read/2024/11/02/643190/menteri-pu-sda-penting-untuk-dukung-target-swasembada-pangan",
+  "access": "search snippet or summary only"
+ },
+ "r05:SPSEICB": {
+  "title": "PUPR SPSE ICB portal",
+  "publisher": "Kementerian PU",
+  "year": null,
+  "url": "https://spseicb.pu.go.id/"
+ },
+ "r05:MTV26": {
+  "title": "Metro TV News, \"BPBD OKU Timur minta warga waspada serangan buaya\", 1 Jun 2026",
+  "publisher": null,
+  "year": 2026,
+  "url": "https://www.metrotvnews.com/read/kELCnPZM-bpbd-oku-timur-minta-warga-waspada-serangan-buaya"
+ },
+ "r05:PUBOOK24": {
+  "title": "Ditjen SDA, booklet \"Air Untuk Negeri\" edisi 1 2024",
+  "publisher": "Kementerian PU",
+  "year": 2024,
+  "url": "https://sda.pu.go.id/assets/uploads/files/Booklet%20Air%20Untuk%20Negeri%20edisi%201%202024.pdf"
+ },
+ "r06:KUR22": {
+  "title": "Kurnia Sari Y., Wasono A., Sangkawati S., Kodoatie R.J., \"Analisis Keruntuhan Bendungan Tiga Dihaji ... Menggunakan Hec-RAS 2D\", AGREGAT 7(2), Nov 2022, pp. 679-685",
+  "publisher": null,
+  "year": 2022,
+  "url": "https://journal.um-surabaya.ac.id/Agregat/article/download/14870/pdf/38224"
+ },
+ "r06:JICA81": {
+  "title": "JICA / DG Water Resources Development, \"Feasibility Study on the Komering-I Irrigation Development Project in the Upper Komering River Basin, Vol. 1 Main Report\", June 1981",
+  "publisher": "JICA",
+  "year": 1981,
+  "url": "https://openjicareport.jica.go.jp/pdf/10559151.pdf"
+ },
+ "r06:JICA03": {
+  "title": "JICA / CTI Engineering and NIKKEN, \"Studi Pengelolaan Air Secara Menyeluruh pada Wilayah Sungai Musi\", Laporan Akhir, ch. 7 (study from Aug 2002)",
+  "publisher": "JICA",
+  "year": 2002,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740537_10.pdf"
+ },
+ "r06:JICA11": {
+  "title": "JICA, \"Project for the Master Plan Study of Hydropower Development in Indonesia\", Final Report ch. 7, Aug 2011",
+  "publisher": "JICA",
+  "year": 2011,
+  "url": "https://openjicareport.jica.go.jp/pdf/12037628_02.pdf"
+ },
+ "r06:DET26": {
+  "title": "detikFinance, \"RI Bakal Punya 15 Bendungan Baru, Anggarannya Rp 32,8 Triliun\", 29 Jul 2026",
+  "publisher": "detik.com",
+  "year": 2026,
+  "url": "https://finance.detik.com/infrastruktur/d-8595451/ri-bakal-punya-15-bendungan-baru-anggarannya-rp-32-8-triliun"
+ },
+ "r06:DET25": {
+  "title": "detikFinance, \"DPR Sentil PU Soal Temuan BPK, Proyek Bendungan Tiga Dihaji Molor Jadi 9 Tahun\", 26 Nov 2025",
+  "publisher": "detik.com",
+  "year": 2025,
+  "url": "https://finance.detik.com/infrastruktur/d-8229349/dpr-sentil-pu-soal-temuan-bpk-proyek-bendungan-tiga-dihaji-molor-jadi-9-tahun"
+ },
+ "r06:DET22": {
+  "title": "detikFinance, \"Investor Dirayu Bangun PLTA Rp 1 Triliun di Bendungan Tiga Dihaji\", 17 Dec 2022",
+  "publisher": "detik.com",
+  "year": 2022,
+  "url": "https://finance.detik.com/infrastruktur/d-6466772/investor-dirayu-bangun-plta-rp-1-triliun-di-bendungan-tiga-dihaji"
+ },
+ "r06:KPPIP": {
+  "title": "KPPIP, Komering II Dam project page, undated",
+  "publisher": null,
+  "year": null,
+  "url": "https://kppip.go.id/en/?p=8960"
+ },
+ "r07:OM-FLOOD": {
+  "title": "Flood API docs, Open-Meteo, 2026",
+  "publisher": "Open-Meteo",
+  "year": 2026,
+  "url": "https://open-meteo.com/en/docs/flood-api"
+ },
+ "r07:OM-LIC": {
+  "title": "Licence, Open-Meteo",
+  "publisher": "Open-Meteo",
+  "year": null,
+  "url": "https://open-meteo.com/en/licence"
+ },
+ "r07:OM-TERMS": {
+  "title": "Terms, Open-Meteo",
+  "publisher": "Open-Meteo",
+  "year": null,
+  "url": "https://open-meteo.com/en/terms"
+ },
+ "r07:JICA03-G": {
+  "title": "The Study on Comprehensive Water Management of Musi River Basin, Final Report, Sector G (hydrology), JICA / CTI Engineering / Nikken, 2003",
+  "publisher": "JICA",
+  "year": 2003,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740495_070.pdf"
+ },
+ "r07:JICA03-I": {
+  "title": "Same study, Annex I2.1.3 Drought Discharges",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740495_128.pdf"
+ },
+ "r07:JICA03-INV": {
+  "title": "Same study, Annex G2.1.4 Inventory of Collected Hydrological Data",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740495_076.pdf"
+ },
+ "r07:JICA14-M": {
+  "title": "The Project for Assessing and Integrating Climate Change Impacts into the Water Resources Management Plans for Brantas and Musi River Basins, Final Report Part 3 (Musi), JICA, about 2014, Table 7.3.3",
+  "publisher": "JICA",
+  "year": 2014,
+  "url": "https://openjicareport.jica.go.jp/pdf/12353090_04.pdf"
+ },
+ "r07:YUONO19": {
+  "title": "Yuono, Putranto, Sarino, Analisis spasial kondisi lingkungan dan hidrologi Sub DAS Komering Hulu..., Prosiding Seminar Nasional Lahan Suboptimal, Univ. Sriwijaya, 2019",
+  "publisher": null,
+  "year": 2019,
+  "url": "https://conference.unsri.ac.id/index.php/lahansuboptimal/article/download/1569/945"
+ },
+ "r07:UNISMA22": {
+  "title": "Ayun, Noerhayati, Suprapto, Studi evaluasi pengoperasian pintu bendung gerak untuk pengendali banjir di Kabupaten OKU Timur, Univ. Islam Malang, 2022",
+  "publisher": "Universitas Islam Malang",
+  "year": 2022,
+  "url": "https://jim.unisma.ac.id/index.php/ft/article/download/17742/13493"
+ },
+ "r07:KUR22": {
+  "title": "via r06 note (Tiga Dihaji design floods, BBWS VIII 2022)",
+  "publisher": null,
+  "year": 2022,
+  "url": null
+ },
+ "r08:JICA82": {
+  "title": "Pre-feasibility study on the Upper Komering River Basin Development Project, Vol II-2 Annex, JICA, March 1982",
+  "publisher": "JICA",
+  "year": 1982,
+  "url": "https://openjicareport.jica.go.jp/pdf/10310852_03.pdf"
+ },
+ "r08:UNISMA22": {
+  "title": "Studi evaluasi pengoperasian pintu bendung gerak Perjaya, Jurnal Rekayasa Sipil Vol 12 No 4, Aug 2022",
+  "publisher": "Universitas Islam Malang",
+  "year": 2022,
+  "url": "https://jim.unisma.ac.id/index.php/ft/article/download/17742/13493"
+ },
+ "r08:PUPR20": {
+  "title": "File:Bendungan Perjaya.jpg, Kementerian PUPR, 10 Jan 2020, public domain",
+  "publisher": "Kementerian PU",
+  "year": 2020,
+  "url": "https://commons.wikimedia.org/wiki/File:Bendungan_Perjaya.jpg"
+ },
+ "r08:ESRI": {
+  "title": "Esri World Imagery (export and z18 tiles), services.arcgisonline.com",
+  "publisher": null,
+  "year": null,
+  "url": null
+ },
+ "r08:JICA04": {
+  "title": "Komering Irrigation Project (2) ex-post evaluation, JICA 2004",
+  "publisher": "JICA",
+  "year": 2004,
+  "url": "https://www.jica.go.jp/english/our_work/evaluation/oda_loan/post/2004/pdf/2-15_full.pdf"
+ },
+ "r08:RADENFATAH": {
+  "title": "jurnal.radenfatah.ac.id Suluh article 35961 (build dates), seen as search summary only, 23 Nov 2026",
+  "publisher": null,
+  "year": 2026,
+  "url": null,
+  "access": "search snippet or summary only"
+ },
+ "r08:OSM": {
+  "title": "OpenStreetMap via Overture 2026-10-21.0, point \"Bendung Perjaya\", as used by sibling lanes",
+  "publisher": "Overture Maps Foundation",
+  "year": 2026,
+  "url": null
+ },
+ "r09:WP-OKUT": {
+  "title": "East Ogan Komering Ulu Regency, Wikipedia (district table citing BPS 2010 and 2020 censuses and mid-2025 estimate)",
+  "publisher": "Wikipedia",
+  "year": 2025,
+  "url": "https://en.wikipedia.org/wiki/East_Ogan_Komering_Ulu_Regency"
+ },
+ "r09:WP-MTP": {
+  "title": "Martapura, South Sumatra, Wikipedia (mid-2024 estimate, BPS 28 Feb 2025)",
+  "publisher": "Wikipedia",
+  "year": 2025,
+  "url": "https://en.wikipedia.org/wiki/Martapura"
+ },
+ "r09:IDWP-MTP": {
+  "title": "Martapura, Ogan Komering Ulu Timur, Wikipedia bahasa Indonesia",
+  "publisher": "Wikipedia",
+  "year": null,
+  "url": "https://id.wikipedia.org/wiki/Martapura"
+ },
+ "r09:BRS25": {
+  "title": "BPS Provinsi Sumatera Selatan, \"Luas Panen dan Produksi Padi di Provinsi Sumatera Selatan 2025 (Angka Tetap)\", BRS No. 11/02/16/Th.XXVIII, 2 Feb 2026",
+  "publisher": "BPS",
+  "year": 2026,
+  "url": "https://satudata.sumselprov.go.id/storage/brs/698359b120c32.pdf"
+ },
+ "r09:KJ26": {
+  "title": "\"Mewaspadai serangan buaya saat beraktivitas di aliran sungai\", Koran Jakarta, 1 Jun 2026",
+  "publisher": "Koran Jakarta",
+  "year": 2026,
+  "url": "https://koran-jakarta.com/2026-06-01/mewaspadai-serangan-buaya-saat-beraktivitas-di-aliran-sungai"
+ },
+ "r09:PERDA09": {
+  "title": "Perda OKU Timur No 2 Tahun 2009 (pemekaran Perjaya Barat)",
+  "publisher": null,
+  "year": 2009,
+  "url": "https://sumsel.bpk.go.id/files/2010/01/PERDA-NO-2-TAHUN-2009.pdf",
+  "access": "search snippet or summary only"
+ },
+ "r09:CORTEVA": {
+  "title": "\"Produktivitas dan produksi padi OKU Timur tembus 10 besar nasional\" (repost of Tempo)",
+  "publisher": null,
+  "year": null,
+  "url": "https://www.corteva.com/id/berita/produktivitas-dan-produksi-padi-oku-timur-tembus-10-besar-nasional.html",
+  "access": "search snippet or summary only"
+ },
+ "r09:CORE15": {
+  "title": "Andrianto S., Dona B., Rama W., \"Perencanaan Jembatan Rangka Baja Sungai Tanjung Kemala Kabupaten Ogan Komering Ulu Timur\"",
+  "publisher": null,
+  "year": null,
+  "url": "https://core.ac.uk/works/129688856",
+  "access": "search snippet or summary only"
+ },
+ "r09:ANT": {
+  "title": "\"Diterjang banjir jembatan gantung di Sumsel putus\", Antara Jatim",
+  "publisher": "Antara",
+  "year": null,
+  "url": "https://jatim.antaranews.com/berita/891265/diterjang-banjir-jembatan-gantung-di-sumsel-putus",
+  "access": "search snippet or summary only"
+ },
+ "r09:RPB19": {
+  "title": "\"Arus kendaraan dialihkan ke Jalinteng\", Republika, 18 Jun 2019",
+  "publisher": null,
+  "year": 2019,
+  "url": "https://news.republika.co.id/berita/ptaxxc430/arus-kendaraan-dialihkan-ke-jalinteng",
+  "access": "search snippet or summary only"
+ },
+ "r10:P14": {
+  "title": "Peraturan Menteri PUPR No. 14/PRT/M/2015 Kriteria dan Penetapan Status Daerah Irigasi, Berita Negara 2015 No. 638, peraturan.go.id, 2015",
+  "publisher": "Kementerian PU",
+  "year": 2015,
+  "url": "https://peraturan.go.id/files/bn638-2015.pdf"
+ },
+ "r10:E02": {
+  "title": "Ex-post evaluation \"Rehabilitation of Irrigation and Flood Alleviation Works\" (Komering-I Package I), JBIC, Oct 2002",
+  "publisher": "JICA",
+  "year": 2002,
+  "url": "https://www.jica.go.jp/english/activities/evaluation/oda_loan/post/2002/n_files/051_full.pdf"
+ },
+ "r10:E04": {
+  "title": "Ex-post evaluation \"Komering Irrigation Project (2)\", JBIC, field survey Jul 2003 (2004 volume)",
+  "publisher": "JICA",
+  "year": 2004,
+  "url": "https://www.jica.go.jp/english/our_work/evaluation/oda_loan/post/2004/pdf/2-15_full.pdf"
+ },
+ "r10:IP453": {
+  "title": "JICA ODA project page IP-453 Komering Irrigation Project (2)",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://www.jica.go.jp/oda/project/IP-453/index.html"
+ },
+ "r10:IP574": {
+  "title": "JICA ODA project page IP-574 Komering Irrigation Project (Phase 3)",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://www.jica.go.jp/oda/project/IP-574/index.html"
+ },
+ "r10:EA574": {
+  "title": "JICA ex-ante evaluation IP-574, 2016",
+  "publisher": "JICA",
+  "year": 2016,
+  "url": "https://www2.jica.go.jp/en/evaluation/pdf/2016_IP-574_1_f.pdf",
+  "access": "search snippet or summary only"
+ },
+ "r10:MOFA": {
+  "title": "Ministry of Foreign Affairs of Japan ODA list",
+  "publisher": null,
+  "year": null,
+  "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/page25_000058.html",
+  "access": "search snippet or summary only"
+ },
+ "r10:EMB": {
+  "title": "Embassy of Japan in Indonesia, \"Komering Irrigation Project (II-2)\"",
+  "publisher": null,
+  "year": null,
+  "url": "https://www.id.emb-japan.go.jp/oda/en/projects/loan/odaprojects_loan_2004_3.htm",
+  "access": "search snippet or summary only"
+ },
+ "r10:MM": {
+  "title": "Mott MacDonald, \"Mott MacDonald appointed to work on the Komering Irrigation Project, Indonesia\"",
+  "publisher": null,
+  "year": null,
+  "url": "https://www.mottmac.com/releases/mott-macdonald-appointed-to-work-on-the-komering-irrigation-project-indonesia",
+  "access": "search snippet or summary only"
+ },
+ "r10:MTV": {
+  "title": "Metro TV News, \"Waskita Karya kantongi kontrak baru proyek irigasi Rp318,54 miliar di Sumsel\", 16 Oct 2025",
+  "publisher": null,
+  "year": 2025,
+  "url": "https://www.metrotvnews.com/read/b3JCpwVP-waskita-karya-kantongi-kontrak-baru-proyek-irigasi-rp31854-miliar-di-sumsel"
+ },
+ "r10:BB8": {
+  "title": "BBWS Sumatera VIII website (contact strings in its page code)",
+  "publisher": "Kementerian PU",
+  "year": null,
+  "url": "https://sda.pu.go.id/balai/bbwssumatera8/"
+ },
+ "r10:DP": {
+  "title": "Dinas PSDA Provinsi Sumatera Selatan website footer",
+  "publisher": null,
+  "year": null,
+  "url": "https://dpsda.sumselprov.go.id/"
+ },
+ "r10:RS26": {
+  "title": "Renstra Dinas PSDA Provinsi Sumatera Selatan 2025-2029 (2026 file)",
+  "publisher": null,
+  "year": 2026,
+  "url": "https://esakip.sumselprov.go.id/storage/Files/renstra_2026_dinas_pengelolaan_sumber_daya_air.pdf"
+ },
+ "r10:P10": {
+  "title": "Permen PUPR 10/2015 (procedure for pola/rencana), peraturan.bpk.go.id, search summary only, 23 Nov 2026",
+  "publisher": "Kementerian PU",
+  "year": 2026,
+  "url": null,
+  "access": "search snippet or summary only"
+ },
+ "r11:JICA-Musi-M": {
+  "title": "Studi Pengelolaan Air Secara Menyeluruh pada Wilayah Sungai Musi, Laporan Akhir, Laporan Utama, sections 3.8-3.10, JICA / CTI Engineering / Nikken Consultants, c. 2003 (data to 2001; year [A])",
+  "publisher": "JICA",
+  "year": 2001,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740537_06.pdf"
+ },
+ "r11:JICA-Musi-S": {
+  "title": "Same study, Ringkasan (summary), section 3.7.6",
+  "publisher": "JICA",
+  "year": null,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740529_07.pdf"
+ },
+ "r11:JICA-EPE-2002": {
+  "title": "Ex-post evaluation, Rehabilitation of Irrigation and Flood Alleviation Works (incl. Komering-I Irrigation Project Package I), JBIC, Oct 2002 (field survey Jul/Aug 2001)",
+  "publisher": "JICA",
+  "year": 2001,
+  "url": "https://www.jica.go.jp/english/activities/evaluation/oda_loan/post/2002/n_files/051_full.pdf"
+ },
+ "r11:Priatna-2011": {
+  "title": "Priatna S.J., Armanto M.E., Saleh E., Putranto D., Fikry F.H., Kajian Debit dan Sedimentasi di Kawasan Hulu Sub DAS Komering Sumatera Selatan, Jurnal Agroteknologi 5(2):100-110, Universitas Jember, 2011",
+  "publisher": null,
+  "year": 2011,
+  "url": "https://jagt.journal.unej.ac.id/article/view/2581"
+ },
+ "r11:Priatna-conf": {
+  "title": "UNSRI Seminar Nasional Lahan Suboptimal paper on the upper Komering sub-DAS",
+  "publisher": null,
+  "year": null,
+  "url": "https://conference.unsri.ac.id/index.php/lahansuboptimal/article/download/1569/945",
+  "access": "search snippet or summary only"
+ },
+ "r11:Atminarso-2024": {
+  "title": "Atminarso D., The impact of Perjaya Dam on fisheries biodiversity and livelihoods in the Komering River, Indonesia, PhD thesis, Charles Sturt University, 2024",
+  "publisher": "Charles Sturt University",
+  "year": 2024,
+  "url": "https://researchoutput.csu.edu.au/en/publications/the-impact-of-perjaya-dam-on-fisheries-biodiversity-and-livelihoo/"
+ },
+ "r11:PC22035": {
+  "title": "Evidence of fish community fragmentation ... (Perjaya), Pacific Conservation Biology, CSIRO Publishing",
+  "publisher": null,
+  "year": null,
+  "url": "https://publish.csiro.au/pc/PC22035",
+  "access": "search snippet or summary only"
+ },
+ "r11:Wibowo-2018": {
+  "title": "Wibowo A., Antony R., Adiansyah V., Baumgartner L., abstract, Fish Passage 2018 conference",
+  "publisher": null,
+  "year": 2018,
+  "url": "https://fish-passage-2018.p.asnevents.com.au/tracks/2436/abstract/52676"
+ },
+ "r11:Nizar-2022": {
+  "title": "Nizar M., Augusta R.C., Karolina A., Catharica A., Kajian Persepsi Masyarakat terhadap Pengelolaan Tangga Ikan Bendung Perjaya sebagai Area Konservasi Ikan, Jurnal LEMURU 4(1):42-53, 2022",
+  "publisher": null,
+  "year": 2022,
+  "url": "https://ejournal.unibabwi.ac.id/index.php/lemuru/article/view/2515"
+ },
+ "r11:ESDM-2011": {
+  "title": "Hasil Pemeriksaan Kematian Ikan di Danau Ranau, Kementerian ESDM, 2 Jun 2011",
+  "publisher": null,
+  "year": 2011,
+  "url": "https://www.esdm.go.id/id/media-center/arsip-berita/hasil-pemeriksaan-kematian-ikan-di-danau-ranau"
+ },
+ "r11:Mongabay-2025": {
+  "title": "Kisah Putri Raja Seminung, kucing liar dan kerusakan Danau Ranau, Mongabay Indonesia, 12 Jun 2025",
+  "publisher": "Mongabay",
+  "year": 2025,
+  "url": "https://mongabay.co.id/2025/06/12/kisah-putri-raja-seminung-kucing-liar-dan-kerusakan-danau-ranau/"
+ },
+ "r11:Republika-2023": {
+  "title": "Ini penyebab 250 ton ikan mati di Danau Ranau Lampung Barat, 16 Jan 2023",
+  "publisher": null,
+  "year": 2023,
+  "url": "https://news.republika.co.id/berita/rokzp6463/ini-penyebab-250-ton-ikan-mati-di-danau-ranau-lampung-barat",
+  "access": "search snippet or summary only"
+ },
+ "r11:Irawan-2017": {
+  "title": "Komering water quality at Ulak Jermun, OKI, Jurnal Akuakultur Rawa Indonesia",
+  "publisher": null,
+  "year": null,
+  "url": "https://ejournal.unsri.ac.id/index.php/jari/article/download/7142/3594",
+  "access": "search snippet or summary only"
+ },
+ "r11:JARI-SpPadang": {
+  "title": "Sand mining and water quality, Sp. Padang OKI, Jurnal Akuakultur Rawa Indonesia",
+  "publisher": null,
+  "year": null,
+  "url": "https://ejournal.unsri.ac.id/index.php/jari/article/viewFile/14285/6243",
+  "access": "search snippet or summary only"
+ },
+ "r11:Rosmalinda": {
+  "title": "Pengaruh Perubahan Penggunaan Lahan terhadap Rezim Hidrologi DAS, Jurnal Teknik Sipil ITB 24(1):91-98",
+  "publisher": null,
+  "year": null,
+  "url": "https://ftsl.itb.ac.id/wp-content/uploads/sites/8/2016/09/15.-Rosmalinda-Pengaruh-Perubahan-Penggunaan-Lahan-terhadap-Rezim-Hidrologi-DAS..-91-98-Vol.-24-No.1.pdf",
+  "access": "search snippet or summary only"
+ },
+ "r11:UNSRI-morph": {
+  "title": "Skripsi on Komering morphometry around Bendungan Perjaya",
+  "publisher": null,
+  "year": null,
+  "url": "https://repository.unsri.ac.id/42130",
+  "access": "search snippet or summary only"
+ },
+ "r11:Unigal": {
+  "title": "Coffee to oil palm in Ranau Tengah, Agroinfo Galuh",
+  "publisher": null,
+  "year": null,
+  "url": "https://jurnal.unigal.ac.id/agroinfogaluh/article/download/24118/pdf",
+  "access": "search snippet or summary only"
+ },
+ "r11:Antara-Mendah": {
+  "title": "Dua siswa SD Kabupaten OKU Timur tewas tertimbun longsor, Antara",
+  "publisher": "Antara",
+  "year": null,
+  "url": "https://megapolitan.antaranews.com/berita/342018/dua-siswa-sd-kabupaten-oku-timur-tewas-tertimbun-longsor-sedalam-satu-meter",
+  "access": "search snippet or summary only"
+ },
+ "r13:KP01": {
+  "title": "Standar Perencanaan Irigasi, Kriteria Perencanaan Bagian Perencanaan Jaringan Irigasi KP-01, Ditjen SDA Kementerian PU, 2013",
+  "publisher": "Kementerian PU",
+  "year": 2013,
+  "url": "https://luk.tsipil.ugm.ac.id/atur/sda/kp/KP01-PerencanaanJaringanIrigasi.pdf"
+ },
+ "r13:KP02": {
+  "title": "Kriteria Perencanaan Bangunan Utama KP-02, Ditjen SDA Kementerian PU, 2013",
+  "publisher": "Kementerian PU",
+  "year": 2013,
+  "url": "https://luk.tsipil.ugm.ac.id/atur/sda/kp/KP02-BangunanUtama.pdf"
+ },
+ "r13:JICA82": {
+  "title": "Pre-Feasibility Study on the Upper Komering River Basin Development Project, Vol II-1 Annex I Meteorology and Hydrology, JICA / Ministry of Public Works, March 1982",
+  "publisher": "JICA",
+  "year": 1982,
+  "url": "https://openjicareport.jica.go.jp/pdf/10310845_01.pdf"
+ },
+ "r13:ITB22": {
+  "title": "Rasyid & Afdhaliah, Analisis Debit Andalan Sungai Cisadane, FJ Mock bulanan dan setengah bulanan, Proc. IGSC, ITB, 2022",
+  "publisher": null,
+  "year": 2022,
+  "url": "https://gcs.itb.ac.id/proceeding-igsc/index.php/igsc/article/download/48/42/182"
+ },
+ "r13:UKIT": {
+  "title": "Ambasalu, Bab II (KP-01 tables restated), Universitas Kristen Indonesia Toraja",
+  "publisher": null,
+  "year": null,
+  "url": "https://repo.ukitoraja.ac.id/1713/3/Bab%20II%20%20-%20Brigita%20Ambasalu.pdf"
+ },
+ "r13:NRECA": {
+  "title": "search snippets of NRECA method reviews (Nominal = 100 + 0.2 Ra; PSUB/GWF ranges)",
+  "publisher": null,
+  "year": null,
+  "url": "https://core.ac.uk/download/492937158.pdf",
+  "access": "search snippet or summary only"
+ },
+ "r13:Bakh08": {
+  "title": "Bakhtiar, Media Komunikasi Teknik Sipil 2008 (Mock, i = 0.40)",
+  "publisher": null,
+  "year": 2008,
+  "url": "https://ejournal.undip.ac.id/index.php/mkts/article/download/3694/3327",
+  "access": "search snippet or summary only"
+ },
+ "r13:SNI": {
+  "title": "secondary quotes of SNI 2415:2016, e.g.",
+  "publisher": null,
+  "year": 2016,
+  "url": "https://eprints.untirta.ac.id/39320/4/Mohamad%20Baihaqi%20Rohmat_3336200058_03.pdf",
+  "access": "search snippet or summary only"
+ },
+ "r13:CopDEM": {
+  "title": "Copernicus DEM Product Handbook v5.0, 2022",
+  "publisher": "Copernicus / ESA",
+  "year": 2022,
+  "url": "https://dataspace.copernicus.eu/sites/default/files/media/files/2024-06/geo1988-copernicusdem-spe-002_producthandbook_i5.0.pdf",
+  "access": "search snippet or summary only"
+ },
+ "r13:FAB": {
+  "title": "Hawker et al., FABDEM, Environ. Res. Lett. 2022",
+  "publisher": null,
+  "year": 2022,
+  "url": "https://iopscience.iop.org/article/10.1088/1748-9326/ac4d4f",
+  "access": "search snippet or summary only"
+ },
+ "r13:HAND": {
+  "title": "Aristizabal et al., HESS 28, 1287, 2024",
+  "publisher": "Copernicus / ESA",
+  "year": 2024,
+  "url": "https://hess.copernicus.org/articles/28/1287/2024/",
+  "access": "search snippet or summary only"
+ },
+ "r14:OM": {
+  "title": "Open-Meteo Historical Weather API, archive-api.open-meteo.com/v1/archive, models=era5, 1991-2025 daily, fetched 23 Nov 2026.",
+  "publisher": "Open-Meteo",
+  "year": 2026,
+  "url": null
+ },
+ "r14:OM-T": {
+  "title": "Open-Meteo Terms",
+  "publisher": "Open-Meteo",
+  "year": null,
+  "url": "https://open-meteo.com/en/terms"
+ },
+ "r14:OM-L": {
+  "title": "Open-Meteo Licence",
+  "publisher": "Open-Meteo",
+  "year": null,
+  "url": "https://open-meteo.com/en/licence"
+ },
+ "r14:ERA5": {
+  "title": "Hersbach H. et al. (2023) ERA5 hourly data on single levels from 1940 to present, ECMWF / Copernicus C3S, doi:10.24381/cds.adbb2d47.",
+  "publisher": "Copernicus / ESA",
+  "year": 2023,
+  "url": null
+ },
+ "r14:JICA": {
+  "title": "JICA / CTI Engineering International, The Study on Comprehensive Water Management of Musi River Basin, final report data book (rainfall tables \"ListofRainfall.xls\", BMG stations), Sep 2003",
+  "publisher": "JICA",
+  "year": 2003,
+  "url": "https://openjicareport.jica.go.jp/pdf/11740503_02.pdf"
+ },
+ "r14:CHC": {
+  "title": "CHIRPS server robots.txt",
+  "publisher": null,
+  "year": null,
+  "url": "https://data.chc.ucsb.edu/robots.txt"
+ }
+}

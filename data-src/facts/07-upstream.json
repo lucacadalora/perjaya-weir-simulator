@@ -1,0 +1,13 @@
+{
+  "_doc": "Dossier section 'upstream'.",
+  "ranau_area": {"v": 127, "u": "km2", "s": "S", "y": 1982, "src": ["r03:JICA82"], "l": ["Luas Danau Ranau", "Area of Lake Ranau"]},
+  "ranau_regulator": {"v": {"id": "Bendung pengatur dibangun Tahap I: panjang 144 m, tinggi 7 m", "en": "Regulating weir built in Phase I: 144 m long, 7 m high"}, "s": "S", "y": 2002, "src": ["r01:J02", "r10:E02"], "l": ["Pengatur Danau Ranau", "Lake Ranau regulator"]},
+  "ranau_hwl": {"v": 541.7, "u": "m", "s": "S", "y": 2003, "src": ["r03:JICA03-S"], "l": ["Muka air tinggi operasi Ranau", "Ranau operating high water"]},
+  "ranau_storage": {"v": 254, "u": "Mm3", "s": "S", "y": 2003, "src": ["r03:JICA03-S"], "l": ["Tampungan efektif Ranau", "Ranau effective storage"]},
+  "ranau_outflow": {"v": 17.6, "u": "m3/s", "s": "S", "y": 1981, "src": ["r06:JICA81"], "l": ["Aliran keluar alami Ranau", "Ranau natural outflow"]},
+  "tiga_dihaji_height": {"v": 122, "u": "m", "s": "S", "y": 2022, "src": ["r06:KUR22"], "l": ["Bendungan Tiga Dihaji: tinggi", "Tiga Dihaji Dam: height"], "n": ["Urugan batu berinti tegak di Sungai Selabung, OKU Selatan; puncak 950 m.", "Zoned rockfill with a vertical core on the Selabung, OKU Selatan; crest 950 m."]},
+  "tiga_dihaji_storage": {"v": 129, "u": "Mm3", "s": "S", "y": 2022, "src": ["r06:KUR22"], "l": ["Tiga Dihaji: tampungan total", "Tiga Dihaji: total storage"], "alt": [{"v": 139.77, "src": ["r06:DET26"], "note": "press, Jul 2026"}]},
+  "tiga_dihaji_catchment": {"v": 1158.2, "u": "km2", "s": "S", "y": 2022, "src": ["r06:KUR22"], "l": ["Tiga Dihaji: luas DAS", "Tiga Dihaji: catchment"]},
+  "tiga_dihaji_status": {"v": {"id": "Dibangun sejak akhir 2018, target 2029; belum digenangi", "en": "Under construction since late 2018, target 2029; not filling"}, "s": "P", "y": 2026, "src": ["r06:DET26", "r06:DET25"], "l": ["Tiga Dihaji: status", "Tiga Dihaji: status"]},
+  "tiga_dihaji_fsl": {"v": 326.0, "u": "m", "s": "A", "y": 2026, "src": ["b18:assume", "r06:KUR22"], "l": ["Tiga Dihaji: muka air penuh (asumsi)", "Tiga Dihaji: full supply level (assumed)"], "n": ["Sedikit di bawah muka banjir 2 tahunan 326,38 m; data teknis tidak ditemukan.", "Just below the routed 2-year flood pool 326.38 m; the data sheet was not found."]}
+}

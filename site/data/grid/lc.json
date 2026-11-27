@@ -1,0 +1,64 @@
+{
+ "classes": {
+  "10": "Tree cover",
+  "20": "Shrubland",
+  "30": "Grassland",
+  "40": "Cropland",
+  "50": "Built-up",
+  "60": "Bare / sparse vegetation",
+  "70": "Snow and ice",
+  "80": "Permanent water bodies",
+  "90": "Herbaceous wetland",
+  "95": "Mangroves",
+  "100": "Moss and lichen"
+ },
+ "nodata": 0,
+ "wide": {
+  "file": "wide.lc.u8",
+  "cols": 2040,
+  "rows": 2040,
+  "west": 103.3,
+  "north": -3.5,
+  "east": 105.0,
+  "south": -5.2,
+  "cell_deg": 0.0008333333333333334,
+  "cell": "3 arc-seconds",
+  "resampling": "majority of 10x10 WorldCover 10 m pixels",
+  "share": {
+   "0": 0.0018,
+   "10": 0.8535,
+   "20": 0.0001,
+   "30": 0.0296,
+   "40": 0.0449,
+   "50": 0.0084,
+   "60": 0.0015,
+   "80": 0.0599,
+   "90": 0.0003
+  }
+ },
+ "fine": {
+  "file": "fine.lc.u8",
+  "cols": 1260,
+  "rows": 1440,
+  "west": 104.2,
+  "north": -4.1,
+  "east": 104.55,
+  "south": -4.5,
+  "cell_deg": 0.0002777777777777778,
+  "cell": "1 arc-second",
+  "resampling": "mode (GDAL) of WorldCover 10 m pixels",
+  "share": {
+   "10": 0.8397,
+   "20": 0.0,
+   "30": 0.0257,
+   "40": 0.106,
+   "50": 0.0209,
+   "60": 0.0007,
+   "80": 0.007,
+   "90": 0.0
+  }
+ },
+ "layout": "uint8, row-major from the north-west corner, row 0 = north edge",
+ "credit": "Land cover: (c) ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium (CC BY 4.0).",
+ "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S06E102_Map.tif"
+}

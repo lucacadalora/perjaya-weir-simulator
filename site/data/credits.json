@@ -1,0 +1,65 @@
+[
+ {
+  "id": "glo30",
+  "short": "Copernicus DEM GLO-30",
+  "full": "Elevation: Copernicus DEM GLO-30, (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "licence": "Copernicus DEM licence",
+  "url": "https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model"
+ },
+ {
+  "id": "s2cloudless",
+  "short": "Sentinel-2 cloudless 2016 by EOX",
+  "full": "Sentinel-2 cloudless 2016 by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2016), CC BY 4.0, cloudless.eox.at",
+  "licence": "CC BY 4.0",
+  "url": "https://cloudless.eox.at"
+ },
+ {
+  "id": "osm",
+  "short": "(c) OpenStreetMap contributors, Overture Maps",
+  "full": "Map features: (c) OpenStreetMap contributors, available under the Open Database License (ODbL); data via Overture Maps Foundation (release 2026-11-18.0).",
+  "licence": "ODbL 1.0",
+  "url": "https://www.openstreetmap.org/copyright"
+ },
+ {
+  "id": "overture-places",
+  "short": "Places: Overture Maps",
+  "full": "Places: Overture Maps Foundation (release 2026-11-18.0), CDLA Permissive 2.0.",
+  "licence": "CDLA Permissive 2.0",
+  "url": "https://overturemaps.org"
+ },
+ {
+  "id": "worldcover",
+  "short": "ESA WorldCover 2021",
+  "full": "(c) ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium (CC BY 4.0).",
+  "licence": "CC BY 4.0",
+  "url": "https://esa-worldcover.org"
+ },
+ {
+  "id": "era5",
+  "short": "ERA5 via Open-Meteo",
+  "full": "Rain and evaporation: ERA5 reanalysis, generated using Copernicus Climate Change Service information; weather data by Open-Meteo.com (CC BY 4.0).",
+  "licence": "CC BY 4.0 (Open-Meteo); Copernicus licence (ERA5)",
+  "url": "https://open-meteo.com"
+ },
+ {
+  "id": "glofas",
+  "short": "GloFAS v4 (modelled) via Open-Meteo",
+  "full": "River discharge: Copernicus Emergency Management Service, GloFAS v4 (modelled), via Open-Meteo.com (CC BY 4.0); summary statistics computed by us.",
+  "licence": "CC BY 4.0",
+  "url": "https://open-meteo.com"
+ },
+ {
+  "id": "s2-2026",
+  "short": "Sentinel-2, 26 Apr 2026",
+  "full": "Contains modified Copernicus Sentinel data 2026",
+  "licence": "Copernicus Sentinel data licence (free and open)",
+  "url": "https://sentinels.copernicus.eu"
+ },
+ {
+  "id": "lc10",
+  "short": "ESA WorldCover 2021 (land-cover picture)",
+  "full": "Land cover: (c) ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+  "licence": "CC BY 4.0",
+  "url": "https://esa-worldcover.org"
+ }
+]

@@ -1,0 +1,54 @@
+{
+ "tilejson": "3.0.0",
+ "name": "Komering terrain (GLO-30, Terrarium)",
+ "tiles": [
+  "./{z}/{x}/{y}.png"
+ ],
+ "scheme": "xyz",
+ "encoding": "terrarium",
+ "tileSize": 256,
+ "minzoom": 6,
+ "maxzoom": 13,
+ "bounds": [
+  103.3,
+  -5.2,
+  105.0,
+  -3.5
+ ],
+ "fine_bounds_z13": [
+  104.2,
+  -4.5,
+  104.55,
+  -4.1
+ ],
+ "attribution": "Elevation: Copernicus DEM GLO-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the EU and ESA. Satellite surface model, not a survey. River bed below the water surface assumed (not a survey). River bed below the water surface assumed (not a survey).",
+ "description": "Copernicus GLO-30 surface model resampled bilinear to web mercator. Zoom 6-12 over the wide box, zoom 13 and 14 inside the fine box only (manifest gives the tile ranges; MapLibre overzooms elsewhere). Heights m above EGM2008, quantised to 0.25 m; voids, sea and anything outside 103-105 E, 6-3 S are 0 m. CARVED RIVER BED (lane g07, 23 Nov 2026): the surface model records Sungai Komering at its water surface, so from 5 km above to 5 km below Bendung Perjaya (along the river, 500 m ramps at the ends) the terrain inside the 26 Apr 2026 Sentinel-2 river outline is lowered to an ASSUMED bed: 70.8 m above the axis (design bed EL 74.0) and 70.95 m below it (EL 74.15, Manning bed for the design flood), or the surface model's water surface minus the axis depth where that is lower, banks 1:2 from the outline's edge, and 68.8 m (1 m below the assumed stilling basin floor EL 73.0) under the weir model's footprint + 10 m. Levels from params.json (terrain m = project EL - 3.2). The bed is assumed, not surveyed. Tile URLs are relative to this file.",
+ "fine_bounds_z14": [
+  104.2,
+  -4.5,
+  104.55,
+  -4.1
+ ],
+ "manifest": {
+  "13": {
+   "x": [
+    6467,
+    6475
+   ],
+   "y": [
+    4189,
+    4198
+   ]
+  },
+  "14": {
+   "x": [
+    12934,
+    12950
+   ],
+   "y": [
+    8378,
+    8397
+   ]
+  }
+ }
+}

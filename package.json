@@ -1,0 +1,16 @@
+{
+  "name": "perjaya-weir-simulator",
+  "version": "0.1.0",
+  "description": "Browser simulator of Bendung Perjaya, a gated weir on the Komering river (Sumatra), and its river basin.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "serve": "node tools/serve.mjs --port 8791",
+    "test": "node --test --test-concurrency=4 'site/js/engine/*.test.js' 'site/js/sim/*.test.js' 'site/js/map/**/*.test.js' 'test/**/*.test.js'",
+    "data": "node tools/data/build.mjs",
+    "data:check": "node tools/data/check.mjs"
+  }
+}

@@ -1,0 +1,94 @@
+/* Perjaya simulator stylesheet, part two. Owner: lane b02. Imported by app.css.
+   MapLibre's own controls restyled to match, and the chart classes. Layout media queries live at the end of app.css
+   (an imported sheet comes before the importing one, so responsive rules must sit in app.css to win). */
+
+/* ---------- MapLibre controls ---------- */
+.maplibregl-map { font: 400 12px/1.4 var(--font); color: var(--ink); -webkit-tap-highlight-color: transparent; }
+.maplibregl-ctrl-group, .maplibregl-ctrl-group:not(:empty) {
+  background: var(--panel); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+}
+.maplibregl-ctrl-group button { width: 32px; height: 32px; background-color: var(--panel); transition: background-color var(--dur) var(--ease); }
+.maplibregl-ctrl-group button + button { border-top: 1px solid var(--line); }
+.maplibregl-ctrl-group button:not(:disabled):hover { background-color: var(--paper-2); }
+.maplibregl-ctrl-group button:focus:focus-visible { box-shadow: inset 0 0 0 2px var(--focus); }
+.maplibregl-ctrl-group button:first-child, .maplibregl-ctrl-group button:last-child { border-radius: 0; }
+.maplibregl-ctrl button .maplibregl-ctrl-icon { opacity: .82; }
+.maplibregl-ctrl-top-left, .maplibregl-ctrl-top-right, .maplibregl-ctrl-bottom-left, .maplibregl-ctrl-bottom-right { z-index: 1; }
+.maplibregl-ctrl-top-right .maplibregl-ctrl, .maplibregl-ctrl-bottom-right .maplibregl-ctrl { margin-right: calc(var(--panel-w) + 2 * var(--gap)); }
+.maplibregl-ctrl-bottom-right .maplibregl-ctrl { margin-bottom: 8px; }
+
+.maplibregl-ctrl-scale {
+  background: rgba(255, 255, 255, .9); border: 1px solid var(--ink-2); border-top: 0; border-radius: 0;
+  font: 500 10.5px/1.5 var(--mono); color: var(--ink); padding: 0 5px; box-sizing: border-box;
+}
+
+.maplibregl-ctrl.maplibregl-ctrl-attrib, .maplibregl-ctrl-attrib.maplibregl-compact {
+  background: rgba(255, 255, 255, .9); border-radius: 2px; padding: 1px 6px; font: 400 11px/1.4 var(--font); color: var(--ink-2);
+  box-shadow: none; min-height: 0;
+}
+.maplibregl-ctrl-attrib a { color: var(--ink-2); text-decoration: none; }
+.maplibregl-ctrl-attrib a:hover { color: var(--ink); text-decoration: underline; }
+.maplibregl-ctrl-attrib.maplibregl-compact { border: var(--hair); }
+.maplibregl-ctrl-attrib.maplibregl-compact-show { padding: 2px 28px 2px 8px; }
+.maplibregl-ctrl-attrib-button { border-radius: 2px; background-color: var(--panel); }
+.maplibregl-ctrl-logo { display: none !important; }
+
+.maplibregl-popup-content {
+  padding: 10px 12px; border-radius: var(--radius); border: var(--hair); box-shadow: var(--shadow);
+  font: 400 13px/1.5 var(--font); color: var(--ink); background: var(--panel);
+}
+.maplibregl-popup-content .label { display: block; margin-bottom: 2px; }
+.maplibregl-popup-close-button {
+  width: 24px; height: 24px; font-size: 18px; line-height: 22px; color: var(--ink-2); border-radius: 0 var(--radius) 0 0;
+}
+.maplibregl-popup-close-button:hover { background: var(--paper-2); color: var(--ink); }
+.maplibregl-popup-anchor-top .maplibregl-popup-tip, .maplibregl-popup-anchor-top-left .maplibregl-popup-tip,
+.maplibregl-popup-anchor-top-right .maplibregl-popup-tip { border-bottom-color: var(--panel); }
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip, .maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip,
+.maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip { border-top-color: var(--panel); }
+.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--panel); }
+.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--panel); }
+.maplibregl-canvas-container.maplibregl-interactive { cursor: default; }
+.maplibregl-canvas-container.maplibregl-interactive:active { cursor: grabbing; }
+.map[data-cursor="crosshair"] .maplibregl-canvas-container, .map.is-placing .maplibregl-canvas-container { cursor: crosshair; }
+
+/* Map labels drawn as HTML markers (optional helper). */
+.map-label {
+  font: 500 10.5px/1.3 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink);
+  background: rgba(255, 255, 255, .92); border: var(--hair); border-radius: 2px; padding: 1px 5px; white-space: nowrap; pointer-events: none;
+}
+
+/* ---------- Charts (ui/charts.js draws SVG with these classes; colours from tokens) ---------- */
+.chart { display: block; overflow: visible; font-variant-numeric: tabular-nums; }
+.chart-grid { stroke: var(--line); stroke-width: 1; shape-rendering: crispEdges; }
+.chart-axis { stroke: var(--chart-axis); stroke-width: 1; shape-rendering: crispEdges; }
+.chart-tick { font: 400 var(--fs-tick) var(--mono); fill: var(--ink-3); }
+.chart-label { font: 500 10px var(--mono); letter-spacing: .05em; text-transform: uppercase; fill: var(--ink-2); }
+.chart-box { border: var(--hair); border-radius: var(--radius); padding: 8px 8px 4px; background: var(--panel); }
+.chart-box > .label { display: block; margin: 0 0 4px 2px; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 2px 12px; margin: 4px 2px 0; font-size: 12px; color: var(--ink-2); }
+.chart-now { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 2 2; }
+.chart-hover { stroke: var(--ink-3); stroke-width: 1; }
+/* .chart-bar fill and opacity stay as charts.js sets them (a CSS fill would override a caller's colour). */
+.chart-bar { shape-rendering: crispEdges; }
+.chart-tip {
+  position: absolute; z-index: 30; pointer-events: none; padding: 6px 9px; min-width: 96px;
+  background: var(--panel); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: var(--shadow);
+  font: 400 12px/1.45 var(--font); color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.chart-tip__head { font: 500 10.5px/1.4 var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+.chart-tip__swatch { display: inline-block; width: 10px; height: 2px; margin-right: 6px; vertical-align: middle; background: currentColor; }
+
+/* ---------- Enlarged drawing sheet over the map (lane b20's classes) ---------- */
+.operasi-overlay { position: absolute; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(242, 243, 241, .84); }
+.operasi-overlay[hidden] { display: none; }
+.operasi-overlay__card {
+  width: 100%; max-width: 1100px; max-height: 100%; overflow: auto; display: flex; flex-direction: column;
+  background: var(--panel); border: var(--hair); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.operasi-overlay__bar {
+  flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 8px 8px 16px;
+  border-bottom: var(--hair); font: 500 var(--fs-label)/1.3 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2);
+}
+.operasi-overlay__bar .btn--icon, .operasi-overlay__bar button:last-child { flex: none; }
+@media (max-width: 720px) { .operasi-overlay { padding: 8px; } }

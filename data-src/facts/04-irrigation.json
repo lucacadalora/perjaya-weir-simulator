@@ -1,0 +1,16 @@
+{
+  "_doc": "Dossier section 'irrigation'.",
+  "scheme": {"v": {"id": "Daerah Irigasi Komering (D.I. Komering Selatan/Way Komering)", "en": "Komering irrigation system (D.I. Komering Selatan/Way Komering)"}, "s": "S", "y": 2015, "src": ["r10:P14"], "l": ["Daerah irigasi", "Irrigation system"]},
+  "area_legal": {"v": 62536, "u": "ha", "s": "S", "y": 2015, "src": ["r10:P14"], "l": ["Luas sah (2015)", "Legal area (2015)"], "n": ["OKU Timur 47.988 + OKI 9.500 + Way Kanan 5.048 ha. Angka bawaan simulator.", "OKU Timur 47,988 + OKI 9,500 + Way Kanan 5,048 ha. The simulator's default."]},
+  "area_served_2019": {"v": 59148, "u": "ha", "s": "S", "y": 2019, "src": ["r01:J19"], "l": ["Luas yang dilayani bendung (2019)", "Area served by the headworks (2019)"]},
+  "area_after_phase3": {"v": 72639, "u": "ha", "s": "S", "y": 2022, "src": ["r02:FIDAMS"], "l": ["Luas setelah Tahap 3", "Area after Phase 3"]},
+  "area_master_plan": {"v": 100000, "u": "ha", "s": "S", "y": 1982, "src": ["r02:J04"], "l": ["Rencana induk 1982", "1982 master plan"]},
+  "main_canal": {"v": 30.5, "u": "km", "s": "S", "y": 2003, "src": ["r02:J04"], "l": ["Saluran Induk Komering (Tahap I)", "Komering main canal (Phase I)"]},
+  "unit_demand": {"v": 1.10, "u": "l/s/ha", "s": "S", "y": 2022, "src": ["r02:FIDAMS"], "l": ["Kebutuhan air puncak", "Peak unit demand"]},
+  "peak_demand": {"v": 68.8, "u": "m3/s", "s": "C", "y": 2022, "src": ["r02:FIDAMS", "r10:P14"], "l": ["Kebutuhan puncak pada luas sah", "Peak demand on the legal area"], "n": ["62.536 ha x 1,10 l/dt/ha", "62,536 ha x 1.10 l/s/ha"]},
+  "efficiency": {"v": 0.65, "u": "-", "s": "S", "y": 2013, "src": ["r13:KP01"], "l": ["Efisiensi irigasi keseluruhan", "Overall irrigation efficiency"]},
+  "cropping": {"v": {"id": "Padi-padi-palawija, intensitas 300 %", "en": "Rice-rice-second crop, 300 % intensity"}, "s": "S", "y": 2022, "src": ["r02:FIDAMS"], "l": ["Pola tanam", "Cropping pattern"]},
+  "belitang_deficit": {"v": {"id": "Kurang air dari awal Agustus sampai akhir Oktober tanpa golongan; cukup dengan golongan", "en": "Short of water from early August to late October without rotation; enough with rotation groups"}, "s": "S", "y": 2022, "src": ["r02:UGM22"], "l": ["Defisit Belitang", "Belitang deficit"]},
+  "rice_2002": {"v": 371059, "u": "t", "s": "S", "y": 2002, "src": ["r02:J04"], "l": ["Produksi gabah daerah Tahap I+II (2002)", "Paddy output, Phase I+II area (2002)"]},
+  "rice_oku_timur": {"v": 923413, "u": "t", "s": "S", "y": 2025, "src": ["r09:BRS25"], "l": ["Produksi padi OKU Timur (2025)", "Rice output of OKU Timur (2025)"], "n": ["Kedua di Sumatera Selatan.", "Second in South Sumatra."]}
+}

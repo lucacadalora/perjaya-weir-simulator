@@ -1,0 +1,8 @@
+node_modules/
+.scratch/
+*.log
+.DS_Store
+paper/build/
+paper/results/*.i16
+paper/results/*.u8
+__pycache__/

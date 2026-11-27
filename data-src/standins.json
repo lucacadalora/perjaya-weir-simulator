@@ -1,0 +1,74 @@
+[
+ {
+  "id": "Medan adalah model permukaan satelit 30 m (Copernicus GLO-30, 2011-2015) yang ikut memuat atap dan pucuk pohon, bukan hasil survei; dasar sungai dan dasar genangan tidak ada di dalamnya.",
+  "en": "The terrain is a 30 m satellite surface model (Copernicus GLO-30, 2011-2015) with roofs and tree tops, not a survey; the river bed and the pond bottom are not in it."
+ },
+ {
+  "id": "Dasar sungai diasumsikan: model medan hanya melihat permukaan air pada hari pengambilannya. Muka air sungai di model medan dianggap tepi alur normal; hanya lahan di luar alur itu yang dihitung tergenang.",
+  "en": "The river bed is assumed: the terrain model sees only the water surface on the days it was flown. The river level in the terrain model is taken as the edge of the normal channel; only ground beyond it counts as flooded."
+ },
+ {
+  "id": "Muka air di hilir bendung dihitung dengan satu penampang Manning yang melewati muka air rencana EL 80,00 pada debit banjir rencana.",
+  "en": "The level below the weir comes from one Manning section drawn through the design tail level EL 80.00 at the design flood."
+ },
+ {
+  "id": "Letak bendung adalah garis OpenStreetMap yang ditelusuri dari citra, bukan koordinat survei.",
+  "en": "The weir's position is an OpenStreetMap line traced on imagery, not a surveyed coordinate."
+ },
+ {
+  "id": "Tiga pintu pembilas di ujung timur terlihat di citra; penomoran pintu banjir dan letak dua pintu yang lebih tinggi adalah asumsi kami.",
+  "en": "The three sluice bays at the east end are seen on imagery; the numbering of the flood gates and where the two taller gates sit are our assumption."
+ },
+ {
+  "id": "Elevasi ambang pintu, ambang pengambilan, lantai jembatan, tinggi menara dan lebar tembok pangkal diandaikan dari tinggi pintu dan muka air normal; gambar aslinya tidak tersedia.",
+  "en": "The gate sills, the intake sill, the deck level, tower heights and abutment widths are assumed from the gate heights and the held pond level; the real drawings were not available."
+ },
+ {
+  "id": "Jenis pintu (pintu angkat dengan klep di atas) berasal dari makalah mahasiswa dan desain 1981; mungkin tidak sama dengan di lapangan.",
+  "en": "The gate type (vertical lift with a flap on top) comes from a student paper and the 1981 design; it may not match the gates on site."
+ },
+ {
+  "id": "Elevasi proyek (EL 79,70 dan seterusnya) diikat ke model medan dengan satu angka: muka genangan di model medan dikurangi EL 79,70. Tidak ada sumber yang menyebut datum proyek.",
+  "en": "Project levels (EL 79.70 and so on) are tied to the terrain model by one number: the pond surface in the terrain model minus EL 79.70. No source states the project datum."
+ },
+ {
+  "id": "Muka air normal EL 79,70 adalah muka air pengambilan pada lembar spesifikasi; urutan membuka pintu berasal dari makalah mahasiswa yang mengutip pedoman operasi.",
+  "en": "The normal pond EL 79.70 is the intake water level of the spec sheet; the gate opening order comes from a student paper quoting the operating manual."
+ },
+ {
+  "id": "Debit harian dihitung model dari hujan ERA5 dan dicocokkan dengan rata-rata bulanan pos Martapura 1963-1980; deret GloFAS hanya untuk pembanding.",
+  "en": "Daily flow is modelled from ERA5 rain and fitted to the 1963-80 Martapura monthly means; the GloFAS series is only a comparison."
+ },
+ {
+  "id": "Hujan adalah reanalisis (ERA5) yang dirata-ratakan di atas DAS hulu; puncak badai menjadi sekitar setengah nilai pos hujan.",
+  "en": "Rain is a reanalysis (ERA5) averaged over the upper basin; it smooths storm peaks to about half of gauge values."
+ },
+ {
+  "id": "Tidak ada muka air, bukaan pintu atau debit pengambilan yang dipublikasikan; pintu di simulator adalah model, bukan catatan operator.",
+  "en": "No pond level, gate setting or intake flow is published; the simulator's gates are a model, not the operator's log."
+ },
+ {
+  "id": "Danau Ranau adalah tampungan sederhana dengan satu volume dan satu debit keluar; pola operasinya tidak ditemukan.",
+  "en": "Lake Ranau is a simple store with one stated storage and one release; its rule curve was not found."
+ },
+ {
+  "id": "Tiga Dihaji ditampilkan sebagai rencana: masih dibangun dan belum digenangi; muka air penuhnya asumsi kami.",
+  "en": "Tiga Dihaji is shown as planned: it is under construction and not filling; its full supply level is our assumption."
+ },
+ {
+  "id": "Luas irigasi adalah angka sah 2015; luas yang benar-benar diairi tiap musim tidak dipublikasikan.",
+  "en": "The irrigated area is the legal 2015 figure; the area actually watered each season is not published."
+ },
+ {
+  "id": "Debit dari hujan dihitung dengan model tampungan sederhana yang disesuaikan dengan tabel debit terbitan: rata-rata tahunan 4,5 % terlalu rendah, debit andalan Juli-Oktober dalam 15 %, Maret 16 % terlalu tinggi, dan debit rata-rata bulan kemarau 20 sampai 30 % terlalu rendah.",
+  "en": "Flow from rain comes from a simple store model fitted to the published flow tables: the yearly mean is 4.5 % low, the July to October dependable flows are within 15 %, March is 16 % high, and the average flows of the dry months are 20 to 30 % low."
+ },
+ {
+  "id": "Muka air terendah untuk pengambilan, EL 79,60, adalah asumsi: satu langkah pintu 0,1 m di bawah muka air normal.",
+  "en": "The lowest pond for the intake, EL 79.60, is an assumption: one 0.1 m gate step under the normal pond."
+ },
+ {
+  "id": "Batas siaga banjir tidak ditemukan untuk pos Komering mana pun.",
+  "en": "No flood warning levels were found for any Komering gauge."
+ }
+]

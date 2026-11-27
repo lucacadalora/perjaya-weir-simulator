@@ -1,0 +1,498 @@
+{
+ "_doc": "Dossier section 'structure'.",
+ "length": {
+  "v": 215.5,
+  "u": "m",
+  "s": "S",
+  "y": 1996,
+  "src": [
+   "r01:J02",
+   "r01:J19"
+  ],
+  "l": [
+   "Panjang bendung",
+   "Weir length"
+  ],
+  "alt": [
+   {
+    "v": 217,
+    "src": [
+     "g04:OV"
+    ],
+    "note": "OpenStreetMap line (R)"
+   }
+  ]
+ },
+ "flood_gates_n": {
+  "v": 7,
+  "u": "-",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Pintu banjir",
+   "Flood gates"
+  ]
+ },
+ "flood_gate_width": {
+  "v": 20.0,
+  "u": "m",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Lebar pintu banjir",
+   "Flood gate width"
+  ]
+ },
+ "flood_gate_h_low": {
+  "v": 2.9,
+  "u": "m",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Tinggi pintu FG1-5",
+   "Height of gates FG1-5"
+  ]
+ },
+ "flood_gate_h_high": {
+  "v": 3.9,
+  "u": "m",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Tinggi pintu FG6-7",
+   "Height of gates FG6-7"
+  ]
+ },
+ "sluice_n": {
+  "v": 3,
+  "u": "-",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Pintu pembilas",
+   "Scouring sluices"
+  ]
+ },
+ "sluice_size": {
+  "v": {
+   "id": "12,5 m x 4,2 m, di atas pembilas bawah 12,5 m x 2,0 m",
+   "en": "12.5 m x 4.2 m, over under-sluices of 12.5 m x 2.0 m"
+  },
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Ukuran pintu pembilas",
+   "Scouring sluice size"
+  ]
+ },
+ "clear_width": {
+  "v": 177.5,
+  "u": "m",
+  "s": "C",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Lebar bersih semua pintu",
+   "Clear width of all gates"
+  ],
+  "n": [
+   "7 x 20,0 + 3 x 12,5",
+   "7 x 20.0 + 3 x 12.5"
+  ]
+ },
+ "bay_order": {
+  "v": {
+   "id": "Dari tepi kiri (barat): tujuh pintu banjir FG1-FG7, lalu tiga pintu pembilas di ujung timur, di samping pengambilan",
+   "en": "From the left (west) bank: seven flood gates FG1-FG7, then the three scouring sluices at the east end beside the intake"
+  },
+  "s": "R",
+  "y": 2026,
+  "src": [
+   "r08:ESRI",
+   "lead:A1"
+  ],
+  "l": [
+   "Urutan pintu",
+   "Order of the bays"
+  ],
+  "n": [
+   "Tiga bukaan sempit terlihat di ujung timur pada citra (R). Penomoran FG1-FG7 dan letak dua pintu 3,9 m (diandaikan di samping pintu pembilas) adalah asumsi (A).",
+   "Three narrow bays are seen at the east end on imagery (R). The numbering FG1-FG7 and the place of the two 3.9 m gates (assumed next to the sluices) are assumptions (A)."
+  ]
+ },
+ "pier_width": {
+  "v": 3.0,
+  "u": "m",
+  "s": "C",
+  "y": 2026,
+  "src": [
+   "r08:ESRI",
+   "r01:J19"
+  ],
+  "l": [
+   "Tebal pilar",
+   "Pier width"
+  ],
+  "n": [
+   "Jarak as 22,9 m dari citra dikurangi lebar pintu 20,0 m.",
+   "22.9 m centre to centre on imagery minus the 20.0 m gate."
+  ],
+  "alt": [
+   {
+    "v": 6.0,
+    "src": [
+     "r01:J19"
+    ],
+    "note": "drawn for some piers on a blurry scan"
+   }
+  ]
+ },
+ "gate_type": {
+  "v": {
+   "id": "Pintu angkat dengan daun klep di atasnya (jenis pintu utama tidak ditemukan)",
+   "en": "Lift gates with a flap on top (main gate type not found)"
+  },
+  "s": "S",
+  "y": 2022,
+  "src": [
+   "r05:UNISMA22",
+   "r01:J19"
+  ],
+  "l": [
+   "Jenis pintu",
+   "Gate type"
+  ],
+  "n": [
+   "Sumber lemah (makalah mahasiswa). Model 3D memakai pintu angkat beroda (A).",
+   "Weak source (a student paper). The 3D model uses vertical-lift roller gates (A)."
+  ]
+ },
+ "stilling_basin": {
+  "v": {
+   "id": "FG1-3: 30 m; FG4-7: 40 m; pintu pembilas: 50 m",
+   "en": "FG1-3: 30 m; FG4-7: 40 m; sluices: 50 m"
+  },
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Panjang kolam olak",
+   "Stilling basin lengths"
+  ],
+  "n": [
+   "Tertulis \"330\" untuk FG1-3, dibaca sebagai salah ketik.",
+   "Printed \"330\" for FG1-3, ruled a typo."
+  ]
+ },
+ "intake_width": {
+  "v": 49.5,
+  "u": "m",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Lebar pengambilan (5 daun pintu)",
+   "Intake width (5 gate leaves)"
+  ]
+ },
+ "intake_capacity": {
+  "v": 91.68,
+  "u": "m3/s",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Kapasitas rencana pengambilan",
+   "Intake design capacity"
+  ],
+  "alt": [
+   {
+    "v": 81,
+    "src": [
+     "r01:J02",
+     "r02:LUC20"
+    ],
+    "note": "Phase I design and operator figure, kept as the operating target"
+   }
+  ]
+ },
+ "intake_capacity_max": {
+  "v": 101,
+  "u": "m3/s",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Kapasitas maksimum pengambilan",
+   "Intake maximum"
+  ]
+ },
+ "intake_operating": {
+  "v": 81.0,
+  "u": "m3/s",
+  "s": "S",
+  "y": 2020,
+  "src": [
+   "r01:J02",
+   "r02:LUC20"
+  ],
+  "l": [
+   "Debit pengambilan operasi",
+   "Operating intake flow"
+  ]
+ },
+ "intake_bank": {
+  "v": {
+   "id": "Tepi kanan (timur)",
+   "en": "Right (east) bank"
+  },
+  "s": "R",
+  "y": 2026,
+  "src": [
+   "g04:OV",
+   "r09:OVT",
+   "lead:A1"
+  ],
+  "l": [
+   "Tepi pengambilan",
+   "Intake bank"
+  ]
+ },
+ "settling_basins": {
+  "v": 5,
+  "u": "-",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Kantong lumpur",
+   "Settling basins"
+  ],
+  "n": [
+   "Masing-masing 16 m3/detik, 45 x 140 m; 3 dibangun Tahap I, 2 ditambah Tahap II.",
+   "Each 16 m3/s, 45 x 140 m; 3 built in Phase I, 2 added in Phase II."
+  ],
+  "alt": [
+   {
+    "v": 3,
+    "src": [
+     "r02:J04"
+    ],
+    "note": "Phase I count"
+   }
+  ]
+ },
+ "settling_capacity": {
+  "v": 80,
+  "u": "m3/s",
+  "s": "C",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Kapasitas kantong lumpur",
+   "Settling basin capacity"
+  ]
+ },
+ "fish_ladder": {
+  "v": 75.5,
+  "u": "m",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Tangga ikan (kolam bertingkat, kemiringan 1:11,7)",
+   "Fish ladder (pool and weir, slope 1:11.7)"
+  ]
+ },
+ "fish_ladder_side": {
+  "v": {
+   "id": "Sisi timur",
+   "en": "East side"
+  },
+  "s": "S",
+  "y": 2022,
+  "src": [
+   "r11:Nizar-2022"
+  ],
+  "l": [
+   "Letak tangga ikan",
+   "Fish ladder side"
+  ]
+ },
+ "control_house": {
+  "v": 638,
+  "u": "m2",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Gedung kendali (4 lantai)",
+   "Control house (4 storeys)"
+  ]
+ },
+ "design_flood": {
+  "v": 2200,
+  "u": "m3/s",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Banjir rencana",
+   "Design flood"
+  ],
+  "n": [
+   "Kala ulang tidak disebut.",
+   "Return period not stated."
+  ],
+  "alt": [
+   {
+    "v": 1398,
+    "src": [
+     "r06:JICA81"
+    ],
+    "note": "1981 plan, a 100-year daily mean; superseded"
+   }
+  ]
+ },
+ "design_high_water": {
+  "v": 81.0,
+  "u": "m EL",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Muka air banjir rencana",
+   "Design high water level"
+  ],
+  "n": [
+   "Hanya tercapai saat banjir rencana dengan semua pintu terbuka.",
+   "Reached only in the design flood with every gate open."
+  ]
+ },
+ "intake_water_level": {
+  "v": 79.7,
+  "u": "m EL",
+  "s": "S",
+  "y": 2019,
+  "src": [
+   "r01:J19"
+  ],
+  "l": [
+   "Muka air rencana pengambilan",
+   "Intake design water level"
+  ],
+  "n": [
+   "Sama dengan muka air normal yang ditahan pintu.",
+   "The same as the normal pond the gates hold."
+  ]
+ },
+ "riverbed": {
+  "v": 74.0,
+  "u": "m EL",
+  "s": "C",
+  "y": 1981,
+  "src": [
+   "r06:JICA81"
+  ],
+  "l": [
+   "Dasar sungai di bendung",
+   "River bed at the weir"
+  ],
+  "n": [
+   "Mercu rencana 1981 EL 79,30 dikurangi tinggi 5,3 m (desain yang diganti). Penampang sungai di hilir (lebar, kemiringan tebing dan kekasaran diasumsikan, A) diberi dasar yang membuat muka air EL 80,00 pada banjir rencana; dasar itu ada di parameter.",
+   "1981 design crest EL 79.30 minus its 5.3 m height (superseded design). The river section below the weir (width, bank slope and roughness assumed, A) gets the bed that gives the design tail level EL 80.00 at the design flood; that bed is in the parameters."
+  ]
+ },
+ "sill_levels": {
+  "v": {
+   "id": "Ambang FG1-5 EL 77,00; FG6-7 EL 76,00; daun atas pembilas EL 75,70; lantai pembilas bawah EL 73,70; pengambilan EL 78,30",
+   "en": "Sills FG1-5 EL 77.00; FG6-7 EL 76.00; upper sluice leaf EL 75.70; under-sluice floor EL 73.70; intake EL 78.30"
+  },
+  "s": "A",
+  "y": 2026,
+  "src": [
+   "b18:assume",
+   "r13:KP02"
+  ],
+  "l": [
+   "Elevasi ambang",
+   "Sill levels"
+  ],
+  "n": [
+   "Tidak ada gambar yang terbaca. Diandaikan puncak pintu tertutup 0,20 m di atas muka air normal EL 79,70; ambang pengambilan dari bukaan yang perlu untuk 91,68 m3/detik.",
+   "No legible drawing. Assumed: closed gate tops 0.20 m above the normal pond EL 79.70; the intake sill from the opening needed for 91.68 m3/s."
+  ]
+ },
+ "deck_level": {
+  "v": 83.0,
+  "u": "m EL",
+  "s": "A",
+  "y": 2026,
+  "src": [
+   "b18:assume"
+  ],
+  "l": [
+   "Elevasi lantai jembatan",
+   "Deck level"
+  ],
+  "n": [
+   "Diandaikan 2 m di atas muka air banjir rencana.",
+   "Assumed 2 m above the design high water."
+  ]
+ },
+ "design_1981": {
+  "v": {
+   "id": "Rencana 1981 (tidak dibangun): mercu tetap EL 79,30, 171 m, 2 pintu rol 17,5 x 5,4 m",
+   "en": "1981 plan (not built): fixed crest EL 79.30, 171 m, 2 roller gates 17.5 x 5.4 m"
+  },
+  "s": "S",
+  "y": 1981,
+  "src": [
+   "r06:JICA81"
+  ],
+  "l": [
+   "Desain awal",
+   "Early design"
+  ]
+ }
+}

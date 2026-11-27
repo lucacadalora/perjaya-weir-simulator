@@ -1,0 +1,591 @@
+[
+ {
+  "id": "E1-01-coef-month",
+  "engine": "E1",
+  "inputs": {
+   "A_km2": 4320,
+   "P_mm": 300,
+   "C": 0.5,
+   "days": 30,
+   "out": "Q_m3s"
+  },
+  "expect": 250.0,
+  "tol": 0.5,
+  "source": "[C] Q = C*P*A/t, r13 hand calc"
+ },
+ {
+  "id": "E1-02-rational",
+  "engine": "E1",
+  "inputs": {
+   "C": 0.6,
+   "I_mm_h": 20,
+   "A_km2": 100,
+   "out": "Qp_m3s"
+  },
+  "expect": 333.6,
+  "tol": 0.5,
+  "source": "[C] rational Q = 0.278 C I A (KP-01 Lampiran I uses the rational form); r13"
+ },
+ {
+  "id": "E1-03-mock-wet-runoff",
+  "engine": "E1",
+  "inputs": {
+   "P_mm": 300,
+   "rain_days": 15,
+   "Ep_mm": 120,
+   "m": 0.3,
+   "SMC_mm": 200,
+   "SM0_mm": 200,
+   "i": 0.4,
+   "k": 0.6,
+   "V0_mm": 100,
+   "PF": 0,
+   "out": "runoff_mm"
+  },
+  "expect": 166.072,
+  "tol": 0.1,
+  "source": "[C] F.J. Mock steps as in Rasyid & Afdhaliah ITB IGSC 2022; r13 recomputed"
+ },
+ {
+  "id": "E1-04-mock-wet-Q",
+  "engine": "E1",
+  "inputs": {
+   "same_as": "E1-03-mock-wet-runoff",
+   "A_km2": 4320,
+   "days": 30,
+   "out": "Q_m3s"
+  },
+  "expect": 276.7867,
+  "tol": 0.5,
+  "source": "[C] r13"
+ },
+ {
+  "id": "E1-05-mock-dry-baseflow",
+  "engine": "E1",
+  "inputs": {
+   "P_mm": 60,
+   "rain_days": 5,
+   "Ep_mm": 135,
+   "m": 0.3,
+   "SMC_mm": 200,
+   "SM0_mm": 200,
+   "i": 0.4,
+   "k": 0.6,
+   "V0_mm": 119.328,
+   "out": "runoff_mm (all baseflow)"
+  },
+  "expect": 47.732,
+  "tol": 0.1,
+  "source": "[C] r13; soil drawn to 151.3 mm, no surplus"
+ },
+ {
+  "id": "E1-06-mock-groundwater",
+  "engine": "E1",
+  "inputs": {
+   "same_as": "E1-03-mock-wet-runoff",
+   "out": "V1_mm"
+  },
+  "expect": 119.328,
+  "tol": 0.05,
+  "source": "[C] Vn = k*Vn-1 + 0.5(1+k)*I"
+ },
+ {
+  "id": "E1-07-nreca-total",
+  "engine": "E1",
+  "inputs": {
+   "P_mm": 300,
+   "PET_mm": 120,
+   "Ra_mm_yr": 2800,
+   "W0_mm": 600,
+   "PSUB": 0.5,
+   "GWF": 0.5,
+   "GW0_mm": 100,
+   "out": "runoff_mm"
+  },
+  "expect": 105.8181,
+  "tol": 0.2,
+  "source": "[C] NRECA (Crawford & Thurin 1981 structure; Nominal = 100+0.2Ra), excess-moisture ratio 0.5(1+tanh((Wi-1)/0.52)) [A, check against the NRECA chart]"
+ },
+ {
+  "id": "E1-08-nreca-storage",
+  "engine": "E1",
+  "inputs": {
+   "same_as": "E1-07-nreca-total",
+   "out": "W1_mm"
+  },
+  "expect": 705.5759,
+  "tol": 0.2,
+  "source": "[C] r13"
+ },
+ {
+  "id": "E1-09-bucket-day1",
+  "engine": "E1",
+  "inputs": {
+   "Smax_mm": 150,
+   "S0_mm": 120,
+   "P_mm": 100,
+   "K_days": 2,
+   "A_km2": 4320,
+   "out": "Q_day1_m3s"
+  },
+  "expect": 1377.1427,
+  "tol": 2,
+  "source": "[C] overflow 70 mm into linear reservoir, q = 70(1-e^-0.5) mm/day; r13"
+ },
+ {
+  "id": "E1-10-q80-weibull",
+  "engine": "E1",
+  "inputs": {
+   "flows_m3s": [
+    420,
+    380,
+    350,
+    300,
+    280,
+    260,
+    240,
+    210,
+    190,
+    150
+   ],
+   "method": "Weibull m/(n+1), linear interpolation",
+   "out": "Q80_m3s"
+  },
+  "expect": 194.0,
+  "tol": 0.01,
+  "source": "[C] KP-01 4.2.5 (80% exceedance); synthetic series"
+ },
+ {
+  "id": "E1-11-q80-normal",
+  "engine": "E1",
+  "inputs": {
+   "flows_m3s": [
+    420,
+    380,
+    350,
+    300,
+    280,
+    260,
+    240,
+    210,
+    190,
+    150
+   ],
+   "method": "normal: mean + z(0.2)*sd",
+   "out": "Q80_m3s"
+  },
+  "expect": 205.5141,
+  "tol": 0.1,
+  "source": "[C] KP-01 Tabel 4-4 row 1a (normal distribution)"
+ },
+ {
+  "id": "E2-01-grid-volume",
+  "engine": "E2",
+  "inputs": {
+   "dem": [
+    [
+     10,
+     11,
+     12
+    ],
+    [
+     9,
+     10,
+     11
+    ],
+    [
+     8,
+     9,
+     13
+    ]
+   ],
+   "cell_m": 30,
+   "level_m": 10.5,
+   "out": "volume_m3"
+  },
+  "expect": 5850.0,
+  "tol": 0.01,
+  "source": "[C] V(h) = sum cell_area*max(0,h-z); r13"
+ },
+ {
+  "id": "E2-02-grid-area",
+  "engine": "E2",
+  "inputs": {
+   "same_as": "E2-01-grid-volume",
+   "out": "area_m2"
+  },
+  "expect": 4500.0,
+  "tol": 0.01,
+  "source": "[C] r13"
+ },
+ {
+  "id": "E2-03-pool-equilibrium",
+  "engine": "E2",
+  "inputs": {
+   "I_m3s": 500,
+   "C": 2.2,
+   "b_m": 100,
+   "out": "head_m at O = I"
+  },
+  "expect": 1.7286,
+  "tol": 0.001,
+  "source": "[C] O = C b H^1.5 solved for O = I"
+ },
+ {
+  "id": "E2-04-pool-euler-step",
+  "engine": "E2",
+  "inputs": {
+   "A_m2": 2000000.0,
+   "H0_m": 1.0,
+   "I_m3s": 500,
+   "C": 2.2,
+   "b_m": 100,
+   "dt_s": 3600,
+   "out": "H1_m"
+  },
+  "expect": 1.504,
+  "tol": 0.001,
+  "source": "[C] explicit step H1 = H0 + (I-O)dt/A"
+ },
+ {
+  "id": "E2-05-puls-linear",
+  "engine": "E2",
+  "inputs": {
+   "A_m2": 2000000.0,
+   "H1_m": 1.0,
+   "I1": 500,
+   "I2": 500,
+   "O_per_m": 100,
+   "dt_s": 3600,
+   "out": "H2_m"
+  },
+  "expect": 1.6606,
+  "tol": 0.0005,
+  "source": "[C] level-pool (Puls) trapezoid step, closed form for linear outflow"
+ },
+ {
+  "id": "E2-06-evap-loss",
+  "engine": "E2",
+  "inputs": {
+   "pan_mm_d": 4.6,
+   "pan_coef": 0.7,
+   "area_km2": 1,
+   "out": "loss_m3_per_day"
+  },
+  "expect": 3220.0,
+  "tol": 1,
+  "source": "[S] pan 4.6 mm/d Belitang, JICA 1982 Upper Komering Pre-FS Annex I 1.8; [A] pan coefficient 0.7"
+ },
+ {
+  "id": "E3-01-gate-free-kp02",
+  "engine": "E3",
+  "inputs": {
+   "mu": 0.6,
+   "a_m": 1.0,
+   "b_m": 10,
+   "h1_m": 5.0,
+   "K": 1.0,
+   "g": 9.81,
+   "out": "Q_m3s"
+  },
+  "expect": 59.4273,
+  "tol": 0.05,
+  "source": "KP-02 2013 (Ditjen SDA, Kriteria Perencanaan Bangunan Utama) eq 4-42; mu [R] from Gambar 4-40"
+ },
+ {
+  "id": "E3-02-gate-free-energy",
+  "engine": "E3",
+  "inputs": {
+   "Cc": 0.61,
+   "a_m": 1.0,
+   "b_m": 10,
+   "h1_m": 5.0,
+   "out": "Q_m3s"
+  },
+  "expect": 57.0385,
+  "tol": 0.05,
+  "source": "[C] energy + contraction form, Cc = 0.61 (standard texts)"
+ },
+ {
+  "id": "E3-03-intake-submerged",
+  "engine": "E3",
+  "inputs": {
+   "mu": 0.8,
+   "b_m": 3.0,
+   "a_m": 1.5,
+   "z_m": 0.2,
+   "out": "Q_m3s"
+  },
+  "expect": 7.1313,
+  "tol": 0.01,
+  "source": "KP-02 2013 (Ditjen SDA, Kriteria Perencanaan Bangunan Utama) eq 5-3, mu = 0.80"
+ },
+ {
+  "id": "E3-04-crest",
+  "engine": "E3",
+  "inputs": {
+   "Cd": 1.3,
+   "b_m": 100,
+   "H1_m": 3.0,
+   "out": "Q_m3s"
+  },
+  "expect": 1151.6562,
+  "tol": 0.5,
+  "source": "KP-02 2013 (Ditjen SDA, Kriteria Perencanaan Bangunan Utama) eq 4-2 (Cd = C0 C1 C2, C0 max 1.49)"
+ },
+ {
+  "id": "E3-05-effective-width",
+  "engine": "E3",
+  "inputs": {
+   "B_m": 100,
+   "n_piers": 4,
+   "Kp": 0.01,
+   "Ka": 0.1,
+   "H1_m": 3.0,
+   "out": "Be_m"
+  },
+  "expect": 99.16,
+  "tol": 0.001,
+  "source": "KP-02 2013 (Ditjen SDA, Kriteria Perencanaan Bangunan Utama) eq 4-1, Tabel 4-1"
+ },
+ {
+  "id": "E3-06-crest-with-be",
+  "engine": "E3",
+  "inputs": {
+   "Cd": 1.3,
+   "B_m": 100,
+   "n_piers": 4,
+   "Kp": 0.01,
+   "Ka": 0.1,
+   "H1_m": 3.0,
+   "out": "Q_m3s"
+  },
+  "expect": 1141.9823,
+  "tol": 0.5,
+  "source": "KP-02 2013 (Ditjen SDA, Kriteria Perencanaan Bangunan Utama) eq 4-1 + 4-2"
+ },
+ {
+  "id": "E3-07-manning",
+  "engine": "E3",
+  "inputs": {
+   "b_m": 80,
+   "side_z": 2,
+   "y_m": 4,
+   "n": 0.035,
+   "S": 0.0003,
+   "out": "Q_m3s"
+  },
+  "expect": 408.8611,
+  "tol": 0.5,
+  "source": "[C] Manning Q = (1/n) A R^(2/3) S^(1/2), trapezoid"
+ },
+ {
+  "id": "E4-01-d8-acc",
+  "engine": "E4",
+  "inputs": {
+   "dem": "toy 5x5 valley in calc_examples.py",
+   "cell_m": 30,
+   "out": "outlet catchment m2"
+  },
+  "expect": 22500.0,
+  "tol": 0.01,
+  "source": "[C] D8 steepest descent, diagonals /sqrt2"
+ },
+ {
+  "id": "E4-02-fill-cells",
+  "engine": "E4",
+  "inputs": {
+   "dem": "toy 5x5, rows 0-2 behind dam line",
+   "crest_m": 6,
+   "seed": [
+    2,
+    2
+   ],
+   "out": "flooded cells"
+  },
+  "expect": 4.0,
+  "tol": 0,
+  "source": "[C] 4-connected flood fill below crest"
+ },
+ {
+  "id": "E4-03-fill-volume",
+  "engine": "E4",
+  "inputs": {
+   "same_as": "E4-02-fill-cells",
+   "out": "volume_m3"
+  },
+  "expect": 5400.0,
+  "tol": 0.01,
+  "source": "[C] r13"
+ },
+ {
+  "id": "E4-04-hand",
+  "engine": "E4",
+  "inputs": {
+   "dem": "toy 5x5",
+   "drain_threshold_cells": 3,
+   "cell": [
+    0,
+    0
+   ],
+   "out": "HAND_m"
+  },
+  "expect": 6.0,
+  "tol": 0.001,
+  "source": "[C] HAND = z - z(first drainage cell along D8)"
+ },
+ {
+  "id": "E4-05-hand-extent",
+  "engine": "E4",
+  "inputs": {
+   "dem": "toy 5x5",
+   "drain_threshold_cells": 3,
+   "stage_m": 2.0,
+   "out": "cells with HAND <= stage"
+  },
+  "expect": 9.0,
+  "tol": 0,
+  "source": "[C] r13"
+ },
+ {
+  "id": "E6-01-lp-table",
+  "engine": "E6",
+  "inputs": {
+   "M_mm_d": 5.0,
+   "T_d": 30,
+   "S_mm": 250,
+   "out": "IR_mm_d"
+  },
+  "expect": 11.0818,
+  "tol": 0.05,
+  "source": "KP-01 2013 (Ditjen SDA, Kriteria Perencanaan Bagian Jaringan Irigasi) Tabel A.2.1 gives 11,1"
+ },
+ {
+  "id": "E6-02-lp-table-b",
+  "engine": "E6",
+  "inputs": {
+   "M_mm_d": 11.0,
+   "T_d": 45,
+   "S_mm": 300,
+   "out": "IR_mm_d"
+  },
+  "expect": 13.6147,
+  "tol": 0.05,
+  "source": "KP-01 2013 (Ditjen SDA, Kriteria Perencanaan Bagian Jaringan Irigasi) Tabel A.2.1 gives 13,6"
+ },
+ {
+  "id": "E6-03-re",
+  "engine": "E6",
+  "inputs": {
+   "R5_halfmonth_mm": 90,
+   "out": "Re_mm_d"
+  },
+  "expect": 4.2,
+  "tol": 0.001,
+  "source": "KP-01 2013 (Ditjen SDA, Kriteria Perencanaan Bagian Jaringan Irigasi) eq A.2.5 Re = 0.7 R5/15"
+ },
+ {
+  "id": "E6-04-nfr",
+  "engine": "E6",
+  "inputs": {
+   "ETo": 4.0,
+   "Kc": 1.1,
+   "P": 2.0,
+   "WLR": 3.3,
+   "Re": 4.2,
+   "out": "NFR_mm_d"
+  },
+  "expect": 5.5,
+  "tol": 0.001,
+  "source": "KP-01 2013 (Ditjen SDA, Kriteria Perencanaan Bagian Jaringan Irigasi) Lampiran II"
+ },
+ {
+  "id": "E6-05-dr",
+  "engine": "E6",
+  "inputs": {
+   "NFR_mm_d": 5.5,
+   "eff": 0.65,
+   "out": "DR_l_s_ha"
+  },
+  "expect": 0.9793,
+  "tol": 0.002,
+  "source": "KP-01 2013 (Ditjen SDA, Kriteria Perencanaan Bagian Jaringan Irigasi) Tabel A.2.x note 4: DR = NFR/(8.64*0.65); KP-01 prints 0,97 for 5,5"
+ },
+ {
+  "id": "E6-06-golongan",
+  "engine": "E6",
+  "inputs": {
+   "groups": 3,
+   "stagger_days": 15,
+   "ETo": 4.0,
+   "P": 2.0,
+   "R5": 90,
+   "out": "mean NFR mm/d (LP, Kc1.10, Kc1.05)"
+  },
+  "expect": 6.1797,
+  "tol": 0.01,
+  "source": "[C] r13, KP-01 A.2.3.3 sums groups"
+ },
+ {
+  "id": "FF-01-gumbel-100",
+  "engine": "E4",
+  "inputs": {
+   "annual_max_m3s": [
+    820,
+    950,
+    1100,
+    760,
+    1300,
+    1020,
+    880,
+    1450,
+    990,
+    1180
+   ],
+   "Yn": 0.4952,
+   "Sn": 0.9496,
+   "T": 100,
+   "out": "Q_m3s"
+  },
+  "expect": 1981.1119,
+  "tol": 1,
+  "source": "[C] Gumbel with Yn/Sn for n = 10 (table as in Soewarno/SNI 2415-type practice); synthetic data"
+ },
+ {
+  "id": "FF-02-gumbel-chow-100",
+  "engine": "E4",
+  "inputs": {
+   "same_as": "FF-01-gumbel-100",
+   "K": "Chow -(sqrt6/pi)(0.5772+ln ln(T/(T-1)))",
+   "out": "Q_m3s"
+  },
+  "expect": 1724.2521,
+  "tol": 1,
+  "source": "[C] r13"
+ },
+ {
+  "id": "FF-03-lp3-100",
+  "engine": "E4",
+  "inputs": {
+   "same_as": "FF-01-gumbel-100",
+   "log": 10,
+   "KT": "Wilson-Hilferty",
+   "out": "Q_m3s"
+  },
+  "expect": 1710.0217,
+  "tol": 5,
+  "source": "[C] r13; Cs = 0.262; table KT differs from Wilson-Hilferty by < 0.01 for |Cs| < 1"
+ },
+ {
+  "id": "FF-04-kt-cs05",
+  "engine": "E4",
+  "inputs": {
+   "Cs": 0.5,
+   "T": 100,
+   "out": "KT"
+  },
+  "expect": 2.6884,
+  "tol": 0.005,
+  "source": "[C] Wilson-Hilferty; standard LP3 table gives 2.686"
+ }
+]
